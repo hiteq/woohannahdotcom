@@ -1,0 +1,48 @@
+---
+생성일: Invalid date
+태그:
+  - Group
+---
+![[image.png]]
+
+Abdomen: Gapes, 2023, fabric, string, cotton, bouncy balls, 120 x 73 x 74 cm
+
+  
+
+![[image 1.png]]
+
+Abdomen: Grapes 설치전경
+
+  
+
+![[SeMA-옴니버스-끝없이-갈라지는-세계의-끝에서_포스터.jpg]]
+
+[https://sema.seoul.go.kr/kr/whatson/exhibition/audio_guide?exNo=1308679&audioGuideNo=1319065&photosketchNo=133549&currentPage=1&glolangType=KOR](https://sema.seoul.go.kr/kr/whatson/exhibition/audio_guide?exNo=1308679&audioGuideNo=1319065&photosketchNo=133549&currentPage=1&glolangType=KOR)
+
+![[Abdomen-Grapes-(1).jpg]]
+
+Abdomen: Grapes, 2023, fabric, string, cotton, bouncy balls, 120 x 73 x 74 cm
+
+  
+
+SeMA 옴니버스는 서울시립미술관의 2024년 기관의제 ‘연결’을 장르적, 매체적, 시간적, 세대적, 사회적 측면에서 고찰하는 대규모 소장품 주제기획전입니다. 하나의 주제를 중심으로 독립된 단편들을 엮어내는 이야기 형식인 옴니버스를 차용하여, 4개 관에서 4개의 전시가 서로 다르지만 긴밀하게 이어집니다.
+
+⠀
+
+서소문본관의 SeMA 옴니버스 《끝없이 갈라지는 세계의 끝에서》는 서울시립미술관 소장품을 매체 사이의 연결과 결합이라는 키워드로 읽어내는 전시입니다. 포스트-미디엄/포스트-미디어 시대 매체를 매개로 예술가와 작품의 필연적 구조를 탐색하고, 올드미디어와 뉴미디어, 가상과 현실, AI와 신체 등 기술과 사회의 변화에 조응하는 매체가 만들어내는 우리 시대 매체/미디어의 다층적(layered) 구조를 보여주는 전시로 여러분을 초대합니다.
+
+⠀
+
+SeMA 옴니버스 《끝없이 갈라지는 세계의 끝에서》
+
+SeMA Omnibus : 𝘈𝘵 𝘵𝘩𝘦 𝘌𝘯𝘥 𝘰𝘧 𝘵𝘩𝘦 𝘞𝘰𝘳𝘭𝘥 𝘚𝘱𝘭𝘪𝘵 𝘌𝘯𝘥𝘭𝘦𝘴𝘴𝘭𝘺
+
+2024. 8. 22.(목) - 2024. 11. 17.(일)
+
+서울시립미술관 서소문본관 1, 2층 전시실
+
+  
+
+This artwork is collected by SeMA.
+
+이 작품은 서울시립미술관에 소장되었습니다.
