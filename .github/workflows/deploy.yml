@@ -38,6 +38,9 @@ jobs:
       - name: Build website
         run: npx quartz build
 
+      - name: List output files
+        run: ls -R public
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
