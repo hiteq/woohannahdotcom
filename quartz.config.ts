@@ -13,7 +13,7 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
-    locale: "en-US",
+    locale: "ko-KR",
     baseUrl: "hiteq.github.io/woohannahdotcom",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
