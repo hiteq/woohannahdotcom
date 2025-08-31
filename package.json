@@ -16,7 +16,7 @@
     "docs": "npx quartz build --serve -d docs",
     "build": "npx quartz build --output docs",
     "dev": "npx quartz build --output docs --serve",
-    "pub": "npm run build && git add . && git commit -m \"Update website\" && git push origin main",
+    "go": "npm run build && git add . && git commit -m \"Update website\" && git push origin main",
     "deploy": "npm run build && git add . && git commit -m \"Deploy website\" && git push origin main",
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
