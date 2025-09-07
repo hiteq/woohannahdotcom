@@ -1,11 +1,43 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { isFolderPath } from "./quartz/util/path"
 
 /**
  * Quartz 4 Configuration
  *
  * See https://quartz.jzhao.xyz/configuration for more information.
  */
+// Custom sort to keep site tree consistent across folder listings
+const folderPageSort = (f1: any, f2: any) => {
+  const topOrder = ["Works", "Exhibitions", "Thoughts", "Press", "About"]
+
+  const f1IsFolder = isFolderPath(f1.slug ?? "")
+  const f2IsFolder = isFolderPath(f2.slug ?? "")
+  if (f1IsFolder && !f2IsFolder) return -1
+  if (!f1IsFolder && f2IsFolder) return 1
+
+  // Prioritize specific top-level names if present
+  const t1 = (f1.frontmatter?.title ?? "") as string
+  const t2 = (f2.frontmatter?.title ?? "") as string
+  const i1 = topOrder.indexOf(t1)
+  const i2 = topOrder.indexOf(t2)
+  if (i1 !== -1 || i2 !== -1) {
+    if (i1 !== -1 && i2 !== -1) return i1 - i2
+    if (i1 !== -1) return -1
+    if (i2 !== -1) return 1
+  }
+
+  // Then by date (modified desc) if available
+  const d1 = f1.dates?.modified ?? f1.dates?.published ?? f1.dates?.created
+  const d2 = f2.dates?.modified ?? f2.dates?.published ?? f2.dates?.created
+  if (d1 && d2) return d2.getTime() - d1.getTime()
+  if (d1 && !d2) return -1
+  if (!d1 && d2) return 1
+
+  // Fallback alphabetical by title
+  return t1.toLowerCase().localeCompare(t2.toLowerCase())
+}
+
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "Hannah Woo",
@@ -14,7 +46,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "ko-KR",
-    baseUrl: "hiteq.github.io/woohannahdotcom",
+    baseUrl: "https://woohannah.com",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -76,7 +108,7 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
+      Plugin.FolderPage({ sort: folderPageSort }),
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,

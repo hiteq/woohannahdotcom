@@ -96,3 +96,7 @@ Thumbs.db
 *.temp
 .tmp/
 .temp/
+
+# Keep Images folder tracked
+!content/Images/
+!docs/Images/

@@ -1,0 +1,7 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+docs폴더는 obisian의 vault로서 관리되어짐.
+따라서 콘텐츠에 생긴 이슈를 해결하고자 할 경우는 md파일을 수정하여 나머지가 dist되도록 할것.

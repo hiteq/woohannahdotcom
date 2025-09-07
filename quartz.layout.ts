@@ -4,7 +4,7 @@ import * as Component from "./quartz/components"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [Component.Nav()],
   afterBody: [],
   footer: Component.Footer({
     links: {
@@ -38,7 +38,31 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      folderDefaultState: "open",
+      filterFn: (node) => node.slugSegment !== "tags" && node.slugSegment !== "Images",
+      sortFn: (a, b) => {
+        const topOrder = ["Works", "Exhibitions", "Thoughts", "Press", "About"]
+        const aIdx = topOrder.indexOf(a.displayName)
+        const bIdx = topOrder.indexOf(b.displayName)
+
+        // Top-level custom order for folders
+        if (a.isFolder && b.isFolder) {
+          if (aIdx !== -1 && bIdx !== -1) return aIdx - bIdx
+          if (aIdx !== -1) return -1
+          if (bIdx !== -1) return 1
+        }
+
+        // Fallback: folders first, then files, alphabetical
+        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+          return a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+        return !a.isFolder && b.isFolder ? 1 : -1
+      },
+    }),
   ],
   right: [
     Component.Graph(),
@@ -62,7 +86,29 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      folderDefaultState: "open",
+      filterFn: (node) => node.slugSegment !== "tags" && node.slugSegment !== "Images",
+      sortFn: (a, b) => {
+        const topOrder = ["Works", "Exhibitions", "Thoughts", "Press", "About"]
+        const aIdx = topOrder.indexOf(a.displayName)
+        const bIdx = topOrder.indexOf(b.displayName)
+
+        if (a.isFolder && b.isFolder) {
+          if (aIdx !== -1 && bIdx !== -1) return aIdx - bIdx
+          if (aIdx !== -1) return -1
+          if (bIdx !== -1) return 1
+        }
+
+        if ((!a.isFolder && !b.isFolder) || (a.isFolder && b.isFolder)) {
+          return a.displayName.localeCompare(b.displayName, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+        return !a.isFolder && b.isFolder ? 1 : -1
+      },
+    }),
   ],
   right: [],
 }

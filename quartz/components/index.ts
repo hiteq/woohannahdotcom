@@ -6,6 +6,7 @@ import ArticleTitle from "./ArticleTitle"
 import Darkmode from "./Darkmode"
 import ReaderMode from "./ReaderMode"
 import Head from "./Head"
+import Header from "./Header"
 import PageTitle from "./PageTitle"
 import ContentMeta from "./ContentMeta"
 import Spacer from "./Spacer"
@@ -23,6 +24,7 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import Nav from "./Nav"
 
 export {
   ArticleTitle,
@@ -32,6 +34,7 @@ export {
   Darkmode,
   ReaderMode,
   Head,
+  Header,
   PageTitle,
   ContentMeta,
   Spacer,
@@ -50,4 +53,5 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  Nav,
 }
