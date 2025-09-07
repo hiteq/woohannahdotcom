@@ -1,0 +1,41 @@
+---
+Year: "2019"
+tags:
+  - Sculpture
+Preview: true
+상태: Done
+생성 일시: Invalid date
+---
+![[Images/Bag-with-you-2019-(백-위드-유-첫시리즈들).jpg]]
+
+Bag with you, 2019
+
+  
+
+![[Images/Bag-with-you-2019-(백-위드-유-첫시리즈들)1.jpg]]
+
+Bag with you, 2019
+
+  
+
+  
+
+![[Images/Bag-with-you-2019-(백-위드-유-첫시리즈들)2.jpg]]
+
+Bag with you, 2019
+
+  
+
+  
+
+![[Images/Bag-with-you-2019-(백-위드-유-첫시리즈들)3.jpg]]
+
+Bag with you, 2019
+
+  
+
+  
+
+![[Images/Bag-with-you-2019-(백-위드-유-첫시리즈들)4.jpg]]
+
+Bag with you, 2019
