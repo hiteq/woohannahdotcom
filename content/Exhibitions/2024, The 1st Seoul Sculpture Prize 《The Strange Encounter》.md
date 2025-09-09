@@ -5,55 +5,70 @@
 ---
 ![[Images/우한나_인스톨_2024_Alive_(7).jpg]]
 
-ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
 
   
+
 
 ![[Images/우한나_인스톨_2024_Alive_(20).jpg]]
 
-ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
 
   
+
 
 ![[Images/우한나_인스톨_2024_Alive_(17).jpg]]
 
-ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
 
   
+
 
 ![[Images/우한나_인스톨_2024_Alive_(6).jpg]]
 
-ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
 
   
+
 
 ![[Images/우한나_인스톨_2024_Alive_(25).jpg]]
 
-ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
 
   
+
 
 ![[Images/KakaoTalk_Photo_2024-10-25-12-12-52_002.jpeg]]
 
-ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
 
   
+
 
 ![[Images/ALIVE_허파_2024_aluminum_fabric_3_x_4.5_x_2.9m(3).jpeg]]
 
-ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
+*ALIVE 허파, 2024, aluminum, fabric, 3 x 4.5 x 2.9m*
 
   
 
   
 
   
+
 
 ![[Images/2.경계없이_낯설게_포스터.jpg]]
 
   
 
   
+
 
 [https://artinseoul.kr/%ec%9e%91%ea%b0%80-%ec%86%8c%ea%b0%9c/](https://artinseoul.kr/%ec%9e%91%ea%b0%80-%ec%86%8c%ea%b0%9c/)
 

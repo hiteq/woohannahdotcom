@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import { ImageCaption } from "./quartz/plugins/transformers/imageCaption"
 import { isFolderPath } from "./quartz/util/path"
 
 /**
@@ -54,7 +55,10 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
+        body: {
+          name: "IBM Plex Sans KR",
+          weights: [100, 200, 300, 400, 500, 600, 700]
+        },
         code: "IBM Plex Mono",
       },
       colors: {
@@ -96,7 +100,8 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
-      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: true }),
+      ImageCaption({ enableImageCaptions: true }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),

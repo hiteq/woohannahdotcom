@@ -19,40 +19,45 @@
 
 ![[Images/제목-없음-2.jpg]]
 
-<백 위드 유_스트롤러 Bag with you_Stroller>, 2020, 50개의 피스, 패브릭, 솜, 플라스틱 체인, 가변크기
+*<백 위드 유_스트롤러 Bag with you_Stroller>, 2020, 50개의 피스, 패브릭, 솜, 플라스틱 체인, 가변크기*
+*<백 위드 유_스트롤러 Bag with you_Stroller>, 2020, 50개의 피스, 패브릭, 솜, 플라스틱 체인, 가변크기*
 
   
 
   
+
 
 ![[Images/IMG_1568덕수궁-행각-설치전경.jpg]]
 
-<백 위드 유_스트롤러 Bag with you_Stroller>, 2020, 50개의 피스, 패브릭, 솜, 플라스틱 체인, 가변크기
+*<백 위드 유_스트롤러 Bag with you_Stroller>, 2020, 50개의 피스, 패브릭, 솜, 플라스틱 체인, 가변크기*
+*<백 위드 유_스트롤러 Bag with you_Stroller>, 2020, 50개의 피스, 패브릭, 솜, 플라스틱 체인, 가변크기*
 
   
 
   
+
 
 ![[Images/제목-없음-1.jpg]]
 
-<백 위드 유_스트롤러 Bag with you_Stroller>, 2020, 50개의 피스, 패브릭, 솜, 플라스틱 체인, 가변크기
+*<백 위드 유_스트롤러 Bag with you_Stroller>, 2020, 50개의 피스, 패브릭, 솜, 플라스틱 체인, 가변크기*
+*<백 위드 유_스트롤러 Bag with you_Stroller>, 2020, 50개의 피스, 패브릭, 솜, 플라스틱 체인, 가변크기*
 
   
 
   
+
 
 ![[Images/사진-타별-photo-by-tabial__V6A9312.jpg]]
 
-<백 위드 유_스트롤러 Bag with you_Stroller>, 2020, 50개의 피스, 패브릭, 솜, 플라스틱 체인, 가변크기
+*<백 위드 유_스트롤러 Bag with you_Stroller>, 2020, 50개의 피스, 패브릭, 솜, 플라스틱 체인, 가변크기*
+*<백 위드 유_스트롤러 Bag with you_Stroller>, 2020, 50개의 피스, 패브릭, 솜, 플라스틱 체인, 가변크기*
 
   
 
-![[Images/Untitled 9.png|Untitled 9.png]]
 
-  
+![[Images/Untitled-9.png|Untitled-9.png]]
 
-  
-
+**《아트 플랜트 아시아 2020 : 토끼 방향 오브젝트》**
 **《아트 플랜트 아시아 2020 : 토끼 방향 오브젝트》**
 
   

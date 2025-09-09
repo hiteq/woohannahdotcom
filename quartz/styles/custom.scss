@@ -1,3 +1,90 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// IBM Plex Sans KR font classes
+.ibm-plex-sans-kr-thin {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-extralight {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-light {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-regular {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-medium {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-semibold {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-sans-kr-bold {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+// Image caption styles
+figure {
+  margin: 0;
+  text-align: left;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0rem;
+    // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  figcaption {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: var(--gray);
+    // font-style: italic;
+    line-height: 1.4;
+    text-align: left;
+    padding: 0rem;
+  }
+}
+
+// Dark mode adjustments for captions
+@media (prefers-color-scheme: dark) {
+  figure {
+    figcaption {
+      color: var(--darkgray);
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  figure {
+    figcaption {
+      font-size: 0.85rem;
+      padding: 0 0.5rem;
+    }
+  }
+}

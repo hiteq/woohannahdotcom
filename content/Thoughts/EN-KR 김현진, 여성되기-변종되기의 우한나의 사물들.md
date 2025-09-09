@@ -1,9 +1,10 @@
 ---
-Date: 2023-10-10
-Preview: false
-상태: Done
-생성 일시: Invalid date
-저자: 김현진
+title: "EN/KR 김현진, 여성되기-변종되기의 우한나의 사물들"
+date: "2023-10-10"
+type: "thought"
+author: "김현진"
+language: "ko,en"
+description: "Critical review of Woo Hannah's works at Frieze Seoul"
 ---
 ### **Woo Hannah Brings ‘The Great Ballroom’ to Frieze Seoul**
 

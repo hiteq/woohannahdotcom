@@ -3,31 +3,24 @@
 태그:
   - Group
 ---
-![[Images/우한나_블리딩-2024-Bleeding_Cocoa-(1).jpg]]
+![[Images/bleeding-cocoa-1-2024.jpg]]
+*Bleeding_Cocoa, 2024, Fabric, thread, cotton, silicone, steel pipe, wire, 120 x 127 x 75 cm*
+*Bleeding_Cocoa, 2024, Fabric, thread, cotton, silicone, steel pipe, wire, 120 x 127 x 75 cm*
 
-Bleeding_Cocoa, 2024, Fabric, thread, cotton, silicone, steel pipe, wire, 120 x 127 x 75 cm
-
-  
-
-![[Images/%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%83%E1%85%B5%E1%86%BC-2024-Bleeding_Cocoa-(3) 2.jpg|%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%83%E1%85%B5%E1%86%BC-2024-Bleeding_Cocoa-(3) 2.jpg]]
-
-Bleeding_Cocoa, 2024, Fabric, thread, cotton, silicone, steel pipe, wire, 120 x 127 x 75 cm
+![[Images/bleeding-cocoa-3-2024.jpg]]
+*Bleeding_Cocoa, 2024, Fabric, thread, cotton, silicone, steel pipe, wire, 120 x 127 x 75 cm*
+*Bleeding_Cocoa, 2024, Fabric, thread, cotton, silicone, steel pipe, wire, 120 x 127 x 75 cm*
 
 ![[Images/Two-side-Love_Installation-view-(5).jpg]]
+*Two Side Love 전시전경*
+*Two Side Love 전시전경*
 
-Two Side Love 전시전경
+![[Images/mama-piano-7-2024.jpg]]
+*Mama Piano, 2024, Painting on PLA, aluminum, urethane, fabric, cotton, silicone, 100 x 112 x 175 cm*
+*Mama Piano, 2024, Painting on PLA, aluminum, urethane, fabric, cotton, silicone, 100 x 112 x 175 cm*
 
-  
 
-![[Images/%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%89%E1%85%B3%E1%84%90%E1%85%A9%E1%86%AF-2024-Mama-Piano-(1) 2.jpg|%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%89%E1%85%B3%E1%84%90%E1%85%A9%E1%86%AF-2024-Mama-Piano-(1) 2.jpg]]
 
-Mama Piano, 2024, Painting on PLA, aluminum, urethane, fabric, cotton, silicone, 100 x 112 x 175 cm
-
-  
-
-  
-
-  
 
 _She is the woman hanging from the 13th floor window. Her hands are pressed white against the concrete molding of the tenement building. She hangs from the 13th floor window in east Chicago, with a swirl of birds over her head. They could be a halo, or a storm of glass waiting to crush her._
 

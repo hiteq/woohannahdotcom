@@ -5,25 +5,32 @@
 ---
 ![[Images/image.png]]
 
-Abdomen: Gapes, 2023, fabric, string, cotton, bouncy balls, 120 x 73 x 74 cm
+*Abdomen: Gapes, 2023, fabric, string, cotton, bouncy balls, 120 x 73 x 74 cm*
+*Abdomen: Gapes, 2023, fabric, string, cotton, bouncy balls, 120 x 73 x 74 cm*
 
   
 
-![[Images/image 1.png]]
 
-Abdomen: Grapes 설치전경
+![[Images/image-1.png]]
+
+*Abdomen: Grapes 설치전경*
+*Abdomen: Grapes 설치전경*
 
   
+
 
 ![[Images/SeMA-옴니버스-끝없이-갈라지는-세계의-끝에서_포스터.jpg]]
+
 
 [https://sema.seoul.go.kr/kr/whatson/exhibition/audio_guide?exNo=1308679&audioGuideNo=1319065&photosketchNo=133549&currentPage=1&glolangType=KOR](https://sema.seoul.go.kr/kr/whatson/exhibition/audio_guide?exNo=1308679&audioGuideNo=1319065&photosketchNo=133549&currentPage=1&glolangType=KOR)
 
 ![[Images/Abdomen-Grapes-(1).jpg]]
 
-Abdomen: Grapes, 2023, fabric, string, cotton, bouncy balls, 120 x 73 x 74 cm
+*Abdomen: Grapes, 2023, fabric, string, cotton, bouncy balls, 120 x 73 x 74 cm*
+*Abdomen: Grapes, 2023, fabric, string, cotton, bouncy balls, 120 x 73 x 74 cm*
 
   
+
 
 SeMA 옴니버스는 서울시립미술관의 2024년 기관의제 ‘연결’을 장르적, 매체적, 시간적, 세대적, 사회적 측면에서 고찰하는 대규모 소장품 주제기획전입니다. 하나의 주제를 중심으로 독립된 단편들을 엮어내는 이야기 형식인 옴니버스를 차용하여, 4개 관에서 4개의 전시가 서로 다르지만 긴밀하게 이어집니다.
 

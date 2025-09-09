@@ -11,37 +11,46 @@
 
 ![[Images/DSC_4172.jpg]]
 
-Bag with you_Take your shape, 2022
+*Bag with you_Take your shape, 2022*
+*Bag with you_Take your shape, 2022*
 
   
 
   
 
-![[Images/220808_조각충동_우한나_resize-(1).jpg]]
 
-Bag with you_Take your shape, 2022
+![[Images/sculptural-impulse-16-2022.jpg]]
+
+*Bag with you_Take your shape, 2022*
+*Bag with you_Take your shape, 2022*
 
   
+
 
 ![[Images/DSC_4182.jpg]]
 
-Bag with you_Take your shape, 2022
+*Bag with you_Take your shape, 2022*
+*Bag with you_Take your shape, 2022*
 
   
 
   
 
-![[Images/Double-Hamstring 2.jpg|Double-Hamstring 2.jpg]]
 
-Double Hamstring, fabric, cotton, 110 x 40 x 8cm, 2022
+![[Images/Double-Hamstring-2.jpg|Double-Hamstring-2.jpg]]
+
+*Double Hamstring, fabric, cotton, 110 x 40 x 8cm, 2022*
+*Double Hamstring, fabric, cotton, 110 x 40 x 8cm, 2022*
 
   
 
   
+
 
 ![[Images/DSC_4189.jpg]]
 
-Bleeding well, rope, beads, 150 x 50 x 13cm, 2022
+*Bleeding well, rope, beads, 150 x 50 x 13cm, 2022*
+*Bleeding well, rope, beads, 150 x 50 x 13cm, 2022*
 
   
 
@@ -49,57 +58,71 @@ Bleeding well, rope, beads, 150 x 50 x 13cm, 2022
 
   
 
-![[Images/220808_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A1%E1%86%A8%E1%84%8E%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_resize-(4) 2.jpg|220808_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A1%E1%86%A8%E1%84%8E%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_resize-(4) 2.jpg]]
 
-Back Eyes, fabric, beads, cotton, 120 x 45 x 45cm, 2022
+![[Images/sculptural-impulse-15-2022.jpg]]
 
-  
-
-  
-
-![[Images/220808_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A1%E1%86%A8%E1%84%8E%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_resize-(10) 2.jpg|220808_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A1%E1%86%A8%E1%84%8E%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_resize-(10) 2.jpg]]
-
-Bag with you_Take your shape, 2022
+*Back Eyes, fabric, beads, cotton, 120 x 45 x 45cm, 2022*
+*Back Eyes, fabric, beads, cotton, 120 x 45 x 45cm, 2022*
 
   
 
   
 
-![[Images/220808_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A1%E1%86%A8%E1%84%8E%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_resize-(12) 2.jpg|220808_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A1%E1%86%A8%E1%84%8E%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_resize-(12) 2.jpg]]
 
-Thinker, fabric, beads, cotton, 23 x 17 x 10cm, 2022
+![[Images/sculptural-impulse-17-2022.jpg]]
 
-  
-
-  
-
-![[Images/220808_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A1%E1%86%A8%E1%84%8E%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_resize-(15) 2.jpg|220808_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A1%E1%86%A8%E1%84%8E%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_resize-(15) 2.jpg]]
-
-Nidation, fabric, beads, weight, cotton, 57 x 90 x 27cm, 2022
+*Bag with you_Take your shape, 2022*
+*Bag with you_Take your shape, 2022*
 
   
 
   
 
-![[Images/220808_조각충동_우한나_resize-(21).jpg]]
 
-Back Eyes, fabric, beads, cotton, 120 x 45 x 45cm, 2022
+![[Images/sculptural-impulse-18-2022.jpg]]
 
-  
-
-  
-
-![[Images/220808_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A1%E1%86%A8%E1%84%8E%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_resize-(24) 2.jpg|220808_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A1%E1%86%A8%E1%84%8E%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_resize-(24) 2.jpg]]
-
-Engraved Keloid, fabric, cotton, 100 x 96 x 18cm, 2022
+*Thinker, fabric, beads, cotton, 23 x 17 x 10cm, 2022*
+*Thinker, fabric, beads, cotton, 23 x 17 x 10cm, 2022*
 
   
 
   
 
-![[Images/220808_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A1%E1%86%A8%E1%84%8E%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_resize-(25) 2.jpg|220808_%E1%84%8C%E1%85%A9%E1%84%80%E1%85%A1%E1%86%A8%E1%84%8E%E1%85%AE%E1%86%BC%E1%84%83%E1%85%A9%E1%86%BC_%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_resize-(25) 2.jpg]]
 
-Bag with you_Take your shape, 2022
+![[Images/sculptural-impulse-19-2022.jpg]]
+
+*Nidation, fabric, beads, weight, cotton, 57 x 90 x 27cm, 2022*
+*Nidation, fabric, beads, weight, cotton, 57 x 90 x 27cm, 2022*
+
+  
+
+  
+
+
+![[Images/sculptural-impulse-20-2022.jpg]]
+
+*Back Eyes, fabric, beads, cotton, 120 x 45 x 45cm, 2022*
+*Back Eyes, fabric, beads, cotton, 120 x 45 x 45cm, 2022*
+
+  
+
+  
+
+
+![[Images/sculptural-impulse-21-2022.jpg]]
+
+*Engraved Keloid, fabric, cotton, 100 x 96 x 18cm, 2022*
+*Engraved Keloid, fabric, cotton, 100 x 96 x 18cm, 2022*
+
+  
+
+  
+
+
+![[Images/sculptural-impulse-22-2022.jpg]]
+
+*Bag with you_Take your shape, 2022*
+*Bag with you_Take your shape, 2022*
 
   
 
@@ -107,12 +130,10 @@ Bag with you_Take your shape, 2022
 
   
 
-![[Images/Untitled 6.png|Untitled 6.png]]
 
-  
+![[Images/Untitled-6.png|Untitled-6.png]]
 
-  
-
+**조각충동 Sculptural Impulse**
 **조각충동 Sculptural Impulse**
 
 BAG WITH YOU : take your shape

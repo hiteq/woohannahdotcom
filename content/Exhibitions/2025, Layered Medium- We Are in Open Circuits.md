@@ -5,14 +5,20 @@
 ---
 ![[Images/Layered-Medium-We-Are-in-Open-Circuits_CH_1232(2).jpg]]
 
-Abdomen: Grapes, 2023, fabric, string, cotton, bouncy balls, 120 x 73 x 74 cm
+*Abdomen: Grapes, 2023, fabric, string, cotton, bouncy balls, 120 x 73 x 74 cm*
+*Abdomen: Grapes, 2023, fabric, string, cotton, bouncy balls, 120 x 73 x 74 cm*
+
 
 ![[Images/Layered_Medium_We_Are_in_Open_Circuits_-R2402023.jpg]]
 
+
 ![[Images/Layered-Medium-We-Are-in-Open-Circuits-R2402063(2).jpg]]
 
-![[Images/image 2.png|image 2.png]]
 
+![[Images/image-2.png|image-2.png]]
+
+*> [!info] Abu Dhabi Festival*
+*> [!info] Abu Dhabi Festival*
 > [!info] Abu Dhabi Festival  
 >  
 > [https://www.abudhabifestival.ae/initiatives/layered-medium-we-are-in-open-circuits](https://www.abudhabifestival.ae/initiatives/layered-medium-we-are-in-open-circuits)  

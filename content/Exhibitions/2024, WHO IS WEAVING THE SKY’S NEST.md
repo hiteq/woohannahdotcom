@@ -5,39 +5,51 @@
 ---
 ![[Images/7_Who-is-Weaving-the-Sky-Net_-curated-by-Do-Tuong-Linh-2-November-2024--5-January-2025-Yeo-Workshop-Singapore.-Installation-view.-Image-courtesy-of-Yeo-Workshop.-Photography-by-Nuhayd-Naufal.jpg]]
 
-WHO IS WEAVING THE SKY’S NEST 전시전경
+*WHO IS WEAVING THE SKY’S NEST 전시전경*
+*WHO IS WEAVING THE SKY’S NEST 전시전경*
 
   
 
-![[Images/%E1%84%82%E1%85%A2%E1%86%B7%E1%84%89%E1%85%A2%E1%84%82%E1%85%A1%E1%84%82%E1%85%B3%E1%86%AB-%E1%84%80%E1%85%B1 2.jpg|%E1%84%82%E1%85%A2%E1%86%B7%E1%84%89%E1%85%A2%E1%84%82%E1%85%A1%E1%84%82%E1%85%B3%E1%86%AB-%E1%84%80%E1%85%B1 2.jpg]]
 
-A Smelly Ear 냄새나는 귀, 2024, Fabric, cotton, silicone, thread, beads, 21 x 14 x 14 cm
+![[Images/%E1%84%82%E1%85%A2%E1%86%B7%E1%84%89%E1%85%A2%E1%84%82%E1%85%A1%E1%84%82%E1%85%B3%E1%86%AB-%E1%84%80%E1%85%B1-2.jpg|%E1%84%82%E1%85%A2%E1%86%B7%E1%84%89%E1%85%A2%E1%84%82%E1%85%A1%E1%84%82%E1%85%B3%E1%86%AB-%E1%84%80%E1%85%B1-2.jpg]]
+
+*A Smelly Ear 냄새나는 귀, 2024, Fabric, cotton, silicone, thread, beads, 21 x 14 x 14 cm*
+*A Smelly Ear 냄새나는 귀, 2024, Fabric, cotton, silicone, thread, beads, 21 x 14 x 14 cm*
 
   
+
 
 ![[Images/NYX.jpg]]
 
-NYX, 2024, Fabric, cotton, 138 x 88 x 5 cm
+*NYX, 2024, Fabric, cotton, 138 x 88 x 5 cm*
+*NYX, 2024, Fabric, cotton, 138 x 88 x 5 cm*
 
   
+
 
 ![[Images/4_Woo_Hannah_NYX_2024_fabric_cotton_138_x_88_x_5_cm._Installation_view._Image_courtesy_of_Yeo_Workshop._Photography_by_Nuhayd_Naufal.jpg.jpg]]
 
-NYX, 2024, Fabric, cotton, 138 x 88 x 5 cm
+*NYX, 2024, Fabric, cotton, 138 x 88 x 5 cm*
+*NYX, 2024, Fabric, cotton, 138 x 88 x 5 cm*
 
   
+
 
 ![[Images/_Nidation-(5)-이승헌.jpg]]
 
-Nidation, 2024, Fabric, cotton, beads, weight, 57 x 90 x 27 cm
+*Nidation, 2024, Fabric, cotton, beads, weight, 57 x 90 x 27 cm*
+*Nidation, 2024, Fabric, cotton, beads, weight, 57 x 90 x 27 cm*
 
   
+
 
 ![[Images/Who-is-Weaving-the-Sky-Net_-curated-by-Do-Tuong-Linh-2-November-2024--5-January-2025-Yeo-Workshop-Singapore--Image-courtesy-of-Yeo-Workshop.-Photography-by-Nuhayd-Naufal-(11).jpg]]
 
-WHO IS WEAVING THE SKY’S NEST 전시전경
+*WHO IS WEAVING THE SKY’S NEST 전시전경*
+*WHO IS WEAVING THE SKY’S NEST 전시전경*
 
   
+
 
 ## **Yeo Workshop**
 

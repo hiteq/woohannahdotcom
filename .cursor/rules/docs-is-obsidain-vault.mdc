@@ -6,3 +6,8 @@ alwaysApply: true
 content폴더는 obisian의 vault로서 관리되어짐.
 docs폴더는 quartz의 문서로서 관리되어짐.
 따라서 콘텐츠에 생긴 이슈를 해결하고자 할 경우는 content폴더의 md파일을 수정하여 나머지가 docs폴더에 dist되도록 할것.
+
+## 개발 서버 규칙
+- 무리없이 돌아가고 있는 yarn dev 서버가 터미널에 보일 때는 불필요하게 pkill하지 말고 그냥 코드 수정만 진행
+- yarn dev 실행 전에는 `ps aux | grep yarn` 또는 `ps aux | grep quartz`로 이미 실행 중인지 확인
+- 중복 서버 실행 방지: 동일한 명령어로 여러 개의 개발 서버를 동시에 띄우지 않도록 주의

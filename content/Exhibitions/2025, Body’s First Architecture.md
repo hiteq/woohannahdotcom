@@ -3,11 +3,11 @@
 태그:
   - Group
 ---
-![[Images/image 3.png|image 3.png]]
+![[Images/image-3.png|image-3.png]]
 
-  
+*The Ely Center for Contemporary Art is thrilled to present Body’s First Architecture, a group show curated by the artists Tamar Ettun and Leeza Meksin, exploring the various ways in which fabric and clothing are being employed by contemporary artists foregrounding the body's needs for healing. Through attending to the body and highlighting its needs, a larger possibility for healing our troubled world comes into view. The exhibition features works by Anindita Dutta, Ann Hamilton, Florencia Escudero, Hannah Woo, Leeza Meksin, LoVid, Michelle Segre, Molly Zuckerman-Hartung, Rachel Hayes, Rose Nestler, Sheila Pepe, Sheilah ReStack, Sopheak Sam, Suzanne Mcclelland & Alix Pearlstein, TAITAI xTina, Tamar Ettun, and Tsedaye Makonnen.*
+*The Ely Center for Contemporary Art is thrilled to present Body’s First Architecture, a group show curated by the artists Tamar Ettun and Leeza Meksin, exploring the various ways in which fabric and clothing are being employed by contemporary artists foregrounding the body's needs for healing. Through attending to the body and highlighting its needs, a larger possibility for healing our troubled world comes into view. The exhibition features works by Anindita Dutta, Ann Hamilton, Florencia Escudero, Hannah Woo, Leeza Meksin, LoVid, Michelle Segre, Molly Zuckerman-Hartung, Rachel Hayes, Rose Nestler, Sheila Pepe, Sheilah ReStack, Sopheak Sam, Suzanne Mcclelland & Alix Pearlstein, TAITAI xTina, Tamar Ettun, and Tsedaye Makonnen.*
 
-The Ely Center for Contemporary Art is thrilled to present Body’s First Architecture, a group show curated by the artists Tamar Ettun and Leeza Meksin, exploring the various ways in which fabric and clothing are being employed by contemporary artists foregrounding the body's needs for healing. Through attending to the body and highlighting its needs, a larger possibility for healing our troubled world comes into view. The exhibition features works by Anindita Dutta, Ann Hamilton, Florencia Escudero, Hannah Woo, Leeza Meksin, LoVid, Michelle Segre, Molly Zuckerman-Hartung, Rachel Hayes, Rose Nestler, Sheila Pepe, Sheilah ReStack, Sopheak Sam, Suzanne Mcclelland & Alix Pearlstein, TAITAI xTina, Tamar Ettun, and Tsedaye Makonnen.
 
 Body’s First Architecture brings together artists working in many media, including sculpture, installation, video, photography, textiles, painting, wearable art, and performance. The inherent nature of working with textiles includes weaving, sewing, joining, mending and repairing.
 

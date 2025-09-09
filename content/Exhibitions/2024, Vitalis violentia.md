@@ -5,57 +5,73 @@
 ---
 ![[Images/아가리-전시전경.jpg]]
 
-Vitalis violentia 전시전경
+*Vitalis violentia 전시전경*
+*Vitalis violentia 전시전경*
+
 
 ![[Images/우한나_블리딩-2024-아가리-(2).jpg]]
 
-Agari, 2024, Fabric, cotton, aluminium wire, acrylic spray on fabric, silicone, 118 x 124 x 56 cm
+*Agari, 2024, Fabric, cotton, aluminium wire, acrylic spray on fabric, silicone, 118 x 124 x 56 cm*
+*Agari, 2024, Fabric, cotton, aluminium wire, acrylic spray on fabric, silicone, 118 x 124 x 56 cm*
 
   
+
 
 ![[Images/아가리-디테일.jpg]]
 
-Agari detail
+*Agari detail*
+*Agari detail*
 
   
+
 
 ![[Images/아가리-디테일3.jpg]]
 
-Agari detail
+*Agari detail*
+*Agari detail*
 
   
+
 
 ![[Images/아가리.jpg]]
 
-Agari, 2024, Fabric, cotton, aluminium wire, acrylic spray on fabric, silicone, 118 x 124 x 56 cm
+*Agari, 2024, Fabric, cotton, aluminium wire, acrylic spray on fabric, silicone, 118 x 124 x 56 cm*
+*Agari, 2024, Fabric, cotton, aluminium wire, acrylic spray on fabric, silicone, 118 x 124 x 56 cm*
 
   
 
   
 
-![[Images/%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%83%E1%85%B5%E1%86%BC-2024-Bleeding-Tungsten-(1) 2.jpg|%E1%84%8B%E1%85%AE%E1%84%92%E1%85%A1%E1%86%AB%E1%84%82%E1%85%A1_%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%83%E1%85%B5%E1%86%BC-2024-Bleeding-Tungsten-(1) 2.jpg]]
 
-Bleeding Tungsten, 2024, Fabric, cotton, beads, acrylic spray on fabric, steel frame, 100 x 80 x 60 cm
+![[Images/tungsten-24-2024.jpg|tungsten-24-2024.jpg]]
+
+*Bleeding Tungsten, 2024, Fabric, cotton, beads, acrylic spray on fabric, steel frame, 100 x 80 x 60 cm*
+*Bleeding Tungsten, 2024, Fabric, cotton, beads, acrylic spray on fabric, steel frame, 100 x 80 x 60 cm*
 
   
+
 
 ![[Images/텅스텐-디테일.jpg]]
 
-Bleeding Tungsten detail
+*Bleeding Tungsten detail*
+*Bleeding Tungsten detail*
 
   
+
 
 ![[Images/Thungsten-Installation-view.jpg]]
 
-Bleeding Tungsten, 2024, Fabric, cotton, beads, acrylic spray on fabric, steel frame, 100 x 80 x 60 cm
+*Bleeding Tungsten, 2024, Fabric, cotton, beads, acrylic spray on fabric, steel frame, 100 x 80 x 60 cm*
+*Bleeding Tungsten, 2024, Fabric, cotton, beads, acrylic spray on fabric, steel frame, 100 x 80 x 60 cm*
 
   
+
 
 ![[Images/2024-Podium.jpg]]
 
-  
+*‘Vitalis Violentia’*
+*‘Vitalis Violentia’*
 
-‘Vitalis Violentia’
 
 HongKong
 

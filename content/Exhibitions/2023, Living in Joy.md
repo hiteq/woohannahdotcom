@@ -6,35 +6,39 @@
 ---
 ![[Images/Milk-and-Honey-3_2023(1).jpg]]
 
-Milk and Honey-3, fabric, cotton, beads, 2023
+*Milk and Honey-3, fabric, cotton, beads, 2023*
+*Milk and Honey-3, fabric, cotton, beads, 2023*
 
   
 
   
+
 
 ![[Images/Milk-and-Honey-3_2023.jpg]]
 
-A detail of ‘Milk and Honey-3’
+*A detail of ‘Milk and Honey-3’*
+*A detail of ‘Milk and Honey-3’*
 
   
 
   
 
-![[Images/Bleeding-7_2023 2.jpg|Bleeding-7_2023 2.jpg]]
 
-Bleeding-7, acrylic on fabric, cotton, beads, 2023
+![[Images/Bleeding-7_2023-2.jpg|Bleeding-7_2023-2.jpg]]
 
-  
-
-  
-
-![[Images/Untitled 10.png|Untitled 10.png]]
+*Bleeding-7, acrylic on fabric, cotton, beads, 2023*
+*Bleeding-7, acrylic on fabric, cotton, beads, 2023*
 
   
 
   
 
-아트선재센터는 오는 3월 28일부터 6월 25일까지 전시 «즐겁게! 기쁘게!»를 개최한다. 이 전시는 아트선재센터에서 같은 기간 회고전을 갖는 스위스 여성 작가 하이디 부허(1926–93)의 작품 세계에 응답하면서 오늘날의 젠더 조건과 평등을 이해하는 데 관심을 갖고 작업하는 한국 여성 작가 박론디, 박보마, 우한나를 소개한다.
+
+![[Images/Untitled-10.png|Untitled-10.png]]
+
+*아트선재센터는 오는 3월 28일부터 6월 25일까지 전시 «즐겁게! 기쁘게!»를 개최한다. 이 전시는 아트선재센터에서 같은 기간 회고전을 갖는 스위스 여성 작가 하이디 부허(1926–93)의 작품 세계에 응답하면서 오늘날의 젠더 조건과 평등을 이해하는 데 관심을 갖고 작업하는 한국 여성 작가 박론디, 박보마, 우한나를 소개한다.*
+*아트선재센터는 오는 3월 28일부터 6월 25일까지 전시 «즐겁게! 기쁘게!»를 개최한다. 이 전시는 아트선재센터에서 같은 기간 회고전을 갖는 스위스 여성 작가 하이디 부허(1926–93)의 작품 세계에 응답하면서 오늘날의 젠더 조건과 평등을 이해하는 데 관심을 갖고 작업하는 한국 여성 작가 박론디, 박보마, 우한나를 소개한다.*
+
 
 하이디 부허는 ‘해방’이라는 주제 의식 아래 가부장적 위계가 내재된 공간과 그 안에 위치하는 인간의 몸과 존재의 양식을 탐구한 작가이다. «즐겁게! 기쁘게!»는 기존의 남성주의 질서에서 탈피해 새로운 가치의 변화를 지향한 부허처럼 한국 여성 작가들의 작업을 통해 새로운 인식, 새로운 변화, 새로운 연결을 만들어내는 동시대 예술 생산의 가능성을 살펴본다.
 

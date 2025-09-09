@@ -13,6 +13,7 @@
 
   
 
+
 [https://youtu.be/-bzS8do7KV4](https://youtu.be/-bzS8do7KV4)
 
   
@@ -25,11 +26,13 @@
 
   
 
+
 ![[Images/D64A0400.jpg]]
 
   
 
   
+
 
 ![[Images/D64A0389.jpg]]
 
@@ -37,11 +40,13 @@
 
   
 
+
 ![[Images/DSC_8852.jpg.jpg]]
 
   
 
   
+
 
 ![[Images/00shinjin.jpg]]
 
@@ -49,11 +54,13 @@
 
   
 
+
 ![[Images/D64A0404.jpg]]
 
   
 
   
+
 
 ![[Images/D64A0432.jpg]]
 
@@ -61,11 +68,13 @@
 
   
 
+
 ![[Images/D64A0501.jpg]]
 
   
 
   
+
 
 ![[Images/swinging_teaser01.jpg]]
 
@@ -73,11 +82,13 @@
 
   
 
+
 ![[Images/D64A0430.jpg]]
 
   
 
   
+
 
 ![[Images/D64A0433.jpg]]
 
@@ -85,11 +96,13 @@
 
   
 
+
 ![[Images/D64A0447.jpg]]
 
   
 
   
+
 
 ![[Images/D64A0457.jpg]]
 
@@ -97,13 +110,16 @@
 
   
 
+
 ![[Images/스틸이미지_0142.jpg]]
 
   
 
+
 ![[Images/스틸이미지_0122.jpg]]
 
   
+
 
 ![[Images/dontleaveme.jpg]]
 
@@ -111,11 +127,13 @@
 
   
 
+
 ![[Images/스틸이미지_0123.jpg]]
 
   
 
   
+
 
 ![[Images/스틸이미지_0145.jpg]]
 
@@ -123,19 +141,19 @@
 
   
 
+
 ![[Images/스틸이미지_0114.jpg]]
 
   
 
   
 
+
 ![[Images/우한나_swinging_poster_web.jpg]]
 
-  
+*서울문화재단(2018년 최초예술지원 발표형 선정작)*
+*서울문화재단(2018년 최초예술지원 발표형 선정작)*
 
-  
-
-서울문화재단(2018년 최초예술지원 발표형 선정작)
 
 **우한나 개인전 : SWINGING**
 

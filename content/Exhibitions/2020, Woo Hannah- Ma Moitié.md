@@ -5,33 +5,48 @@
 ---
 ![[Images/_DSC1350.jpg]]
 
+
 ![[Images/_DSC1353.jpg]]
+
 
 ![[Images/_DSC1371.jpg]]
 
+
 ![[Images/_DSC1461.jpg]]
+
 
 ![[Images/_DSC1385.jpg]]
 
+
 ![[Images/_DSC1398.jpg]]
+
 
 ![[Images/_DSC1452.jpg]]
 
+
 ![[Images/_DSC1490.jpg]]
+
 
 ![[Images/_DSC1503.jpg]]
 
+
 ![[Images/_DSC1523.jpg]]
+
 
 ![[Images/_DSC1525.jpg]]
 
+
 ![[Images/_DSC1545.jpg]]
+
 
 ![[Images/_DSC1548.jpg]]
 
+
 ![[Images/_DSC1572.jpg]]
 
+
 ![[Images/_DSC1580.jpg]]
+
 
 ![[Images/_DSC1589.jpg]]
 
@@ -41,10 +56,10 @@
 
   
 
-![[Images/Untitled 7.png|Untitled 7.png]]
 
-  
+![[Images/Untitled-7.png|Untitled-7.png]]
 
+**Woo Hannah: Ma Moitié**
 **Woo Hannah: Ma Moitié**
 
 패브릭을 주재료로 다양한 설치 작업을 진행해 온 우한나의 네 번째 개인전은 하나의 아이덴티티로서 디자이너 우한나를 전면에 세운다. 작가는 디자이너 우한나의 이름으로 자신의 신작을 선보이고, 이로써 명품(brand-name product)이 명품(masterpiece)의 자리를 차지한 시대에 아름답고 가치 있는 것으로서 미술이 가야 할 자리를 묻는다. 이번에 제작한 신작은 모두 버려진 천을 재활용하여 만들었다.
