@@ -9,113 +9,87 @@ Preview: true
   
 
 ![[Images/우한나_드로잉_Every_goodbye_2024_(1).jpg]]
-
-*Every Goodbye, 2024, pencil on paper, 38.5 x 28cm*
 *Every Goodbye, 2024, pencil on paper, 38.5 x 28cm*
 
   
 
 
 ![[Images/우한나_드로잉_Im_wunderschonen_Monat_Mai_2024_(1).jpg]]
-
-*Im wunderschönen Monat Mai, 2024, pencil on paper, 38.5 x 28cm*
 *Im wunderschönen Monat Mai, 2024, pencil on paper, 38.5 x 28cm*
 
   
 
 
 ![[Images/우한나_드로잉_Please_come_to_my_zone_2024_(1).jpg]]
-
-*Please come to my zone, 2024, pencil on paper, 38.5 x 28cm*
 *Please come to my zone, 2024, pencil on paper, 38.5 x 28cm*
 
   
 
 
 ![[Images/우한나_드로잉_Tinker_Bell_Teeth_2024_(1).jpg]]
+*Tinker Bell Teeth, 2024, pencil on paper, 38.5 x 28cm*
 
-*Tinker Bell Teeth, 2024, pencil on paper, 38.5 x 28cm*
-*Tinker Bell Teeth, 2024, pencil on paper, 38.5 x 28cm*
 
   
 
 
 ![[Images/우한나_드로잉_Tulip_Queen_2024_(1).jpg]]
-
-*Tulip Queen, 2024, pencil on paper, 38.5 x 28cm*
 *Tulip Queen, 2024, pencil on paper, 38.5 x 28cm*
 
   
 
 
 ![[Images/우한나_드로잉_A_Drawing_for_Standing_Statue_2024_(1).jpg]]
-
-*A Drawing for Standing Statue, 2024, pencil on paper, 38.5 x 28cm*
 *A Drawing for Standing Statue, 2024, pencil on paper, 38.5 x 28cm*
 
   
 
 
 ![[Images/우한나_드로잉_Decollete_2024_(1).jpg]]
+**Décolleté, 2024, pencil on paper, 77 x 57cm**
 
-*Décolleté, 2024, pencil on paper, 77 x 57cm*
-*Décolleté, 2024, pencil on paper, 77 x 57cm*
 
-  
 
 
 ![[Images/우한나_드로잉_Hibernation_2024_(1).jpg]]
-
-*Hibernation, 2024, pencil on paper, 77 x 57cm*
-*Hibernation, 2024, pencil on paper, 77 x 57cm*
+**Hibernation, 2024, pencil on paper, 77 x 57cm**
 
   
 
 
 ![[Images/Pumse-2024-저용량.jpg]]
-
-*Pumse, 2024, colored pencil on paper, 123 x 89cm*
-*Pumse, 2024, colored pencil on paper, 123 x 89cm*
+**Pumse, 2024, colored pencil on paper, 123 x 89cm**
 
   
 
 
 ![[Images/우한나_드로잉-Pumse-2024-(2)-저용량.jpg]]
-
-*Pumse, 2024, colored pencil on paper, 123 x 89cm*
-*Pumse, 2024, colored pencil on paper, 123 x 89cm*
+**Pumse, 2024, colored pencil on paper, 123 x 89cm**
 
   
 
 
 ![[Images/우한나_드로잉-Pumse-2024-(3).jpg]]
-
-*Pumse, 2024, colored pencil on paper, 123 x 89cm*
-*Pumse, 2024, colored pencil on paper, 123 x 89cm*
+**Pumse, 2024, colored pencil on paper, 123 x 89cm**
 
   
 
 
 ![[Images/우한나_드로잉-Pumse-2024-(4)-저용량.jpg]]
+**Pumse, 2024, colored pencil on paper, 123 x 89cm**
 
-*Pumse, 2024, colored pencil on paper, 123 x 89cm*
-*Pumse, 2024, colored pencil on paper, 123 x 89cm*
-
-  
 
 
 ![[Images/우한나_드로잉-Deal-2024-(1).jpg]]
+**Deal, 2024, colored pencil on paper, 114 x 82cm**
 
-*Deal, 2024, colored pencil on paper, 114 x 82cm*
-*Deal, 2024, colored pencil on paper, 114 x 82cm*
 
-  
 
 
 ![[Images/%E1%84%87%E1%85%AE%E1%84%8C%E1%85%A91-2.jpg|%E1%84%87%E1%85%AE%E1%84%8C%E1%85%A91-2.jpg]]
 
 *Roaring, acrylic on wood panel, 72.7 x 60.6cm, 2022*
-*Roaring, acrylic on wood panel, 72.7 x 60.6cm, 2022*
+
 
   
 

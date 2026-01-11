@@ -9,6 +9,8 @@
 
 ![[Images/Intro.jpg]]
 
+*Swinging 전시 포스터*
+
   
 
   
@@ -21,6 +23,8 @@
   
 
 ![[Images/입구.jpg]]
+
+*입구 전시 전경*
 
   
 
