@@ -1,4 +1,4 @@
-name: Deploy Quartz site to GitHub Pages
+name: Deploy site to GitHub Pages
 
 on:
   push:
@@ -30,16 +30,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: "npm"
+          cache: "yarn"
+          cache-dependency-path: site/yarn.lock
 
       - name: Install dependencies
-        run: npm install
+        working-directory: site
+        run: yarn install --frozen-lockfile
 
       - name: Build website
-        run: npx quartz build
+        working-directory: site
+        run: yarn build
 
       - name: List output files
-        run: ls -R public
+        run: ls -R site/dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -47,7 +50,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: site/dist
 
       - name: Deploy to GitHub Pages
         id: deployment

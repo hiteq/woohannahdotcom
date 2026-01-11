@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    @apply bg-white text-zinc-900;
+  }
+
+  a {
+    @apply underline-offset-4 hover:underline;
+  }
+}
+

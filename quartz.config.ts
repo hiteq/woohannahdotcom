@@ -48,18 +48,19 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "ko-KR",
     baseUrl: "https://woohannah.com",
+    fontOrigin: "googleFonts",
+    googleFonts: [
+      "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+    ],
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: {
-          name: "IBM Plex Sans KR",
-          weights: [100, 200, 300, 400, 500, 600, 700]
-        },
-        code: "IBM Plex Mono",
+        header: "Pretendard Variable, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif",
+        body: "Pretendard Variable, Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif",
+        code: "IBM Plex Mono, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace"
       },
       colors: {
         lightMode: {
@@ -124,7 +125,11 @@ const config: QuartzConfig = {
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
+      // NOTE: Disabled because OG image generation fetches fonts via Google Fonts TTF endpoint.
+      // With the current typography stack (Pretendard via CDN), this causes build failures:
+      // "Failed to emit from plugin `CustomOgImages`: No fonts are loaded."
+      // If you want per-page OG images again, we should load a TTF/OTF font locally (or switch OG fonts).
+      // Plugin.CustomOgImages(),
     ],
   },
 }

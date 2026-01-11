@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import { loadAllContent } from "../lib/content"
+
+const all = await loadAllContent()
+const about = all.find((e) => e.type === "page" && e.slug.join("/") === "about")
+
+if (!about) {
+  throw new Error("About page not found in content/About.md")
+}
+---
+
+<BaseLayout title="About · Hannah Woo" description={about.description}>
+  <article class="max-w-none">
+    <h1>{about.title}</h1>
+    <Fragment set:html={about.bodyHtml} />
+  </article>
+</BaseLayout>
+
