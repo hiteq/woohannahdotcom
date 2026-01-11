@@ -32,6 +32,8 @@ out/
 yarn.lock
 package-lock.json
 pnpm-lock.yaml
+# But keep site's lock file
+!site/yarn.lock
 
 # Logs
 *.log
