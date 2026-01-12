@@ -11,7 +11,7 @@ if (!about) {
 ---
 
 <BaseLayout title="About · Hannah Woo" description={about.description}>
-  <article class="max-w-none">
+  <article class="prose prose-zinc max-w-none">
     <h1>{about.title}</h1>
     <Fragment set:html={about.bodyHtml} />
   </article>

@@ -12,7 +12,7 @@ const { entry } = Astro.props
 ---
 
 <BaseLayout title={`${entry.title} · Hannah Woo`} description={entry.description}>
-  <article class="max-w-none">
+  <article class="prose prose-zinc max-w-none">
     <h1>{entry.title}</h1>
     <p class="mt-2 text-sm text-zinc-600">
       {[entry.year, entry.category, entry.medium, entry.dimensions].filter(Boolean).join(" · ")}
