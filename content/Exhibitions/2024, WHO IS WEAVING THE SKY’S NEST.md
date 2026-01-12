@@ -11,7 +11,7 @@
   
 
 
-![[Images/%E1%84%82%E1%85%A2%E1%86%B7%E1%84%89%E1%85%A2%E1%84%82%E1%85%A1%E1%84%82%E1%85%B3%E1%86%AB-%E1%84%80%E1%85%B1-2.jpg|%E1%84%82%E1%85%A2%E1%86%B7%E1%84%89%E1%85%A2%E1%84%82%E1%85%A1%E1%84%82%E1%85%B3%E1%86%AB-%E1%84%80%E1%85%B1-2.jpg]]
+![[Images/냄새나는-귀.jpg]]
 
 *A Smelly Ear 냄새나는 귀, 2024, Fabric, cotton, silicone, thread, beads, 21 x 14 x 14 cm*
 *A Smelly Ear 냄새나는 귀, 2024, Fabric, cotton, silicone, thread, beads, 21 x 14 x 14 cm*

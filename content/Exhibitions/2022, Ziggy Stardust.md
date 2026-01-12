@@ -19,7 +19,7 @@
   
 
 
-![[Images/%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%B5%E1%86%BC9-2.jpg|%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%90%E1%85%B5%E1%86%BC9-2.jpg]]
+![[Images/페인팅9.jpg]]
 
 *Don’t read me*
 *Don’t read me*

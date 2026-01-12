@@ -1,21 +1,35 @@
 {
-  "name": "woohannahdotcom",
-  "description": "Hannah Woo - Artist Portfolio",
+  "name": "woohannahdotcom-site",
   "private": true,
-  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "cd site && yarn dev",
-    "build": "cd site && yarn build",
-    "preview": "cd site && yarn preview",
-    "go": "yarn build && git add . && git commit -m \"Update website\" && git push origin main",
-    "deploy": "yarn build && git add . && git commit -m \"Deploy website\" && git push origin main",
-    "format": "prettier . --write"
+    "dev": "node site/scripts/kill-port.mjs 4321 && node scripts/sync-content.mjs && astro dev --port 4321",
+    "build": "node scripts/sync-content.mjs && astro build",
+    "preview": "astro preview",
+    "sync": "node scripts/sync-content.mjs"
   },
-  "engines": {
-    "node": ">=22"
+  "dependencies": {
+    "@astrojs/react": "^4.3.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^5.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.469.0",
+    "marked": "^15.0.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
-    "prettier": "^3.6.2"
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@types/node": "^24.2.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.2"
   }
 }
+

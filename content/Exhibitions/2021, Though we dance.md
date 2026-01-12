@@ -100,7 +100,7 @@
   
 
 
-![[though01.webp]]
+![[Images/though01.webp]]
 
 **Though We Dance**  
 **Though We Dance**  

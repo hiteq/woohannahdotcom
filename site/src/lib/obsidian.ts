@@ -22,9 +22,28 @@ function ensureLeadingSlash(p: string): string {
 export function normalizeObsidianEmbeds(md: string, basePath = "/"): string {
   const base = ensureTrailingSlash(ensureLeadingSlash(basePath))
 
-  // Image embeds: ![[Images/foo.jpg]] -> ![](/Images/foo.jpg)
+  // Image embeds:
+  // - ![[Images/foo.jpg]] -> ![](/<base>/Images/foo.jpg)
+  // - ![[Images/foo.jpg|alt]] -> ![alt](/<base>/Images/foo.jpg)
   // (We assume Images are copied to site/public/Images/)
-  md = md.replaceAll(/!\[\[(Images\/[^\]]+)\]\]/g, (_m, imgPath) => `![](${base}${imgPath})`)
+  // Don't encode Korean filenames - let browser/server handle them naturally
+  md = md.replaceAll(
+    /!\[\[Images\/([^\]|]+)(?:\|([^\]]+))?\]\]/g,
+    (_m, filename: string, alt?: string) => {
+      const safeFilename = filename.trim()
+      const safeAlt = (alt ?? "").trim()
+      return safeAlt ? `![${safeAlt}](${base}Images/${safeFilename})` : `![](${base}Images/${safeFilename})`
+    },
+  )
+
+  // If someone used standard markdown image syntax pointing at root (/Images/...),
+  // rewrite to respect the configured base path (important for GitHub Pages base deploy).
+  md = md.replaceAll(/!\[([^\]]*)\]\(\/Images\/([^)]+)\)/g, (_m, alt: string, rest: string) => {
+    return `![${alt}](${base}Images/${rest})`
+  })
+
+  // Same for raw HTML <img src="/Images/...">
+  md = md.replaceAll(/(<img\b[^>]*\bsrc=")\/Images\//g, `$1${base}Images/`)
 
   // Wiki links: [[Works/Sculptures/Bleeding]] -> [Bleeding](/works/sculptures/bleeding)
   md = md.replaceAll(/\[\[([^[\]]+?)\]\]/g, (_m, target: string) => {

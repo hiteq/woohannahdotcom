@@ -7,7 +7,7 @@ Preview: true
 상태: Done
 생성 일시: Invalid date
 ---
-![[Images/220808_조각충동_우한나_resize-(25).jpg]]
+![[Images/sculptural-impulse-23-2022.jpg]]
 
 *Bag with you _ Take your shape, 2022 Installation view at SeMA Buk Seoul Museum*
 *Bag with you _ Take your shape, 2022 Installation view at SeMA Buk Seoul Museum*
@@ -17,7 +17,7 @@ Preview: true
   
 
 
-![[Images/220808_조각충동_우한나_resize-(4).jpg]]
+![[Images/sculptural-impulse-20-2022.jpg]]
 
 *Back Eyes, fabric, beads, cotton, 120 x 45 x 45cm, 2022*
 *Back Eyes, fabric, beads, cotton, 120 x 45 x 45cm, 2022*
@@ -27,7 +27,7 @@ Preview: true
   
 
 
-![[Images/220808_조각충동_우한나_resize-(10).jpg]]
+![[Images/sculptural-impulse-10-2022.jpg]]
 
 *Bag with you _ Take your shape, 2022 Installation view at SeMA Buk Seoul Museum*
 *Bag with you _ Take your shape, 2022 Installation view at SeMA Buk Seoul Museum*
@@ -37,7 +37,7 @@ Preview: true
   
 
 
-![[Images/220808_조각충동_우한나_resize-(12).jpg]]
+![[Images/sculptural-impulse-12-2022.jpg]]
 
 *Bag with you _ Take your shape, 2022 Installation view at SeMA Buk Seoul Museum*
 *Bag with you _ Take your shape, 2022 Installation view at SeMA Buk Seoul Museum*
@@ -47,7 +47,7 @@ Preview: true
   
 
 
-![[Images/220808_조각충동_우한나_resize-(15).jpg]]
+![[Images/sculptural-impulse-15-2022.jpg]]
 
 *Nidation, fabric, beads, weight, cotton, 57 x 90 x 27cm, 2022*
 *Nidation, fabric, beads, weight, cotton, 57 x 90 x 27cm, 2022*
@@ -57,7 +57,7 @@ Preview: true
   
 
 
-![[Images/220808_조각충동_우한나_resize-(24).jpg]]
+![[Images/sculptural-impulse-22-2022.jpg]]
 
 *Engraved Keloid, fabric, cotton, 100 x 96 x 18cm, 2022*
 *Engraved Keloid, fabric, cotton, 100 x 96 x 18cm, 2022*

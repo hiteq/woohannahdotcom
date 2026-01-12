@@ -1,3 +1,8 @@
+---
+title: "Press"
+type: "page"
+---
+
 ## City Units
 
 ![[Images/인터넷신문_시티유닛2.jpg]]

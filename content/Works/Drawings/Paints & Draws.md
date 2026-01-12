@@ -86,7 +86,7 @@ Preview: true
 
 
 
-![[Images/%E1%84%87%E1%85%AE%E1%84%8C%E1%85%A91-2.jpg|%E1%84%87%E1%85%AE%E1%84%8C%E1%85%A91-2.jpg]]
+![[Images/부조1.jpg]]
 
 *Roaring, acrylic on wood panel, 72.7 x 60.6cm, 2022*
 

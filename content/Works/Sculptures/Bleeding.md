@@ -24,26 +24,14 @@ description: "Sculpture work exploring themes of growth and fragility"
   
 
 
-![[Images/우한나_블리딩-2024-Bleeding-Tungsten-(1).jpg]]
-
-*Bleeding Tungsten, 2024, Fabric, cotton, beads, acrylic spray on fabric, steel frame, 100 x 80 x 60 cm*
-*Bleeding Tungsten, 2024, Fabric, cotton, beads, acrylic spray on fabric, steel frame, 100 x 80 x 60 cm*
 
   
 
 
-![[Images/우한나_블리딩-2024-Bleeding-Tungsten-(3).jpg]]
-
-*Bleeding Tungsten, 2024, Fabric, cotton, beads, acrylic spray on fabric, steel frame, 100 x 80 x 60 cm*
-*Bleeding Tungsten, 2024, Fabric, cotton, beads, acrylic spray on fabric, steel frame, 100 x 80 x 60 cm*
 
   
 
 
-![[Images/우한나_블리딩-2024-Bleeding-Tungsten-(2).jpg]]
-
-*Bleeding Tungsten, 2024, Fabric, cotton, beads, acrylic spray on fabric, steel frame, 100 x 80 x 60 cm*
-*Bleeding Tungsten, 2024, Fabric, cotton, beads, acrylic spray on fabric, steel frame, 100 x 80 x 60 cm*
 
   
 

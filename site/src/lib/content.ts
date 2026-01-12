@@ -5,6 +5,8 @@ import matter from "gray-matter"
 import { marked } from "marked"
 import { normalizeObsidianEmbeds, slugifyPathSegment } from "./obsidian"
 
+// We'll decode URLs after marked.parse() since marked's renderer API is complex
+
 export type EntryType = "work" | "exhibition" | "thought" | "page"
 
 export type ContentEntry = {
@@ -24,7 +26,9 @@ export type ContentEntry = {
 
 const REPO_ROOT = path.resolve(process.cwd(), "..")
 const CONTENT_ROOT = path.join(REPO_ROOT, "content")
-const SITE_BASE = process.env.SITE_BASE ?? "/woohannahdotcom/"
+// For GitHub Pages deployment, base path is /woohannahdotcom/
+// In development, it should also be /woohannahdotcom/ for consistency
+const SITE_BASE = "/woohannahdotcom/"
 
 /** Extract the first image from Obsidian-style markdown (![[Images/...]]) */
 function extractFirstImage(mdContent: string, siteBase: string): string | undefined {
@@ -32,17 +36,15 @@ function extractFirstImage(mdContent: string, siteBase: string): string | undefi
   const obsidianMatch = mdContent.match(/!\[\[Images\/([^\]|]+)/)
   if (obsidianMatch) {
     const filename = obsidianMatch[1]
-    // Don't double-encode: if filename already has %XX, use as-is
-    const encodedFilename = filename.includes("%")
-      ? filename
-      : encodeURIComponent(filename)
-    return `${siteBase}Images/${encodedFilename}`
+    // Don't encode Korean filenames - let browser/server handle them naturally
+    return `${siteBase}Images/${filename}`
   }
   // Also try standard markdown image syntax
   const mdMatch = mdContent.match(/!\[.*?\]\(([^)]+)\)/)
   if (mdMatch) {
     const src = mdMatch[1]
     if (src.startsWith("http")) return src
+    // If src is absolute (/Images/...), respect the configured base.
     return `${siteBase}${src.replace(/^\//, "")}`
   }
   return undefined
@@ -98,7 +100,29 @@ export async function loadAllContent(): Promise<ContentEntry[]> {
       top === "works" || top === "exhibitions" || top === "thoughts" ? slugAll.slice(1) : slugAll
 
     const md = normalizeObsidianEmbeds(parsed.content, SITE_BASE)
-    const bodyHtml = marked.parse(md) as string
+    // Configure marked to not encode URLs
+    marked.setOptions({
+      breaks: false,
+      gfm: true,
+    })
+    let bodyHtml = marked.parse(md) as string
+    
+    // Fix: Decode URL-encoded Korean filenames in image src attributes
+    // marked automatically encodes URLs, so we need to decode them back
+    // Match all src="..." patterns containing Images/ paths
+    bodyHtml = bodyHtml.replace(
+      /src="([^"]*Images\/[^"]+)"/g,
+      (match, url) => {
+        try {
+          // Decode URL-encoded Korean characters
+          const decoded = decodeURIComponent(url)
+          return `src="${decoded}"`
+        } catch (e) {
+          return match
+        }
+      }
+    )
+    
     const thumbnail = extractFirstImage(parsed.content, SITE_BASE)
 
     entries.push({

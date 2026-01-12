@@ -90,7 +90,7 @@ Preview: true
   
 
 
-![[Images/220808_조각충동_우한나_resize-(1).jpg]]
+![[Images/sculptural-impulse-23-2022.jpg]]
 
 *조각충동 Sculptural Impulse, Bag with you : Take your shape 설치장면, 2022*
 *조각충동 Sculptural Impulse, Bag with you : Take your shape 설치장면, 2022*
@@ -100,7 +100,7 @@ Preview: true
   
 
 
-![[Images/sculptural-impulse-22-2022-2.jpg]]
+![[Images/sculptural-impulse-22-2022.jpg]]
 
 *조각충동 Sculptural Impulse, Bag with you : Take your shape 설치장면, 2022*
 *조각충동 Sculptural Impulse, Bag with you : Take your shape 설치장면, 2022*

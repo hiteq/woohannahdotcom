@@ -15,7 +15,7 @@ Contemporary artist working with sculpture, installation, and mixed media.
 
 - [[Exhibitions/2025, POOMSAE]] (2025, Solo)
 - [[Exhibitions/2025, Body's First Architecture]] (2025, Group)
-- [[Exhibitions/2024, WHO IS WEAVING THE SKY’S NEST]] (2024, Group)
+- [[Exhibitions/2024, WHO IS WEAVING THE SKY'S NEST]] (2024, Group)
 - [[Exhibitions/2023, Living in Joy]] (2023, Group)
 
 **[모든 전시 보기 →](Exhibitions)**
@@ -49,4 +49,4 @@ Contemporary artist working with sculpture, installation, and mixed media.
 
 ---
 
-[[About]] • [[Press]]
+[[About]] • [[Press/Press]]

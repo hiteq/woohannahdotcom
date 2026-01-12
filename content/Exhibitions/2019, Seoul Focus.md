@@ -9,7 +9,7 @@
 
   
 
-![[Images/Find-your-fairy-%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8E%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC-2019-2.jpg|Find-your-fairy-%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8E%E1%85%B5%E1%84%8C%E1%85%A5%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC-2019-2.jpg]]
+![[Images/Find-your-fairy-설치전경-2019-2.jpg]]
 
 *Find your fairy 설치장면, 2019*
 *Find your fairy 설치장면, 2019*

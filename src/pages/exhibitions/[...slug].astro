@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import { loadAllContent } from "../../lib/content"
+
+export async function getStaticPaths() {
+  const all = await loadAllContent()
+  const exhibitions = all.filter((e) => e.type === "exhibition")
+  return exhibitions.map((e) => ({ params: { slug: e.slug.join("/") }, props: { entry: e } }))
+}
+
+const { entry } = Astro.props
+---
+
+<BaseLayout title={`${entry.title} · Hannah Woo`} description={entry.description}>
+  <article class="max-w-none">
+    <h1>{entry.title}</h1>
+    <p class="mt-2 text-sm text-zinc-600">
+      {[entry.date?.slice(0, 10), entry.category].filter(Boolean).join(" · ")}
+    </p>
+    <Fragment set:html={entry.bodyHtml} />
+  </article>
+</BaseLayout>
+

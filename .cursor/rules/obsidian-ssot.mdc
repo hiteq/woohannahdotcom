@@ -1,0 +1,38 @@
+---
+description: Ensure Obsidian markdown files are the Single Source of Truth (SSOT)
+globs: ["**/*.md", "src/lib/content.ts", "scripts/**/*.mjs", "scripts/**/*.py", "scripts/**/*.sh"]
+---
+
+# Obsidian as Single Source of Truth (SSOT)
+
+This project treats the `content/` directory (Obsidian Vault) as the Single Source of Truth.
+All content edits must happen in Obsidian (or directly in `content/` markdown files), not in the build output or intermediate files.
+
+## Principles
+
+1.  **Content First**: Never modify content in `dist/`, `public/`, or generated HTML. Always edit the source `.md` files in `content/`.
+2.  **Read-Only Build**: The build process should treat `content/` as read-only input.
+3.  **Sync Direction**: Sync always flows from `content/` -> `Astro`. Never the other way around.
+    - Images are synced from `content/Images` to `public/Images` via `scripts/sync-content.mjs`.
+4.  **Metadata Authority**: Frontmatter in `.md` files overrides any inferred metadata (e.g., `slug`, `date`, `title`).
+5.  **Link Preservation**:
+    - Respect Obsidian's `![[Image]]` and `[[WikiLink]]` syntax.
+    - Use `slug` frontmatter to maintain stable URLs even if files are moved/renamed in Obsidian.
+
+## Coding Guidelines
+
+- **Content Loading (`src/lib/content.ts`)**:
+    - Always prioritize Frontmatter data (`data.slug`, `data.title`) over filesystem metadata.
+    - Handle Obsidian-specific syntax (callouts, embeds) gracefully during the build transformation.
+- **Maintenance Scripts**:
+    - Scripts in `scripts/` should facilitate the SSOT workflow (e.g., fixing captions, checking links).
+    - Do not create scripts that modify `content/` in a way that breaks Obsidian compatibility.
+
+## Workflow
+
+- **Editing**: Open `content/` in Obsidian. Edit freely.
+- **Assets**: Drag & drop images into Obsidian. They go to `content/Images`.
+- **Deploy**: Run `yarn build` (which runs `sync-content.mjs` first) to propagate changes.
+- **Development**:
+    - Avoid killing the `yarn dev` server unnecessarily.
+    - Check for running processes before starting a new server to prevent duplicates.

@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node scripts/sync-content.mjs && astro dev",
+    "dev": "node scripts/kill-port.mjs 4321 && node scripts/sync-content.mjs && astro dev --port 4321",
     "build": "node scripts/sync-content.mjs && astro build",
     "preview": "astro preview",
     "sync": "node scripts/sync-content.mjs"
