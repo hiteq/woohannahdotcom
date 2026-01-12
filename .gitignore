@@ -4,6 +4,7 @@ docs/
 
 # dependencies
 node_modules/
+.yarn-integrity
 
 # logs
 npm-debug.log*
