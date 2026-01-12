@@ -3,30 +3,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node site/scripts/kill-port.mjs 4321 && node scripts/sync-content.mjs && astro dev --port 4321",
+    "dev": "node scripts/kill-port.mjs 4321 && node scripts/sync-content.mjs && astro dev --port 4321",
     "build": "node scripts/sync-content.mjs && astro build",
     "preview": "astro preview",
     "sync": "node scripts/sync-content.mjs"
   },
   "dependencies": {
-    "@astrojs/react": "^4.3.0",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^5.1.0",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3",
-    "lucide-react": "^0.469.0",
-    "marked": "^15.0.6",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tailwind-merge": "^2.6.0"
+    "marked": "^15.0.6"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.19",
     "@types/node": "^24.2.1",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17",
