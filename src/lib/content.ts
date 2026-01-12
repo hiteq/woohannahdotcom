@@ -5,6 +5,27 @@ import matter from "gray-matter";
 import { marked } from "marked";
 import { normalizeObsidianEmbeds, slugifyPathSegment } from "./obsidian";
 
+/**
+ * 이미지 바로 다음에 오는 이탤릭(em) 텍스트를 캡션으로 인식하여
+ * <figure> + <figcaption>으로 변환
+ */
+function wrapImageCaptions(html: string): string {
+  // 패턴: <p><img ...></p>\n<p><em>...</em>...</p>
+  // 이미지 p 다음 줄바꿈 후 em으로 시작하는 p가 캡션
+  const pattern = /<p>(<img\s+[^>]*>)<\/p>\n<p>(<em>[\s\S]*?<\/em>[\s\S]*?)<\/p>/g;
+  
+  return html.replace(pattern, (_match, imgTag: string, captionContent: string) => {
+    // 캡션에서 첫 번째 em 내용만 추출 (중복 캡션 제거)
+    const captionMatch = captionContent.match(/<em>([\s\S]*?)<\/em>/);
+    if (!captionMatch) {
+      return `<figure class="image-figure">${imgTag}</figure>`;
+    }
+    
+    const caption = captionMatch[1].trim();
+    return `<figure class="image-figure">${imgTag}<figcaption>${caption}</figcaption></figure>`;
+  });
+}
+
 export type EntryType = "work" | "exhibition" | "thought" | "page";
 
 export type ContentEntry = {
@@ -128,7 +149,8 @@ export async function loadAllContent(): Promise<ContentEntry[]> {
     }
 
     const md = normalizeObsidianEmbeds(parsed.content, SITE_BASE);
-    const bodyHtml = marked.parse(md) as string;
+    const rawHtml = marked.parse(md) as string;
+    const bodyHtml = wrapImageCaptions(rawHtml);
     const thumbnail = extractFirstImage(parsed.content, SITE_BASE);
 
     entries.push({

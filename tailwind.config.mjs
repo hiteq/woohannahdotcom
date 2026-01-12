@@ -30,10 +30,9 @@ export default {
               marginTop: theme("spacing.2"), // 0.5rem
               marginBottom: theme("spacing.2"), // 0.5rem
             },
-            // 이미지가 텍스트와 너무 붙지 않게
             img: {
               marginTop: theme("spacing.8"), // 2rem
-              marginBottom: theme("spacing.8"), // 2rem
+              marginBottom: theme("spacing.2"), // 이미지-캡션 간격 줄임
             },
           },
         },

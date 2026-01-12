@@ -16,3 +16,16 @@
   }
 }
 
+/* 이미지-캡션 그룹핑: figure + figcaption 스타일 */
+.prose figure.image-figure {
+  @apply my-8;
+}
+
+.prose figure.image-figure img {
+  @apply mt-0 mb-2;
+}
+
+.prose figure.image-figure figcaption {
+  @apply text-sm text-zinc-500 italic mt-1;
+}
+

@@ -5,6 +5,7 @@ import { loadAllContent, sortByDateDesc } from "../lib/content"
 const all = await loadAllContent()
 const works = sortByDateDesc(all.filter((e) => e.type === "work")).slice(0, 6)
 const exhibitions = sortByDateDesc(all.filter((e) => e.type === "exhibition")).slice(0, 6)
+const about = all.find((e) => e.type === "page" && e.slug.join("/") === "about")
 const baseRaw = import.meta.env.BASE_URL
 const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
 ---
@@ -12,25 +13,28 @@ const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
 <BaseLayout title="Hannah Woo" description="Artist Portfolio">
   <!-- Hero Section -->
   <section class="relative mb-16">
-    <div class="flex">
-      <!-- Vertical text sidebar -->
-      <div class="hidden md:flex items-center justify-center w-20 shrink-0">
-        <span class="text-4xl font-bold tracking-tight text-zinc-900 writing-vertical">
-          Hannah Woo
-        </span>
-      </div>
-      
-      <div class="flex-1 space-y-6">
+    <div class="space-y-6">
         <h1 class="text-5xl md:text-6xl font-bold tracking-tight text-zinc-900">
           Hannah Woo
         </h1>
+        
+        <!-- About Card -->
         <a
           href={`${base}about/`}
-          class="block bg-zinc-900 text-white px-6 py-4 hover:bg-zinc-800 transition-colors no-underline"
+          class="group block border border-zinc-200 p-6 hover:border-zinc-400 hover:bg-zinc-50 transition-all no-underline"
         >
-          About Hannah Woo →
+          <div class="flex items-start justify-between gap-4">
+            <div class="flex-1 min-w-0">
+              <h2 class="text-lg font-semibold text-zinc-900 mb-2">About</h2>
+              {about?.description && (
+                <p class="text-zinc-600 text-sm line-clamp-2">{about.description}</p>
+              )}
+            </div>
+            <span class="text-zinc-400 group-hover:text-zinc-900 group-hover:translate-x-1 transition-all text-xl shrink-0">
+              →
+            </span>
+          </div>
         </a>
-      </div>
     </div>
   </section>
 
@@ -142,10 +146,3 @@ const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
   </section>
 </BaseLayout>
 
-<style>
-  .writing-vertical {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    transform: rotate(180deg);
-  }
-</style>
