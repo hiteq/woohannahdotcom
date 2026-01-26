@@ -8,25 +8,13 @@ const about = all.find((e) => e.type === "page" && e.slug.join("/") === "about")
 if (!about) {
   throw new Error("About page not found in content/About.md")
 }
-
-// Extract English content from <details> block
-const detailsRegex = /<details[^>]*>\s*<summary[^>]*>\s*ENG\s*<\/summary>(.*?)<\/details>/s;
-const match = about.bodyHtml.match(detailsRegex);
-
-let engContent = "";
-let korContent = about.bodyHtml;
-
-if (match) {
-  engContent = match[1];
-  korContent = about.bodyHtml.replace(match[0], "");
-}
 ---
 
 <BaseLayout title="About · Hannah Woo" description={about.description}>
   <article class="prose prose-zinc max-w-none">
     <h1>{about.title}</h1>
     
-    {engContent ? (
+    {about.englishHtml ? (
       <div id="language-tabs" class="not-prose mb-8">
         <div class="inline-flex h-10 items-center justify-center rounded-md bg-zinc-100 p-1 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
           <button 
@@ -47,10 +35,10 @@ if (match) {
       </div>
 
       <div id="content-kor">
-        <Fragment set:html={korContent} />
+        <Fragment set:html={about.bodyHtml} />
       </div>
       <div id="content-eng" class="hidden">
-        <Fragment set:html={engContent} />
+        <Fragment set:html={about.englishHtml} />
       </div>
 
       <script>

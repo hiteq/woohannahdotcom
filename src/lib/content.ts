@@ -39,6 +39,7 @@ export type ContentEntry = {
   medium?: string;
   dimensions?: string;
   bodyHtml: string;
+  englishHtml?: string;
   sourcePath: string;
   thumbnail?: string; // first image URL for cards
 };
@@ -150,8 +151,18 @@ export async function loadAllContent(): Promise<ContentEntry[]> {
 
     const md = normalizeObsidianEmbeds(parsed.content, SITE_BASE);
     const rawHtml = marked.parse(md) as string;
-    const bodyHtml = wrapImageCaptions(rawHtml);
+    let bodyHtml = wrapImageCaptions(rawHtml);
     const thumbnail = extractFirstImage(parsed.content, SITE_BASE);
+
+    // About 페이지 등에서 <details><summary>ENG</summary>... 패턴이 있으면 영문 콘텐츠로 분리
+    let englishHtml: string | undefined;
+    const detailsRegex = /<details[^>]*>\s*<summary[^>]*>\s*ENG\s*<\/summary>(.*?)<\/details>/s;
+    const match = bodyHtml.match(detailsRegex);
+
+    if (match) {
+      englishHtml = match[1].trim();
+      bodyHtml = bodyHtml.replace(match[0], "").trim();
+    }
 
     entries.push({
       type,
@@ -166,6 +177,7 @@ export async function loadAllContent(): Promise<ContentEntry[]> {
       dimensions:
         typeof data.dimensions === "string" ? data.dimensions : undefined,
       bodyHtml,
+      englishHtml,
       sourcePath: abs,
       thumbnail,
     });
