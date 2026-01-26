@@ -8,12 +8,76 @@ const about = all.find((e) => e.type === "page" && e.slug.join("/") === "about")
 if (!about) {
   throw new Error("About page not found in content/About.md")
 }
+
+// Extract English content from <details> block
+const detailsRegex = /<details[^>]*>\s*<summary[^>]*>\s*ENG\s*<\/summary>(.*?)<\/details>/s;
+const match = about.bodyHtml.match(detailsRegex);
+
+let engContent = "";
+let korContent = about.bodyHtml;
+
+if (match) {
+  engContent = match[1];
+  korContent = about.bodyHtml.replace(match[0], "");
+}
 ---
 
 <BaseLayout title="About · Hannah Woo" description={about.description}>
   <article class="prose prose-zinc max-w-none">
     <h1>{about.title}</h1>
-    <Fragment set:html={about.bodyHtml} />
+    
+    {engContent ? (
+      <div id="language-tabs" class="not-prose mb-8">
+        <div class="inline-flex h-10 items-center justify-center rounded-md bg-zinc-100 p-1 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
+          <button 
+            id="btn-kor"
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-white data-[state=active]:text-black data-[state=active]:shadow-sm dark:data-[state=active]:bg-zinc-950 dark:data-[state=active]:text-white cursor-pointer hover:text-black dark:hover:text-white"
+            data-state="active"
+          >
+            한국어
+          </button>
+          <button 
+            id="btn-eng"
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-white data-[state=active]:text-black data-[state=active]:shadow-sm dark:data-[state=active]:bg-zinc-950 dark:data-[state=active]:text-white cursor-pointer hover:text-black dark:hover:text-white"
+            data-state="inactive"
+          >
+            English
+          </button>
+        </div>
+      </div>
+
+      <div id="content-kor">
+        <Fragment set:html={korContent} />
+      </div>
+      <div id="content-eng" class="hidden">
+        <Fragment set:html={engContent} />
+      </div>
+
+      <script>
+        const btnKor = document.getElementById('btn-kor');
+        const btnEng = document.getElementById('btn-eng');
+        const contentKor = document.getElementById('content-kor');
+        const contentEng = document.getElementById('content-eng');
+
+        if (btnKor && btnEng && contentKor && contentEng) {
+          btnKor.addEventListener('click', () => {
+            btnKor.setAttribute('data-state', 'active');
+            btnEng.setAttribute('data-state', 'inactive');
+            contentKor.classList.remove('hidden');
+            contentEng.classList.add('hidden');
+          });
+
+          btnEng.addEventListener('click', () => {
+            btnKor.setAttribute('data-state', 'inactive');
+            btnEng.setAttribute('data-state', 'active');
+            contentKor.classList.add('hidden');
+            contentEng.classList.remove('hidden');
+          });
+        }
+      </script>
+    ) : (
+      <Fragment set:html={about.bodyHtml} />
+    )}
   </article>
 </BaseLayout>
 
