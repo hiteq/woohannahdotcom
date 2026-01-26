@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Works/_index.md",
+                "file": "About.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "About"
             }
           }
         ]
@@ -174,10 +174,12 @@
   },
   "active": "105fb335e9f8e12a",
   "lastOpenFiles": [
-    "우한나_관찰기록(디자인_완료).pdf",
-    "About.md",
     "index.md",
+    "About.md",
+    "private/Images/About",
     "index_new.md",
+    "Works/_index.md",
+    "우한나_관찰기록(디자인_완료).pdf",
     "Exhibitions/2016, City Units.md",
     "Exhibitions/2023, Autohypnosis.md",
     "Exhibitions/2024, WHO IS WEAVING THE SKY’S NEST.md",
@@ -200,7 +202,6 @@
     "Works/Sculptures/Sculptures.md.backup",
     "Works/Sculptures/Milk and Honey.md.backup",
     "Works/Installations/Circus Effect Project.md.backup",
-    "Works/Installations/Bag with you.md.backup",
     "Images/_DSC1398.jpg",
     "Images/부조4-1.jpg",
     "Images/220404_cylinder_007-copy-2.jpg",
@@ -217,7 +218,6 @@
     "Thoughts/권정현, 전시서문.md",
     "Thoughts/우한나 작가노트.md",
     "Thoughts/우한나 x 김해주 대화.md",
-    "Thoughts/장혜정, ‘겨우 하나 가진’.md",
-    "Thoughts/우한나 X 김남수 심층비평.md"
+    "Thoughts/장혜정, ‘겨우 하나 가진’.md"
   ]
 }

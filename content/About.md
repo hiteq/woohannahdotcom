@@ -3,328 +3,255 @@ title: "About Hannah Woo"
 type: "page"
 ---
 
-- ENG
+<details>
+<summary>ENG</summary>
 
-    ## **About the Artist**
-    
-      
-    
-    Woo Hannah’s work imagines an existence that transcends the notion of a finite and fixed body. Based on this, she depicts a scenario where all beings are equal to one another in a horizontal relationship, breaking away from the existing dichotomy which divides humans and non-humans. She presents a situation in which opposite and polarized beings, such as the living and the non-living, the protecting and the protected, the old and the young, the painful and the joyful, converge and complement each other in works that do not limit the boundaries of genres, ranging from painting to sculpture to installation which is based on fabric as the main material.
-    
-      
-    
-    Woo Hannah (B.1988) received both BFA and MFA from the Korea National University of Arts’ department of Visual Art and has held solo exhibitions at Frieze No.9 Cork Street (London, 2023), G Gallery (2023), and Song Eun Art Cube (2020). Her recent group exhibitions include _Summer Love_ (Song Eun Art Center, 2022), _Sculptural Impulse_ (Buk-Seoul Museum of Art, 2022), _Superhero_ (Insa Art Space, 2020), _2020 Next Code_ (Daejeon Museum of Art, 2020), _Nothing Twice_ (Seoul Museum of Art, Buk Seoul, 2019), _Superfuture Food_ (Arko Museum of Art, 2019), _Linkin Out_ (Ilmin Museum of Art, 2019), _LOTUS LAND_ (National Asian Cultural Center, 2017), and many others, in addition to participating in the Art Plant Asia 2020 exhibition _Hare Way Object_. She received the Frieze Artist Award in 2023 and was a recipient of the Seoul Arts Council Fund in 2018 and 2019.
-    
-      
-    
-      
-    
-      
-    
-    ---
-    
-      
-    
-    ## CV
-    
-    ### **Hannah Woo**
-    
-    b. 1988
-    
-    2016 - MFA Visual Art, Korea National University of Arts, Seoul, Korea
-    
-    2014 - Work Master (Exchange 1 year), Geneva University of Art and Design, Geneva, Switzerland
-    
-    2012 - BFA Visual Art, Korea National University of Arts, Seoul, Korea
-    
-      
-    
-      
-    
-    ---
-    
-      
-    
-    ## Solo
-    
-      
-    
-    2025 - Poomsae, G Gallery, Seoul, Korea
-    
-    2023 - Appearances, G Gallery, Frieze No. 9 Cork Street, London, England
-    
-    2023 - Tumbleweeds, Art Space BOAN2, Seoul, Korea
-    
-    2023 - Connection: Woo Hannah Open Studion, G Gallery, Seoul, Korea
-    
-    2021 - Hannah Flashed That, Art&Choi’s, Seoul, Korea
-    
-    2020 - Ma Moitié, SongEun Artcube, Seoul, Korea
-    
-    2019 - Moulage Mélancolique, P.S. Sarubia, Seoul, Korea
-    
-    2018 - Swinging, SamyukBD, Seoul, Korea
-    
-    2016 - City Units, Choc2gak, Seoul, Korea
-    
-    ---
-    
-    ## Group
-    
-      
-    
-    ### 2025
-    
-    Body’s First Architecture, Ely Center of Contemporary Art, U.S.A
-    
-    Buddies Sharing Our Big Home, Gyeonggi, Korea
-    
-      
-    
-    ---
-    
-    ### 2024
-    
-    WHO IS WEAVING THE SKY’S NEST, Yeo Workshop, Singapore
-    
-    Two Side Love, G Gallery, Seoul, Korea
-    
-    Vitalis violentia, Podium Gallery, Hongkong
-    
-    The 1st Seoul Sculpture Prize ‘The Strange Encounter’, SongHyun Park, Seoul, Korea
-    
-    At the end of the world split endlessly, SeMA, Seoul, Korea
-    
-      
-    
-    ---
-    
-    ### 2023
-    
-    Autohypnosis, G Gallery, Seoul, Korea
-    
-    Living in Joy, Art Sonje Center, Seoul, Korea
-    
-      
-    
-    ---
-    
-    ### 2022
-    
-    Summer Love 2022, SongEun Art Space, Seoul, Korea
-    
-    Circuit Seoul, Loop Station Ikseon, Seoul, Korea
-    
-    Fashion Exhibition, MMCA Residency Changdong, Seoul, Korea
-    
-    Sculptural Impulse, Buk-Seoul Museum of Art, Seoul, Korea
-    
-    ART REBUILD, Boan1942, Seoul, Korea
-    
-    Feather, Cylinder, Seoul, Korea
-    
-    Ziggy Stardust, n/a, Seoul, Korea
-    
-      
-    
-    ---
-    
-      
-    
-    ### 2021
-    
-    Night&Forest, Gana sounds Hannam, Seoul, Korea
-    
-    Quality of Working Life, G Museum, Seoul, Korea
-    
-    Sculpture Park, Sculpture Park in front of SeMA Nanji Residency,
-    
-    Seoul, Korea
-    
-    Though we dance, cosmo40, Incheon, Korea
-    
-      
-    
-    ---
-    
-      
-    
-    ### 2020
-    
-    Next code 2020, Daejeon Museum of Art (DMA), Daejeon, Korea
-    
-    Hare Way Object, Art Plant Asia, Deoksugung Palace, Seoul, Korea
-    
-    Super Hero, Insa Art Space, Seoul, Korea
-    
-    The Material of the Audience, Blume Museum of Contemporary Art, Paju, Korea
-    
-    The parallel Universes of Prufrock, Rainbowcube, Seoul, Korea
-    
-      
-    
-    ---
-    
-      
-    
-    ### 2019
-    
-    More More Morel, SP gallery, Seoul, Korea
-    
-    Linkin out, IImin Museum, Seoul, Korea
-    
-    The 6th Amado Anualnale, Amado Art Space/Lab, Seoul, Korea
-    
-    8people from Korea, Parplume Gallery, Ganagawa, Japan
-    
-    Come to think of it, it’s a good thing corpses sell, Artspace Pool, Seoul, Korea
-    
-    Nothing Twice, SeMA Buk-Seoul Museum of Art, Seoul, Korea
-    
-      
-    
-    ---
-    
-      
-    
-    ### 2018 
-    
-    DDANG!, 5%, Seoul, Korea
-    
-      
-    
-    ---
-    
-      
-    
-    ### 2017 
-    
-    The Scrape, The Scrape, Seoul, Korea
-    
-    Kitty Decadance, Open Hoero, Seoul, Korea
-    
-    Sticky Forever, Keep in Touch, Seoul, Korea
-    
-    PACK F/W17, Culturetank, Seoul, Korea
-    
-    2X2, “The Revenge, It’s Ma Power, Huh!”, Audio Visual Pavilion, Seoul, Korea
-    
-    LOTUS LAND, Asia Culture Center, Gwangju, Korea
-    
-    The girl who can go nowhere, Project Tambourine, Busan, Korea
-    
-    Protagonist, Somewhere you should go, Seogyo Art Center, Seoul, Korea
-    
-      
-    
-    ---
-    
-      
-    
-    ### 2015 
-    
-    Visitor Q, Post Territory Ujeongguk, Seoul, Korea
-    
-      
-    
-    ---
-    
-      
-    
-    ### 2014
-    
-    Read the Room/you’ve got to, S.A.L.T.S, Basel, Switzerland
-    
-    Oops!, tehtaankatu 27-29, Helsinki, Finland
-    
-    Oops!, duplex, Geneva, Switzerland
-    
-    Oops!, room335, Tallinn, Estonia
-    
-    Bourgeois bore, Istituto Svizzero, Rome, Italy
-    
-    There is more Fresh air on the floor, Amado Art Space/Lab, Seoul, Korea
-    
-      
-    
-    ---
-    
-      
-    
-    ### 2012
-    
-    37.9°N 22.9°N, Kunshan art gallery, Taiwan
-    
-      
-    
-    ---
-    
-    ## Selected & Residency
-    
-      
-    
-    2025 - Doosan International Residency New York, U.S.A
-    
-    2024 - Selected by The 1st Seoul Sculpture Prize
-    
-    2023 - Frieze Artist Award
-    
-    2021 - SeMA NANJI RESIDENCY, Seoul Museum of Art
-    
-    2019 - Arts support, Seoul Foundation for Art and Culture
-    
-    2018 - Hello Artist, Naver Foundation
-    
-    2018 - Beginners Project, Seoul Foundation for Art and Culture
-    
-    2017 - Seoul Young Artist Group 'Sandpapers’
-    
-    Travel Grant 2014, Ilhyun Museum, Elji Foundation
-    
-    ---
-    
-    ## Project
-    
-    ### 2024
-    
-    Circus Effect Project, Nakwon Sangga, Seoul
-    
-    ---
-    
-    ## Collections
-    
-      
-    
-      
-    
-    2023 - Kadist
-    
-    2023 - Art Sonje Center
-    
-    2023 - DOOSAN Art Center
-    
-    2023 - Seoul Museum of Art
-    
-      
-    
-    ---
-    
-    ## Contact
-    
-      
-    
-    ![[Images/KakaoTalk_Photo_2022-10-19-21-03-41.jpeg]]
-    
+## **About the Artist**
+
+Woo Hannah’s work imagines an existence that transcends the notion of a finite and fixed body. Based on this, she depicts a scenario where all beings are equal to one another in a horizontal relationship, breaking away from the existing dichotomy which divides humans and non-humans. She presents a situation in which opposite and polarized beings, such as the living and the non-living, the protecting and the protected, the old and the young, the painful and the joyful, converge and complement each other in works that do not limit the boundaries of genres, ranging from painting to sculpture to installation which is based on fabric as the main material.
+
+Woo Hannah (B.1988) received both BFA and MFA from the Korea National University of Arts’ department of Visual Art and has held solo exhibitions at Frieze No.9 Cork Street (London, 2023), G Gallery (2023), and Song Eun Art Cube (2020). Her recent group exhibitions include _Summer Love_ (Song Eun Art Center, 2022), _Sculptural Impulse_ (Buk-Seoul Museum of Art, 2022), _Superhero_ (Insa Art Space, 2020), _2020 Next Code_ (Daejeon Museum of Art, 2020), _Nothing Twice_ (Seoul Museum of Art, Buk Seoul, 2019), _Superfuture Food_ (Arko Museum of Art, 2019), _Linkin Out_ (Ilmin Museum of Art, 2019), _LOTUS LAND_ (National Asian Cultural Center, 2017), and many others, in addition to participating in the Art Plant Asia 2020 exhibition _Hare Way Object_. She received the Frieze Artist Award in 2023 and was a recipient of the Seoul Arts Council Fund in 2018 and 2019.
+
+---
+
+## CV
+
+### **Hannah Woo**
+
+b. 1988
+
+2016 - MFA Visual Art, Korea National University of Arts, Seoul, Korea
+
+2014 - Work Master (Exchange 1 year), Geneva University of Art and Design, Geneva, Switzerland
+
+2012 - BFA Visual Art, Korea National University of Arts, Seoul, Korea
+
+---
+
+## Solo
+
+2025 - Poomsae, G Gallery, Seoul, Korea
+
+2023 - Appearances, G Gallery, Frieze No. 9 Cork Street, London, England
+
+2023 - Tumbleweeds, Art Space BOAN2, Seoul, Korea
+
+2023 - Connection: Woo Hannah Open Studion, G Gallery, Seoul, Korea
+
+2021 - Hannah Flashed That, Art&Choi’s, Seoul, Korea
+
+2020 - Ma Moitié, SongEun Artcube, Seoul, Korea
+
+2019 - Moulage Mélancolique, P.S. Sarubia, Seoul, Korea
+
+2018 - Swinging, SamyukBD, Seoul, Korea
+
+2016 - City Units, Choc2gak, Seoul, Korea
+
+---
+
+## Group
+
+### 2025
+
+Body’s First Architecture, Ely Center of Contemporary Art, U.S.A
+
+Buddies Sharing Our Big Home, Gyeonggi, Korea
+
+---
+
+### 2024
+
+WHO IS WEAVING THE SKY’S NEST, Yeo Workshop, Singapore
+
+Two Side Love, G Gallery, Seoul, Korea
+
+Vitalis violentia, Podium Gallery, Hongkong
+
+The 1st Seoul Sculpture Prize ‘The Strange Encounter’, SongHyun Park, Seoul, Korea
+
+At the end of the world split endlessly, SeMA, Seoul, Korea
+
+---
+
+### 2023
+
+Autohypnosis, G Gallery, Seoul, Korea
+
+Living in Joy, Art Sonje Center, Seoul, Korea
+
+---
+
+### 2022
+
+Summer Love 2022, SongEun Art Space, Seoul, Korea
+
+Circuit Seoul, Loop Station Ikseon, Seoul, Korea
+
+Fashion Exhibition, MMCA Residency Changdong, Seoul, Korea
+
+Sculptural Impulse, Buk-Seoul Museum of Art, Seoul, Korea
+
+ART REBUILD, Boan1942, Seoul, Korea
+
+Feather, Cylinder, Seoul, Korea
+
+Ziggy Stardust, n/a, Seoul, Korea
+
+---
+
+### 2021
+
+Night&Forest, Gana sounds Hannam, Seoul, Korea
+
+Quality of Working Life, G Museum, Seoul, Korea
+
+Sculpture Park, Sculpture Park in front of SeMA Nanji Residency,
+
+Seoul, Korea
+
+Though we dance, cosmo40, Incheon, Korea
+
+---
+
+### 2020
+
+Next code 2020, Daejeon Museum of Art (DMA), Daejeon, Korea
+
+Hare Way Object, Art Plant Asia, Deoksugung Palace, Seoul, Korea
+
+Super Hero, Insa Art Space, Seoul, Korea
+
+The Material of the Audience, Blume Museum of Contemporary Art, Paju, Korea
+
+The parallel Universes of Prufrock, Rainbowcube, Seoul, Korea
+
+---
+
+### 2019
+
+More More Morel, SP gallery, Seoul, Korea
+
+Linkin out, IImin Museum, Seoul, Korea
+
+The 6th Amado Anualnale, Amado Art Space/Lab, Seoul, Korea
+
+8people from Korea, Parplume Gallery, Ganagawa, Japan
+
+Come to think of it, it’s a good thing corpses sell, Artspace Pool, Seoul, Korea
+
+Nothing Twice, SeMA Buk-Seoul Museum of Art, Seoul, Korea
+
+---
+
+### 2018 
+
+DDANG!, 5%, Seoul, Korea
+
+---
+
+### 2017 
+
+The Scrape, The Scrape, Seoul, Korea
+
+Kitty Decadance, Open Hoero, Seoul, Korea
+
+Sticky Forever, Keep in Touch, Seoul, Korea
+
+PACK F/W17, Culturetank, Seoul, Korea
+
+2X2, “The Revenge, It’s Ma Power, Huh!”, Audio Visual Pavilion, Seoul, Korea
+
+LOTUS LAND, Asia Culture Center, Gwangju, Korea
+
+The girl who can go nowhere, Project Tambourine, Busan, Korea
+
+Protagonist, Somewhere you should go, Seogyo Art Center, Seoul, Korea
+
+---
+
+### 2015 
+
+Visitor Q, Post Territory Ujeongguk, Seoul, Korea
+
+---
+
+### 2014
+
+Read the Room/you’ve got to, S.A.L.T.S, Basel, Switzerland
+
+Oops!, tehtaankatu 27-29, Helsinki, Finland
+
+Oops!, duplex, Geneva, Switzerland
+
+Oops!, room335, Tallinn, Estonia
+
+Bourgeois bore, Istituto Svizzero, Rome, Italy
+
+There is more Fresh air on the floor, Amado Art Space/Lab, Seoul, Korea
+
+---
+
+### 2012
+
+37.9°N 22.9°N, Kunshan art gallery, Taiwan
+
+---
+
+## Selected & Residency
+
+2025 - Doosan International Residency New York, U.S.A
+
+2024 - Selected by The 1st Seoul Sculpture Prize
+
+2023 - Frieze Artist Award
+
+2021 - SeMA NANJI RESIDENCY, Seoul Museum of Art
+
+2019 - Arts support, Seoul Foundation for Art and Culture
+
+2018 - Hello Artist, Naver Foundation
+
+2018 - Beginners Project, Seoul Foundation for Art and Culture
+
+2017 - Seoul Young Artist Group 'Sandpapers’
+
+Travel Grant 2014, Ilhyun Museum, Elji Foundation
+
+---
+
+## Project
+
+### 2024
+
+Circus Effect Project, Nakwon Sangga, Seoul
+
+---
+
+## Collections
+
+2023 - Kadist
+
+2023 - Art Sonje Center
+
+2023 - DOOSAN Art Center
+
+2023 - Seoul Museum of Art
+
+---
+
+## Contact
+
+![[Images/KakaoTalk_Photo_2022-10-19-21-03-41.jpeg]]
+
 *photo.Jean Lee*
 *photo.Jean Lee*
-    
-    
-    ### [→ Instagram](https://www.instagram.com/hannah.flashed.that/)
-    
-    ### [→](http://instagram.com/abielzulio) e-mail
-    
-      
-    
+
+### [→ Instagram](https://www.instagram.com/hannah.flashed.that/)
+
+### [→](http://instagram.com/abielzulio) e-mail
+
+</details>
 
 ## **About the Artist**
 
