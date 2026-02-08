@@ -1,11 +1,8 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 
-// GitHub Pages repo deployment:
-// - site: https://hiteq.github.io
-// - base: /woohannahdotcom
+// Custom domain deployment
 export default defineConfig({
-  site: "https://hiteq.github.io",
-  base: "/woohannahdotcom",
+  site: "https://woohannah.com",
   integrations: [tailwind()],
 });

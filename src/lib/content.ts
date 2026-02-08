@@ -3,7 +3,11 @@ import path from "node:path";
 import fg from "fast-glob";
 import matter from "gray-matter";
 import { marked } from "marked";
-import { normalizeObsidianEmbeds, slugifyPathSegment } from "./obsidian";
+import {
+  normalizeImageFilenameToUrlSegment,
+  normalizeObsidianEmbeds,
+  slugifyPathSegment,
+} from "./obsidian";
 
 /**
  * 이미지 바로 다음에 오는 이탤릭(em) 텍스트를 캡션으로 인식하여
@@ -46,26 +50,8 @@ export type ContentEntry = {
 
 const REPO_ROOT = process.cwd();
 const CONTENT_ROOT = path.join(REPO_ROOT, "content");
-// For GitHub Pages deployment, base path is /woohannahdotcom/
-// In development, it should also be /woohannahdotcom/ for consistency
-const SITE_BASE = "/woohannahdotcom/";
-
-function normalizeAndEncodeImageFilename(filename: string): string {
-  const trimmed = filename.trim();
-
-  let decoded = trimmed;
-  if (/%[0-9A-Fa-f]{2}/.test(trimmed)) {
-    try {
-      decoded = decodeURIComponent(trimmed);
-    } catch {
-      // ignore
-    }
-  }
-
-  // NFD -> NFC 정규화 후 인코딩 (서버/파일 매칭 안정화)
-  const nfc = decoded.normalize("NFC");
-  return encodeURIComponent(nfc);
-}
+// Custom domain: no base path needed
+const SITE_BASE = "/";
 
 /** Extract the first image from Obsidian-style markdown (![[Images/...]]) */
 function extractFirstImage(
@@ -76,7 +62,7 @@ function extractFirstImage(
   const obsidianMatch = mdContent.match(/!\[\[Images\/([^\]|]+)/);
   if (obsidianMatch) {
     const filename = obsidianMatch[1];
-    const encodedFilename = normalizeAndEncodeImageFilename(filename);
+    const encodedFilename = normalizeImageFilenameToUrlSegment(filename);
     return `${siteBase}Images/${encodedFilename}`;
   }
   // Also try standard markdown image syntax
@@ -88,6 +74,12 @@ function extractFirstImage(
     return `${siteBase}${src.replace(/^\//, "")}`;
   }
   return undefined;
+}
+
+let allContentCache: Promise<ContentEntry[]> | null = null;
+
+export function clearContentCache(): void {
+  allContentCache = null;
 }
 
 function toSlugSegmentsFromFsPath(relFromContent: string): string[] {
@@ -111,7 +103,7 @@ function entryTypeFrom(relFromContent: string, fmType: unknown): EntryType {
   return "page";
 }
 
-export async function loadAllContent(): Promise<ContentEntry[]> {
+async function loadAllContentUncached(): Promise<ContentEntry[]> {
   const files = await fg(["**/*.md"], {
     cwd: CONTENT_ROOT,
     dot: false,
@@ -184,6 +176,11 @@ export async function loadAllContent(): Promise<ContentEntry[]> {
   }
 
   return entries;
+}
+
+export function loadAllContent(): Promise<ContentEntry[]> {
+  if (!allContentCache) allContentCache = loadAllContentUncached();
+  return allContentCache;
 }
 
 export function sortByDateDesc<T extends { date?: string }>(items: T[]): T[] {
