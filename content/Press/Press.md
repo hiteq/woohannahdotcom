@@ -151,7 +151,3 @@ type: "page"
 ## MBN News
 
 [https://www.youtube.com/watch?v=X4_8XwqxF8M](https://www.youtube.com/watch?v=X4_8XwqxF8M)
-
-## Arirang Culture
-
-[https://youtu.be/h4whYmm7qzw](https://youtu.be/h4whYmm7qzw)
