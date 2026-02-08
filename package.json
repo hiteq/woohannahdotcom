@@ -6,11 +6,12 @@
     "dev": "node scripts/kill-port.mjs 4321 && node scripts/sync-content.mjs && astro dev --port 4321",
     "build": "node scripts/sync-content.mjs && astro build",
     "preview": "astro preview",
-    "sync": "node scripts/sync-content.mjs"
+    "sync": "node scripts/sync-content.mjs",
+    "test": "vitest run"
   },
   "dependencies": {
     "@astrojs/tailwind": "6.0.2",
-    "astro": "5.16.15",
+    "astro": "5.17.1",
     "fast-glob": "^3.3.3",
     "gray-matter": "^4.0.3",
     "marked": "^15.0.6"
@@ -21,6 +22,7 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.1",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "vitest": "^4.0.18"
   }
 }
