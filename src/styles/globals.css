@@ -9,6 +9,7 @@
 
   body {
     @apply bg-white text-zinc-900;
+    font-family: "Inter", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   }
 
   a {

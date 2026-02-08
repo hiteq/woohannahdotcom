@@ -1,23 +1,34 @@
 ---
+interface Props {
+  currentPath?: string
+}
+const { currentPath = "" } = Astro.props
 const nav = [
   { href: "", label: "Home" },
   { href: "works/", label: "Works" },
   { href: "exhibitions/", label: "Exhibitions" },
-  { href: "about/", label: "About" },
+  { href: "thoughts/", label: "Thoughts" },
   { href: "press/", label: "Press" },
+  { href: "about/", label: "About" },
 ]
 const baseRaw = import.meta.env.BASE_URL
 const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
+const path = currentPath.replace(/\/$/, "") || "/"
+function isActive(href: string): boolean {
+  if (href === "") return path === "" || path === "/"
+  const segment = href.replace(/\/$/, "")
+  return path === `/${segment}` || path.startsWith(`/${segment}/`)
+}
 ---
 
 <header class="border-b border-zinc-200 bg-white/80 backdrop-blur">
   <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
-    <a href={base} class="font-semibold no-underline hover:no-underline">Hannah Woo</a>
-    <nav class="flex gap-4 text-sm">
+    <a href={base} class="font-black no-underline hover:no-underline">Hannah Woo</a>
+    <nav class="flex gap-6 text-sm">
       {nav.map((i) => (
         <a
           href={`${base}${i.href}`}
-          class="text-zinc-700 hover:text-zinc-900 no-underline hover:no-underline"
+          class={`text-zinc-700 hover:text-zinc-900 no-underline hover:no-underline ${isActive(i.href) ? "font-bold" : ""}`}
         >
           {i.label}
         </a>
