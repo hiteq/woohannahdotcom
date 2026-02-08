@@ -5,24 +5,36 @@ import { loadAllContent, sortByDateDesc } from "../lib/content"
 const all = await loadAllContent()
 const works = sortByDateDesc(all.filter((e) => e.type === "work")).slice(0, 6)
 const exhibitions = sortByDateDesc(all.filter((e) => e.type === "exhibition")).slice(0, 6)
+const thoughts = sortByDateDesc(all.filter((e) => e.type === "thought")).slice(0, 5)
 const about = all.find((e) => e.type === "page" && e.slug.join("/") === "about")
 const baseRaw = import.meta.env.BASE_URL
 const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
+
+function stripHtml(html: string): string {
+  return html.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim()
+}
+
+function getExcerpt(html: string, maxLen = 120): string {
+  const text = stripHtml(html)
+  if (text.length <= maxLen) return text
+  return text.slice(0, maxLen).replace(/\s\S*$/, "") + "…"
+}
 ---
 
 <BaseLayout title="Hannah Woo" description="Artist Portfolio">
   <!-- Hero Section -->
   <section class="relative mb-24 mt-12 flex flex-col items-center justify-center text-center">
     <div class="space-y-8 animate-fade-in">
-        <h1 class="text-6xl md:text-8xl font-bold tracking-tighter text-zinc-900">
+        <h1 class="sr-only">Hannah Woo</h1>
+        <span class="text-6xl md:text-[64px] font-bold tracking-tighter text-zinc-900">
           Hannah Woo
-        </h1>
+        </span>
         
         <!-- About Button -->
         <div class="flex justify-center">
             <a
               href={`${base}about/`}
-              class="group inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-zinc-600 bg-zinc-50 border border-zinc-200 rounded-full hover:bg-zinc-900 hover:text-white hover:border-zinc-900 transition-all duration-300 no-underline"
+              class="group inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-zinc-600 bg-zinc-50 border border-zinc-200 rounded-full hover:bg-zinc-900 hover:text-white hover:border-zinc-900 hover:no-underline transition-all duration-300 no-underline"
             >
               <span>About</span>
               <span class="group-hover:translate-x-0.5 transition-transform">→</span>
@@ -112,6 +124,37 @@ const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
               </>
             )}
           </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Thoughts Section -->
+  <section class="mb-20">
+    <div class="flex items-baseline justify-between gap-4 mb-8 border-b border-zinc-200 pb-4">
+      <h2 class="text-2xl font-bold">Thoughts</h2>
+      <a href={`${base}thoughts/`} class="text-sm text-zinc-600 hover:text-zinc-900 no-underline">
+        More Thoughts →
+      </a>
+    </div>
+
+    <div class="flex flex-col divide-y divide-zinc-100">
+      {thoughts.map((t) => (
+        <a
+          href={`${base}thoughts/${t.slug.join("/")}/`}
+          class="group block py-5 first:pt-0 last:pb-0 no-underline"
+        >
+          <h3 class="font-medium text-zinc-900 group-hover:text-zinc-600 transition-colors leading-snug">
+            {t.title}
+          </h3>
+          <p class="mt-2 text-sm text-zinc-500 leading-relaxed line-clamp-2">
+            {getExcerpt(t.bodyHtml, 150)}
+          </p>
+          {t.date && (
+            <span class="mt-2 inline-block text-xs text-zinc-400">
+              {t.date.slice(0, 4)}
+            </span>
+          )}
         </a>
       ))}
     </div>
