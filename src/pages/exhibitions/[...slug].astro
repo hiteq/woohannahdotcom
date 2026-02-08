@@ -17,6 +17,7 @@ const { entry } = Astro.props
     <p class="mt-2 text-sm text-zinc-600">
       {[entry.date?.slice(0, 10), entry.category].filter(Boolean).join(" · ")}
     </p>
+
     <Fragment set:html={entry.bodyHtml} />
   </article>
 </BaseLayout>

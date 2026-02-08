@@ -37,6 +37,10 @@ function normalizeImageFilename(filename: string): string {
   return decoded.normalize("NFC")
 }
 
+export function normalizeImageFilenameToUrlSegment(filename: string): string {
+  return encodeURIComponent(normalizeImageFilename(filename))
+}
+
 export function normalizeObsidianEmbeds(md: string, basePath = "/"): string {
   const base = ensureTrailingSlash(ensureLeadingSlash(basePath))
 
@@ -47,7 +51,7 @@ export function normalizeObsidianEmbeds(md: string, basePath = "/"): string {
   md = md.replaceAll(
     /!\[\[Images\/([^\]|]+)(?:\|([^\]]+))?\]\]/g,
     (_m, filename: string, alt?: string) => {
-      const safe = normalizeImageFilename(filename)
+      const safe = normalizeImageFilenameToUrlSegment(filename)
       const safeAlt = (alt ?? "").trim()
       return safeAlt ? `![${safeAlt}](${base}Images/${safe})` : `![](${base}Images/${safe})`
     },
@@ -56,7 +60,7 @@ export function normalizeObsidianEmbeds(md: string, basePath = "/"): string {
   // If someone used standard markdown image syntax pointing at root (/Images/...),
   // rewrite to respect the configured base path (important for GitHub Pages base deploy).
   md = md.replaceAll(/!\[([^\]]*)\]\(\/Images\/([^)]+)\)/g, (_m, alt: string, rest: string) => {
-    const safeRest = normalizeImageFilename(rest)
+    const safeRest = normalizeImageFilenameToUrlSegment(rest)
     return `![${alt}](${base}Images/${safeRest})`
   })
 
@@ -83,4 +87,3 @@ export function normalizeObsidianEmbeds(md: string, basePath = "/"): string {
 
   return md
 }
-
