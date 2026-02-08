@@ -6,7 +6,51 @@ Preview: true
 상태: Done
 생성 일시: Invalid date
 ---
-  
+
+![[Images/G_Gallery_POOMSAE_Installation_view_(12)_(crop).png]]
+*(from left) I am trying 해보고 있어, 2025, pastel on paper, 29.8 x 22.5cm / Thunderhead 적란운, 2025, pastel on paper, 22.8 x 23cm / Wrong meditation 틀린 명상, 2025, gouache pastel on paper, 28.5 x 22.5cm / Magma diver 마그마 다이버, 2025, gouache pastel on paper, 22.2 x 27.8cm / Though sleeping 힘든 잠, 2025, gouache on paper, 26.4 x 19.4cm*
+
+![[Images/우한나_드로잉_2025_Mirror_Gazing_거울_보기.png]]
+*Mirror Gazing 거울보기, 2025, Pastel and gouache on paper and mount, 39.4 x 35.9 cm*
+
+![[Images/우한나_행잉_2025_Things_That_Always_Come_at_Once_늘_동시에_다가오는_것_(1).png]]
+*Things That Always Come at Once 늘 동시에 다가오는 것, 2025, gouache on paper; double-sided frame with ribbon, 69 x 43 x 6cm*
+
+![[Images/우한나_행잉_2025_Things_That_Always_Come_at_Once_늘_동시에_다가오는_것_(2).png]]
+*Things That Always Come at Once 늘 동시에 다가오는 것, 2025, gouache on paper; double-sided frame with ribbon, 69 x 43 x 6cm*
+
+![[Images/우한나_드로잉_2025_A_Female_암컷.png]]
+*A Female 암컷, 2025, pencil on paper, color flame, 43.3 x 39.5cm*
+
+![[Images/우한나_드로잉_2025_Fimmutt_퓌무트.png]]
+*Fimmutt 퓌무트, 2025, pencil on paper, 40.3 x 40.8cm*
+
+![[Images/우한나_드로잉_2025_Heache_히아체.png]]
+*Heache 히아체, 2025, pencil on paper, 39.4 x 45cm*
+
+![[Images/우한나_드로잉_2025_Mayes_마이예스.png]]
+*Mayes 마이예스, 2025, pencil on paper, 39.4 x 45cm*
+
+![[Images/우한나_드로잉_2025_Savidim_사비딤.png]]
+*Savidim 사비딤, 2025, pencil on paper, 39.4 x 45cm*
+
+![[Images/우한나_드로잉_2025_Toordut_투르둣.png]]
+*Toordut 투르둣, 2025, pencil on paper, 47.3 x 38.8cm*
+
+![[Images/우한나_드로잉_2025_Me_나.png]]
+*Me 나, 2025, pencil on paper, 35.8 x 43.5cm*
+
+![[Images/우한나_드로잉_2025_My_life_is_based_on_reasons_there_is_no_doubt._내_삶은_이유들로_가득해_절대로_그렇지_.png]]
+*My life is based on reasons, there is no doubt. 내 삶은 이유들로 가득해, 절대로 그렇지, 2025*
+
+![[Images/우한나_드로잉_2025_The_Way_I_Believe_Lies_거짓말을_믿는_방법.png]]
+*The Way I Believe Lies 거짓말을 믿는 방법, 2025, gouache pastel on paper, 22 x 27.5cm*
+
+![[Images/우한나_드로잉_2025_Woven_Beings_직조된_존재들.png]]
+*Woven Beings 직조된 존재들, 2025, pencil on paper, 35.8 x 43.4cm*
+
+![[Images/우한나_드로잉_2025_Xooxoo_수수.png]]
+*Xooxoo 수수, 2025, pencil on paper, 40.3 x 40.8cm*
 
 ![[Images/우한나_드로잉_Every_goodbye_2024_(1).jpg]]
 *Every Goodbye, 2024, pencil on paper, 38.5 x 28cm*
