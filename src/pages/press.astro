@@ -14,6 +14,8 @@ type PressItem = {
   html: string
   imageCount: number
   hasVideo: boolean
+  firstLinkUrl: string | null
+  isLinkOnly: boolean
 }
 
 function parseSections(html: string): PressItem[] {
@@ -23,12 +25,16 @@ function parseSections(html: string): PressItem[] {
     const title = parts[i].trim()
     const content = (parts[i + 1] || "").trim()
     const imgMatch = content.match(/<img\s+[^>]*src="([^"]+)"/)
+    const imageCount = (content.match(/<img\s/g) || []).length
+    const firstLinkUrl = extractFirstLink(content)
     items.push({
       title,
       thumbnail: imgMatch?.[1] ?? null,
       html: content,
-      imageCount: (content.match(/<img\s/g) || []).length,
+      imageCount,
       hasVideo: /youtube\.com|youtu\.be/i.test(content),
+      firstLinkUrl,
+      isLinkOnly: imageCount === 0 && firstLinkUrl !== null,
     })
   }
   return items
@@ -78,30 +84,46 @@ if (smallCount > 0 && smallCount % 3 === 1) {
 
   <!-- Bento Grid -->
   <div class="press-grid" id="grid">
-    {items.map((item, i) => (
-      <button
-        class:list={["press-card group", gridClasses[i]]}
-        data-idx={i}
-        type="button"
-      >
-        {item.thumbnail ? (
-          <img src={item.thumbnail} alt={item.title} class="press-card-img" loading="lazy" />
-        ) : (
-          <div class="press-card-empty">
-            {item.hasVideo ? (
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-zinc-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-              </svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-zinc-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-              </svg>
-            )}
-          </div>
-        )}
-        <span class="press-card-label">{item.title}</span>
-      </button>
-    ))}
+    {items.map((item, i) => {
+      const cardContent = (
+        <>
+          {item.thumbnail ? (
+            <img src={item.thumbnail} alt={item.title} class="press-card-img" loading="lazy" />
+          ) : (
+            <div class="press-card-empty">
+              {item.hasVideo ? (
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-zinc-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                </svg>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-zinc-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                </svg>
+              )}
+            </div>
+          )}
+          <span class="press-card-label">{item.title}</span>
+        </>
+      )
+      const cardClass = ["press-card group", gridClasses[i]]
+      if (item.isLinkOnly && item.firstLinkUrl) {
+        return (
+          <a
+            href={item.firstLinkUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class:list={[...cardClass, "no-underline hover:no-underline"]}
+          >
+            {cardContent}
+          </a>
+        )
+      }
+      return (
+        <button class:list={cardClass} data-idx={i} type="button">
+          {cardContent}
+        </button>
+      )
+    })}
   </div>
 
   <!-- 확대 오버레이 -->
