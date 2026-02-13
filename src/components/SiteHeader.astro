@@ -21,10 +21,10 @@ function isActive(href: string): boolean {
 }
 ---
 
-<header class="border-b border-zinc-200 bg-white/80 backdrop-blur">
+<header class="relative z-40 border-b border-zinc-200 bg-white/80 backdrop-blur">
   <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
     <a href={base} class="font-black no-underline hover:no-underline">Hannah Woo</a>
-    <nav class="flex gap-6 text-sm">
+    <nav class="hidden gap-6 text-sm md:flex">
       {nav.map((i) => (
         <a
           href={`${base}${i.href}`}
@@ -34,6 +34,31 @@ function isActive(href: string): boolean {
         </a>
       ))}
     </nav>
+
+    <details class="group relative z-50 md:hidden">
+      <summary
+        class="list-none cursor-pointer p-2 text-zinc-700 marker:content-none"
+        aria-label="Open mobile menu"
+      >
+        <span class="sr-only">Toggle mobile menu</span>
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"></path>
+        </svg>
+      </summary>
+      <nav class="absolute right-0 z-50 mt-2 w-52 rounded border border-zinc-200 bg-white p-2 shadow-lg">
+        <ul class="flex flex-col">
+          {nav.map((i) => (
+            <li>
+              <a
+                href={`${base}${i.href}`}
+                class={`block rounded px-3 py-2 text-sm text-zinc-700 no-underline hover:bg-zinc-100 hover:text-zinc-900 hover:no-underline ${isActive(i.href) ? "font-bold bg-zinc-100" : ""}`}
+              >
+                {i.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </details>
   </div>
 </header>
-
