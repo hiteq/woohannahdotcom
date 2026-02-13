@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exhibitions/2026, BOOMSAE 1.md",
+                "file": "Works/Drawings/Paints & Draws.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026, BOOMSAE 1"
+              "title": "Paints & Draws"
             }
           }
         ]
@@ -174,12 +174,17 @@
   },
   "active": "105fb335e9f8e12a",
   "lastOpenFiles": [
-    "Exhibitions/2025, POOMSAE.md",
     "Exhibitions/2026, BOOMSAE 1.md",
+    "Works/Drawings/Paints & Draws.md",
+    "Thoughts/박가희.md",
+    "Thoughts/권정현, ‘아름답고 반짝이는 것의 자리’.md",
+    "private/Images/2026, BOOMSAE 1",
+    "private/Images",
+    "private",
+    "Exhibitions/2025, POOMSAE.md",
     "Thoughts/김해주, ‘시선과 눈빛’.md",
     "Thoughts/김수정, ‘우한나 관찰기록’.md",
     "Thoughts/권정현, 전시서문.md",
-    "Thoughts/권정현, ‘아름답고 반짝이는 것의 자리’.md",
     "index.md",
     "About.md",
     "private/Images/About",
@@ -200,14 +205,10 @@
     "Exhibitions/2023, Living in Joy.md",
     "Exhibitions/2022, Feather.md",
     "Exhibitions/_index.md",
-    "Works/Drawings/Paints & Draws.md",
     "Thoughts/옥다애, ‘가장 무도회’.md.backup",
     "Thoughts/김수정, ‘우한나 관찰기록’.md.backup",
     "Works/Sculptures/Bleeding.md.backup",
     "Works/Sculptures/Abdomen.md.backup",
-    "Works/Sculptures/Sculptures.md.backup",
-    "Works/Sculptures/Milk and Honey.md.backup",
-    "Works/Installations/Circus Effect Project.md.backup",
     "Images/_DSC1398.jpg",
     "Images/부조4-1.jpg",
     "Images/220404_cylinder_007-copy-2.jpg",
@@ -218,7 +219,6 @@
     "Thoughts/EN-KR 김해주, ‘내 멋대로 앞으로 춤’.md",
     "Thoughts/Seungmin Kang, ‘Hello Artist’.md",
     "Thoughts/김화용, ‘서로가 서로를 지탱하는 이미지’.md",
-    "Thoughts/송가현, ‘멜랑콜리적 상상’.md",
-    "Thoughts/우한나 작가노트.md"
+    "Thoughts/송가현, ‘멜랑콜리적 상상’.md"
   ]
 }
