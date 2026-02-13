@@ -21,3 +21,6 @@ pnpm-debug.log*
 
 # Astro
 .astro/
+
+# local editor workspace state
+content/.obsidian/workspace.json
