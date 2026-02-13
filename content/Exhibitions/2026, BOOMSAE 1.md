@@ -1,9 +1,9 @@
 ---
-title: "2025, POOMSAE"
-date: "2025-08-27"
-type: "exhibition"
-category: "Solo"
-description: "품새 POOMSAE, Aug. 27 – Sep. 27, 2025"
+title: 2025, SOOMSAE
+date: 2025-08-27
+type: exhibition
+category: Solo
+description: 품새 POOMSAE, Aug. 27 – Sep. 27, 2025
 ---
 ![[Images/G_Gallery_POOMSAE_Installation_view_(10).png]]
 
