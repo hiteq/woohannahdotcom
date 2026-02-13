@@ -30,3 +30,8 @@
   @apply text-sm text-zinc-500 italic mt-1;
 }
 
+article.prose p {
+  text-wrap: pretty;
+  word-break: keep-all;
+}
+
