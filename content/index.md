@@ -3,8 +3,7 @@ title: "Hannah Woo"
 description: "Artist Portfolio"
 ---
 
-# Hannah Woo
-
+#
 Contemporary artist working with sculpture, installation, and mixed media.
 
 > [!important] [[About]]
