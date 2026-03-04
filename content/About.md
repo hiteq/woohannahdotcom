@@ -52,8 +52,6 @@ b. 1988
 
 ## Group
 
----
-
 ### 2026
 
 Rehearsing Transformation, Incheon Art Platform, Incheon, South of Korea
