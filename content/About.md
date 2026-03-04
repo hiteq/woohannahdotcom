@@ -202,21 +202,21 @@ There is more Fresh air on the floor, Amado Art Space/Lab, Seoul, Korea
 
 2025 - Doosan International Residency New York, U.S.A
 
-2024 - Selected by The 1st Seoul Sculpture Prize
+2024 - Selected by The 1st Seoul Sculpture Prize, South of Korea
 
-2023 - Frieze Artist Award
+2023 - Frieze Artist Award, South of Korea
 
-2021 - SeMA NANJI RESIDENCY, Seoul Museum of Art
+2021 - SeMA NANJI RESIDENCY, Seoul Museum of Art, South of Korea
 
-2019 - Arts support, Seoul Foundation for Art and Culture
+2019 - Arts support, Seoul Foundation for Art and Culture, South of Korea
 
-2018 - Hello Artist, Naver Foundation
+2018 - Hello Artist, Naver Foundation, South of Korea
 
-2018 - Beginners Project, Seoul Foundation for Art and Culture
+2018 - Beginners Project, Seoul Foundation for Art and Culture, South of Korea
 
-2017 - Seoul Young Artist Group 'Sandpapers’
+2017 - Seoul Young Artist Group 'Sandpapers’, South of Korea
 
-Travel Grant 2014, Ilhyun Museum, Elji Foundation
+Travel Grant 2014, Ilhyun Museum, Elji Foundation, South of Korea
 
 ---
 
@@ -224,7 +224,7 @@ Travel Grant 2014, Ilhyun Museum, Elji Foundation
 
 ### 2024
 
-Circus Effect Project, Nakwon Sangga, Seoul
+Circus Effect Project, Nakwon Sangga, Seoul, South of Korea
 
 ---
 
@@ -249,7 +249,7 @@ Circus Effect Project, Nakwon Sangga, Seoul
 
 ### [→ Instagram](https://www.instagram.com/hannah.flashed.that/)
 
-### [→](http://instagram.com/abielzulio) e-mail
+### [→ e-mail](mailto:toroomoo@gmail.com)
 
 </details>
 
@@ -538,6 +538,8 @@ Circus Effect Project, 낙원악기상가, 서울, 대한민국
 2018 - 최초예술지원, 서울문화재단, 대한민국
 
 2017 - 청년예술단 팀 '샌드페이퍼스', 서울특별시청, 대한민국
+
+2017 - 트러블 그랜트, 일현미술관, 을지재단, 대한민국
 
 ---
 
