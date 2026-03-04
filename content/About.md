@@ -330,7 +330,7 @@ b. 1988
 
 Stay with Me: Neither Here nor There, Gallery Vacancy, 상하이, 중국
 
-Nothing is Complete, 서울, 대한민국
+Nothing is Complete, CYNC, 서울, 대한민국
 
 ---
 
