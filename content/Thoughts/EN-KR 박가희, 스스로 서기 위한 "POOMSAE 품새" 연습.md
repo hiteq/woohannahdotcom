@@ -5,6 +5,7 @@ Preview: false
 저자: 박가희
 type: thought
 language: ko,en
+title: EN-KR 박가희, 스스로 서기 위한 "POOMSAE 품새" 연습
 ---
 **_Practicing “POOMSAE” to Stand on One’s Own_**
 

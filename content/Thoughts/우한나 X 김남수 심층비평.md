@@ -2,6 +2,7 @@
 Date: 2019-11-06
 Preview: false
 상태: Not started
+title: 우한나 X 김남수 심층비평
 ---
 (42분 39초)
 

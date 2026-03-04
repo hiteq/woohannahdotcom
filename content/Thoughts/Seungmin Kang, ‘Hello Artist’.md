@@ -2,6 +2,8 @@
 Date: 2018-10-05
 Preview: false
 상태: Not started
+title: Seungmin Kang, ‘Hello Artist’
+저자: 강승민
 ---
 강승민
 

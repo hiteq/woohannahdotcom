@@ -2,6 +2,9 @@
 Date: 2018-08-15
 Preview: false
 상태: Not started
+title: EN-KR 김해주, ‘내 멋대로 앞으로 춤’
+저자: 김해주
+language: ko,en
 ---
   
 

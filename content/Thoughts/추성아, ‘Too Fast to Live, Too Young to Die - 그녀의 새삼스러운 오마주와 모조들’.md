@@ -3,6 +3,7 @@ Date: 2019-11-02
 Preview: false
 상태: Not started
 저자: 추성아
+title: 추성아, ‘Too Fast to Live, Too Young to Die - 그녀의 새삼스러운 오마주와 모조들’
 ---
 글. 추성아 (독립큐레이터)
 

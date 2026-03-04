@@ -2,6 +2,7 @@
 Date: 2021-03-01
 Preview: true
 상태: Not started
+title: 우한나 x 김해주 대화
 ---
 ### 직진하다 회전하는 변화
 
