@@ -66,9 +66,9 @@ Rehearsing Transformation, Incheon Art Platform, Incheon, South of Korea
 
 ### 2025
 
-Body’s First Architecture, Ely Center of Contemporary Art, U.S.A
+Body’s First Architecture, Ely Center of Contemporary Art, New Haven, U.S.A
 
-Buddies Sharing Our Big Home, Gyeonggi, South of Korea
+Buddies Sharing Our Big Home, Gyeonggi Children's Museum, Yongin, South of Korea
 
 ---
 
@@ -338,9 +338,9 @@ Stay with Me: Neither Here nor There, Gallery Vacancy, 상하이, 중국
 
 ### 2025
 
-Body’s First Architecture, Ely Center of Contemporary Art, 뉴헤이브, 미국
+Body’s First Architecture, Ely Center of Contemporary Art, 뉴헤이븐, 미국
 
-Buddies Sharing Our Big Home, 용인, 대한민국
+Buddies Sharing Our Big Home, 경기도어린이박물관, 용인, 대한민국
   
 
 ---
