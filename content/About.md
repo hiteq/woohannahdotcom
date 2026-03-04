@@ -56,11 +56,11 @@ b. 1988
 
 ### 2026
 
-Nothing is Complete, CYNC, Seoul, South of Korea
+Rehearsing Transformation, Incheon Art Platform, Incheon, South of Korea
 
 Stay with Me: Neither Here nor There, Gallery Vacancy, Shanghai, China
 
-Rehearsing Transformation, Incheon Art Platform, Incheon, South of Korea
+Nothing is Complete, CYNC, Seoul, South of Korea
 
 ---
 
@@ -328,11 +328,11 @@ b. 1988
 
 ### 2026
 
-Nothing is Complete, 서울, 대한민국
+변신연습, 인천아트플랫폼, 인천, 대한민국
 
 Stay with Me: Neither Here nor There, Gallery Vacancy, 상하이, 중국
 
-변신연습, 인천아트플랫폼, 인천, 대한민국
+Nothing is Complete, 서울, 대한민국
 
 ---
 
