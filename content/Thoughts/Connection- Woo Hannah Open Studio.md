@@ -2,7 +2,6 @@
 Date: 2023-01-09
 Preview: false
 상태: Not started
-생성 일시: Invalid date
 ---
   
 

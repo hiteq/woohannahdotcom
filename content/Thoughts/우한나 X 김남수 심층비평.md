@@ -2,7 +2,6 @@
 Date: 2019-11-06
 Preview: false
 상태: Not started
-생성 일시: Invalid date
 ---
 (42분 39초)
 

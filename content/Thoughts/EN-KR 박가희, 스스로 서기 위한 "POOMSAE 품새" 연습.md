@@ -2,7 +2,6 @@
 Date: 2025-08-12
 Preview: false
 상태: Not started
-생성 일시: Invalid date
 저자: 박가희
 type: thought
 language: ko,en

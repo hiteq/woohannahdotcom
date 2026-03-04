@@ -2,7 +2,6 @@
 Date: 2019-11-02
 Preview: false
 상태: Not started
-생성 일시: Invalid date
 저자: 추성아
 ---
 글. 추성아 (독립큐레이터)

@@ -2,7 +2,6 @@
 Date: 2025-10-17
 Preview: false
 상태: Not started
-생성 일시: Invalid date
 저자: Elisa Carollo
 ---
 Hannah Woo’s sculptures are bodies in motion, animated characters of a personal mythology that already inhabits a generative hybridity between human and nonhuman, between the artificial and the biological. Her sensorial, symbol-laden assemblages pulse with liveliness yet carry a haunting, ominous weight—anchored in fantasy, in that metaphorical third realm of dreams and fairy tales where the alien and the unknown can still take form, find existence, and endure.

@@ -2,7 +2,6 @@
 Date: 2018-10-05
 Preview: false
 상태: Not started
-생성 일시: Invalid date
 ---
 강승민
 

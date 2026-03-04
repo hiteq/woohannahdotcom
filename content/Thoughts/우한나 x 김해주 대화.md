@@ -2,7 +2,6 @@
 Date: 2021-03-01
 Preview: true
 상태: Not started
-생성 일시: Invalid date
 ---
 ### 직진하다 회전하는 변화
 

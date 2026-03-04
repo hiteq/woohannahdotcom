@@ -2,7 +2,6 @@
 Date: 2024-06-19
 Preview: false
 상태: Not started
-생성 일시: Invalid date
 저자: Louisa Buck
 ---
 Woo Hannah first attracted widespread international attention as the recipient of the inaugural Artist Award at Frieze Seoul in September 2023. Her winning commission, The Great Ballroom, took the form of a large-scale installation featuring gigantic, vivid fabric draperies hanging from the eight-metre-high ceiling of the exhibition hall.

@@ -2,7 +2,6 @@
 Date: 2023-03-03
 Preview: false
 상태: Done
-생성 일시: Invalid date
 저자: 리타
 ---
 **우한나: 세계를 소생(reanimate)시키기**
