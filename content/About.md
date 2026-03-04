@@ -52,6 +52,18 @@ b. 1988
 
 ## Group
 
+---
+
+### 2026
+
+Nothing is Complete, CYNC, Seoul, South of Korea
+
+Stay with Me: Neither Here nor There, Gallery Vacancy, Shanghai, China
+
+Rehearsing Transformation, Incheon Art Platform, Incheon, South of Korea
+
+---
+
 ### 2025
 
 Body’s First Architecture, Ely Center of Contemporary Art, U.S.A
@@ -291,7 +303,6 @@ b. 1988
 
 ## Solo
 
-  
 
 2025 - 품새, G Gallery, 서울, 대한민국
 
@@ -315,14 +326,21 @@ b. 1988
 
 ## Group
 
-  
+### 2026
+
+Nothing is Complete, 서울, 대한민국
+
+Stay with Me: Neither Here nor There, Gallery Vacancy, 상하이, 중국
+
+변신연습, 인천아트플랫폼, 인천, 대한민국
+
+---
 
 ### 2025
 
 Body’s First Architecture, Ely Center of Contemporary Art, 뉴헤이브, 미국
 
 Buddies Sharing Our Big Home, 용인, 대한민국
-
   
 
 ---
