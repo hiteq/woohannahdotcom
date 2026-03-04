@@ -20,33 +20,33 @@ Woo Hannah (B.1988) received both BFA and MFA from the Korea National University
 
 b. 1988
 
-2016 - MFA Visual Art, Korea National University of Arts, Seoul, Korea
+2016 - MFA Visual Art, Korea National University of Arts, Seoul, South of Korea
 
 2014 - Work Master (Exchange 1 year), Geneva University of Art and Design, Geneva, Switzerland
 
-2012 - BFA Visual Art, Korea National University of Arts, Seoul, Korea
+2012 - BFA Visual Art, Korea National University of Arts, Seoul, South of Korea
 
 ---
 
 ## Solo
 
-2025 - Poomsae, G Gallery, Seoul, Korea
+2025 - Poomsae, G Gallery, Seoul, South of Korea
 
 2023 - Appearances, G Gallery, Frieze No. 9 Cork Street, London, England
 
-2023 - Tumbleweeds, Art Space BOAN2, Seoul, Korea
+2023 - Tumbleweeds, Art Space BOAN2, Seoul, South of Korea
 
-2023 - Connection: Woo Hannah Open Studion, G Gallery, Seoul, Korea
+2023 - Connection: Woo Hannah Open Studion, G Gallery, Seoul, South of Korea
 
-2021 - Hannah Flashed That, Art&Choi’s, Seoul, Korea
+2021 - Hannah Flashed That, Art&Choi’s, Seoul, South of Korea
 
-2020 - Ma Moitié, SongEun Artcube, Seoul, Korea
+2020 - Ma Moitié, SongEun Artcube, Seoul, South of Korea
 
-2019 - Moulage Mélancolique, P.S. Sarubia, Seoul, Korea
+2019 - Moulage Mélancolique, P.S. Sarubia, Seoul, South of Korea
 
-2018 - Swinging, SamyukBD, Seoul, Korea
+2018 - Swinging, SamyukBD, Seoul, South of Korea
 
-2016 - City Units, Choc2gak, Seoul, Korea
+2016 - City Units, Choc2gak, Seoul, South of Korea
 
 ---
 
@@ -56,7 +56,7 @@ b. 1988
 
 Body’s First Architecture, Ely Center of Contemporary Art, U.S.A
 
-Buddies Sharing Our Big Home, Gyeonggi, Korea
+Buddies Sharing Our Big Home, Gyeonggi, South of Korea
 
 ---
 
@@ -64,115 +64,115 @@ Buddies Sharing Our Big Home, Gyeonggi, Korea
 
 WHO IS WEAVING THE SKY’S NEST, Yeo Workshop, Singapore
 
-Two Side Love, G Gallery, Seoul, Korea
+Two Side Love, G Gallery, Seoul, South of Korea
 
 Vitalis violentia, Podium Gallery, Hongkong
 
-The 1st Seoul Sculpture Prize ‘The Strange Encounter’, SongHyun Park, Seoul, Korea
+The 1st Seoul Sculpture Prize ‘The Strange Encounter’, SongHyun Park, Seoul, South of Korea
 
-At the end of the world split endlessly, SeMA, Seoul, Korea
+At the end of the world split endlessly, SeMA, Seoul, South of Korea
 
 ---
 
 ### 2023
 
-Autohypnosis, G Gallery, Seoul, Korea
+Autohypnosis, G Gallery, Seoul, South of Korea
 
-Living in Joy, Art Sonje Center, Seoul, Korea
+Living in Joy, Art Sonje Center, Seoul, South of Korea
 
 ---
 
 ### 2022
 
-Summer Love 2022, SongEun Art Space, Seoul, Korea
+Summer Love 2022, SongEun Art Space, Seoul, South of Korea
 
-Circuit Seoul, Loop Station Ikseon, Seoul, Korea
+Circuit Seoul, Loop Station Ikseon, Seoul, South of Korea
 
-Fashion Exhibition, MMCA Residency Changdong, Seoul, Korea
+Fashion Exhibition, MMCA Residency Changdong, Seoul, South of Korea
 
-Sculptural Impulse, Buk-Seoul Museum of Art, Seoul, Korea
+Sculptural Impulse, Buk-Seoul Museum of Art, Seoul, South of Korea
 
-ART REBUILD, Boan1942, Seoul, Korea
+ART REBUILD, Boan1942, Seoul, South of Korea
 
-Feather, Cylinder, Seoul, Korea
+Feather, Cylinder, Seoul, South of Korea
 
-Ziggy Stardust, n/a, Seoul, Korea
+Ziggy Stardust, n/a, Seoul, South of Korea
 
 ---
 
 ### 2021
 
-Night&Forest, Gana sounds Hannam, Seoul, Korea
+Night&Forest, Gana sounds Hannam, Seoul, South of Korea
 
-Quality of Working Life, G Museum, Seoul, Korea
+Quality of Working Life, G Museum, Seoul, South of Korea
 
 Sculpture Park, Sculpture Park in front of SeMA Nanji Residency,
 
-Seoul, Korea
+Seoul, South of Korea
 
-Though we dance, cosmo40, Incheon, Korea
+Though we dance, cosmo40, Incheon, South of Korea
 
 ---
 
 ### 2020
 
-Next code 2020, Daejeon Museum of Art (DMA), Daejeon, Korea
+Next code 2020, Daejeon Museum of Art (DMA), Daejeon, South of Korea
 
-Hare Way Object, Art Plant Asia, Deoksugung Palace, Seoul, Korea
+Hare Way Object, Art Plant Asia, Deoksugung Palace, Seoul, South of Korea
 
-Super Hero, Insa Art Space, Seoul, Korea
+Super Hero, Insa Art Space, Seoul, South of Korea
 
-The Material of the Audience, Blume Museum of Contemporary Art, Paju, Korea
+The Material of the Audience, Blume Museum of Contemporary Art, Paju, South of Korea
 
-The parallel Universes of Prufrock, Rainbowcube, Seoul, Korea
+The parallel Universes of Prufrock, Rainbowcube, Seoul, South of Korea
 
 ---
 
 ### 2019
 
-More More Morel, SP gallery, Seoul, Korea
+More More Morel, SP gallery, Seoul, South of Korea
 
-Linkin out, IImin Museum, Seoul, Korea
+Linkin out, IImin Museum, Seoul, South of Korea
 
-The 6th Amado Anualnale, Amado Art Space/Lab, Seoul, Korea
+The 6th Amado Anualnale, Amado Art Space/Lab, Seoul, South of Korea
 
 8people from Korea, Parplume Gallery, Ganagawa, Japan
 
-Come to think of it, it’s a good thing corpses sell, Artspace Pool, Seoul, Korea
+Come to think of it, it’s a good thing corpses sell, Artspace Pool, Seoul, South of Korea
 
-Nothing Twice, SeMA Buk-Seoul Museum of Art, Seoul, Korea
+Nothing Twice, SeMA Buk-Seoul Museum of Art, Seoul, South of Korea
 
 ---
 
 ### 2018 
 
-DDANG!, 5%, Seoul, Korea
+DDANG!, 5%, Seoul, South of Korea
 
 ---
 
 ### 2017 
 
-The Scrape, The Scrape, Seoul, Korea
+The Scrape, The Scrape, Seoul, South of Korea
 
-Kitty Decadance, Open Hoero, Seoul, Korea
+Kitty Decadance, Open Hoero, Seoul, South of Korea
 
-Sticky Forever, Keep in Touch, Seoul, Korea
+Sticky Forever, Keep in Touch, Seoul, South of Korea
 
-PACK F/W17, Culturetank, Seoul, Korea
+PACK F/W17, Culturetank, Seoul, South of Korea
 
-2X2, “The Revenge, It’s Ma Power, Huh!”, Audio Visual Pavilion, Seoul, Korea
+2X2, “The Revenge, It’s Ma Power, Huh!”, Audio Visual Pavilion, Seoul, South of Korea
 
-LOTUS LAND, Asia Culture Center, Gwangju, Korea
+LOTUS LAND, Asia Culture Center, Gwangju, South of Korea
 
-The girl who can go nowhere, Project Tambourine, Busan, Korea
+The girl who can go nowhere, Project Tambourine, Busan, South of Korea
 
-Protagonist, Somewhere you should go, Seogyo Art Center, Seoul, Korea
+Protagonist, Somewhere you should go, Seogyo Art Center, Seoul, South of Korea
 
 ---
 
 ### 2015 
 
-Visitor Q, Post Territory Ujeongguk, Seoul, Korea
+Visitor Q, Post Territory Ujeongguk, Seoul, South of Korea
 
 ---
 
@@ -188,7 +188,7 @@ Oops!, room335, Tallinn, Estonia
 
 Bourgeois bore, Istituto Svizzero, Rome, Italy
 
-There is more Fresh air on the floor, Amado Art Space/Lab, Seoul, Korea
+There is more Fresh air on the floor, Amado Art Space/Lab, Seoul, South of Korea
 
 ---
 
