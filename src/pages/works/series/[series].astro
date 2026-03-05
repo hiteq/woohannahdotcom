@@ -1,44 +1,39 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro"
-import { loadAllContent, sortByDateDesc } from "../../lib/content"
+import BaseLayout from "../../../layouts/BaseLayout.astro"
+import { loadAllContent, sortByDateDesc } from "../../../lib/content"
 
-const all = await loadAllContent()
-const works = sortByDateDesc(all.filter((e) => e.type === "work"))
-
-const groupedWorks: any[] = [];
-const seriesSeen = new Set<string>();
-
-for (const w of works) {
-  if (w.series) {
-    if (!seriesSeen.has(w.series)) {
-      seriesSeen.add(w.series);
-      const seriesSlug = w.series.toLowerCase().replace(/\s+/g, '-');
-      groupedWorks.push({
-        ...w,
-        title: w.series,
-        category: "Series",
-        isSeries: true,
-        seriesSlug,
-      });
+export async function getStaticPaths() {
+  const all = await loadAllContent()
+  const works = all.filter((e) => e.type === "work" && e.series)
+  const seriesNames = [...new Set(works.map(w => w.series))]
+  
+  return seriesNames.map(series => {
+    const slug = series!.toLowerCase().replace(/\s+/g, '-')
+    return {
+      params: { series: slug },
+      props: { 
+        seriesTitle: series,
+        works: sortByDateDesc(works.filter(w => w.series === series))
+      }
     }
-  } else {
-    groupedWorks.push(w);
-  }
+  })
 }
 
+const { seriesTitle, works } = Astro.props
 const baseRaw = import.meta.env.BASE_URL
 const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
 ---
 
-<BaseLayout title="Works · Hannah Woo" description="Works">
+<BaseLayout title={`${seriesTitle} · Hannah Woo`} description={`Series: ${seriesTitle}`}>
   <div class="mb-8 border-b border-zinc-200 pb-4">
-    <h1 class="text-3xl font-bold">Works</h1>
+    <a href={`${base}works/`} class="text-sm text-zinc-500 hover:text-zinc-900 mb-2 inline-block">← Back to Works</a>
+    <h1 class="text-3xl font-bold">{seriesTitle}</h1>
   </div>
   
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {groupedWorks.map((w) => (
+    {works.map((w) => (
       <a
-        href={w.isSeries ? `${base}works/series/${w.seriesSlug}/` : `${base}works/${w.slug.join("/")}/`}
+        href={`${base}works/${w.slug.join("/")}/`}
         class="group block no-underline"
       >
         <div class="aspect-[4/3] overflow-hidden bg-zinc-100 mb-3">

@@ -17,14 +17,14 @@ function wrapImageCaptions(html: string): string {
   // 패턴: <p><img ...></p>\n<p><em>...</em>...</p>
   // 이미지 p 다음 줄바꿈 후 em으로 시작하는 p가 캡션
   const pattern = /<p>(<img\s+[^>]*>)<\/p>\n<p>(<em>[\s\S]*?<\/em>[\s\S]*?)<\/p>/g;
-  
+
   return html.replace(pattern, (_match, imgTag: string, captionContent: string) => {
     // 캡션에서 첫 번째 em 내용만 추출 (중복 캡션 제거)
     const captionMatch = captionContent.match(/<em>([\s\S]*?)<\/em>/);
     if (!captionMatch) {
       return `<figure class="image-figure">${imgTag}</figure>`;
     }
-    
+
     const caption = captionMatch[1].trim();
     return `<figure class="image-figure">${imgTag}<figcaption>${caption}</figcaption></figure>`;
   });
@@ -46,6 +46,8 @@ export type ContentEntry = {
   englishHtml?: string;
   sourcePath: string;
   thumbnail?: string; // first image URL for cards
+  pinned?: boolean;
+  series?: string;
 };
 
 const REPO_ROOT = process.cwd();
@@ -160,18 +162,18 @@ async function loadAllContentUncached(): Promise<ContentEntry[]> {
       type,
       title,
       slug,
-      date: typeof data.date === "string" ? data.date : undefined,
-      description:
-        typeof data.description === "string" ? data.description : undefined,
       category: typeof data.category === "string" ? data.category : undefined,
       year: typeof data.year === "string" ? data.year : undefined,
       medium: typeof data.medium === "string" ? data.medium : undefined,
-      dimensions:
-        typeof data.dimensions === "string" ? data.dimensions : undefined,
+      dimensions: typeof data.dimensions === "string" ? data.dimensions : undefined,
       bodyHtml,
       englishHtml,
       sourcePath: abs,
       thumbnail,
+      date: typeof data.date === "string" ? data.date : typeof data.Date === "string" ? data.Date : undefined,
+      description: typeof data.description === "string" ? data.description : undefined,
+      series: typeof data.series === "string" ? data.series : undefined,
+      pinned: data.pinned === true || data.pinned === "true",
     });
   }
 
@@ -183,6 +185,10 @@ export function loadAllContent(): Promise<ContentEntry[]> {
   return allContentCache;
 }
 
-export function sortByDateDesc<T extends { date?: string }>(items: T[]): T[] {
-  return [...items].sort((a, b) => (b.date ?? "").localeCompare(a.date ?? ""));
+export function sortByDateDesc<T extends { date?: string; pinned?: boolean }>(items: T[]): T[] {
+  return [...items].sort((a, b) => {
+    if (a.pinned && !b.pinned) return -1;
+    if (!a.pinned && b.pinned) return 1;
+    return (b.date ?? "").localeCompare(a.date ?? "");
+  });
 }

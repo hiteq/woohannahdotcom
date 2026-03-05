@@ -33,14 +33,14 @@ function getExcerpt(html: string, maxLen = 200): string {
         <h3 class="text-lg font-medium text-zinc-900 group-hover:text-zinc-600 transition-colors leading-snug">
           {t.title}
         </h3>
-        <p class="mt-2 text-sm text-zinc-500 leading-relaxed line-clamp-3">
+        {t.date && (
+          <div class="mt-1 text-xs text-zinc-400">
+            {t.date.slice(0, 10).replace(/\-/g, '.')}
+          </div>
+        )}
+        <p class="mt-3 text-sm text-zinc-500 leading-relaxed line-clamp-3">
           {getExcerpt(t.bodyHtml, 250)}
         </p>
-        {t.date && (
-          <span class="mt-3 inline-block text-xs text-zinc-400">
-            {t.date.slice(0, 10)}
-          </span>
-        )}
       </a>
     ))}
   </div>
