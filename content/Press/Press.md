@@ -2,6 +2,10 @@
 title: "Press"
 type: "page"
 ---
+## Frieze
+[[private/Images/Press/fc8d57012965c89e82562ad5dc5602a8_MD5.jpg|Open: S25C-923101815401_1.jpg]]
+![[private/Images/Press/fc8d57012965c89e82562ad5dc5602a8_MD5.jpg]]
+
 
 ## City Units
 
