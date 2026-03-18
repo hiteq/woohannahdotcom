@@ -4,6 +4,8 @@
 
 :root {
   color-scheme: light;
+  --font-body: "Inter", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --font-display: "Playfair Display", "Times New Roman", serif;
   --background: hsl(0 0% 100%);
   --foreground: hsl(240 10% 3.9%);
   --card: hsl(0 0% 100%);
@@ -79,7 +81,7 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
-    font-family: "Inter", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    font-family: var(--font-body);
   }
 
   a {
@@ -89,6 +91,14 @@
   a:hover {
     text-decoration-line: underline;
   }
+}
+
+.home-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
 }
 
 .prose figure.image-figure {

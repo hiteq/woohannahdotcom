@@ -22,9 +22,8 @@ function isActive(href: string): boolean {
 ---
 
 <header class="relative z-40 border-b border-zinc-200 bg-white/80 backdrop-blur">
-  <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
-    <a href={base} class="font-black no-underline hover:no-underline">WOO HANNAH</a>
-    <nav class="hidden gap-6 text-sm md:flex">
+  <div class="mx-auto flex max-w-5xl items-center justify-end px-4 py-4 md:justify-center">
+    <nav class="hidden items-center justify-center gap-6 text-sm md:flex">
       {nav.map((i) => (
         <a
           href={`${base}${i.href}`}
