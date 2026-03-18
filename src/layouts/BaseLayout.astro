@@ -1,5 +1,6 @@
 ---
 import "../styles/globals.css"
+import AgentationOverlay from "../components/AgentationOverlay"
 import SiteHeader from "../components/SiteHeader.astro"
 import SiteFooter from "../components/SiteFooter.astro"
 
@@ -26,6 +27,6 @@ const { title, description } = Astro.props
       <slot />
     </main>
     <SiteFooter />
+    {import.meta.env.DEV && <AgentationOverlay client:only="react" />}
   </body>
 </html>
-
