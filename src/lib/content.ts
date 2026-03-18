@@ -89,6 +89,18 @@ function toSlugSegmentsFromFsPath(relFromContent: string): string[] {
   return noExt.split(path.sep).map(slugifyPathSegment).filter(Boolean);
 }
 
+function normalizeFrontmatterDate(value: unknown): string | undefined {
+  if (typeof value === "string" && value.trim()) {
+    return value.trim();
+  }
+
+  if (value instanceof Date && !Number.isNaN(value.getTime())) {
+    return value.toISOString().slice(0, 10);
+  }
+
+  return undefined;
+}
+
 function entryTypeFrom(relFromContent: string, fmType: unknown): EntryType {
   if (typeof fmType === "string") {
     const t = fmType.toLowerCase();
@@ -170,7 +182,7 @@ async function loadAllContentUncached(): Promise<ContentEntry[]> {
       englishHtml,
       sourcePath: abs,
       thumbnail,
-      date: typeof data.date === "string" ? data.date : typeof data.Date === "string" ? data.Date : undefined,
+      date: normalizeFrontmatterDate(data.date) ?? normalizeFrontmatterDate(data.Date),
       description: typeof data.description === "string" ? data.description : undefined,
       series: typeof data.series === "string" ? data.series : undefined,
       pinned: data.pinned === true || data.pinned === "true",

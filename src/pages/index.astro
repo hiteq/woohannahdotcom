@@ -4,10 +4,9 @@ import { loadAllContent, sortByDateDesc, groupWorksBySeries } from "../lib/conte
 
 const all = await loadAllContent()
 const rawWorks = sortByDateDesc(all.filter((e) => e.type === "work"))
-const works = groupWorksBySeries(rawWorks).slice(0, 6)
+const works = groupWorksBySeries(rawWorks)
 const exhibitions = sortByDateDesc(all.filter((e) => e.type === "exhibition")).slice(0, 6)
 const thoughts = sortByDateDesc(all.filter((e) => e.type === "thought")).slice(0, 5)
-const about = all.find((e) => e.type === "page" && e.slug.join("/") === "about")
 const baseRaw = import.meta.env.BASE_URL
 const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
 
@@ -181,4 +180,3 @@ function getExcerpt(html: string, maxLen = 120): string {
     </div>
   </section>
 </BaseLayout>
-
