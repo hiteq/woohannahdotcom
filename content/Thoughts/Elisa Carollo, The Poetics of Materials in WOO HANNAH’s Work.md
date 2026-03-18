@@ -3,9 +3,9 @@ Date: 2025-10-17
 Preview: false
 상태: Not started
 저자: Elisa Carollo
-title: Elisa Carollo, The Poetics of Materials in Hannah Woo’s Work
+title: Elisa Carollo, The Poetics of Materials in WOO HANNAH’s Work
 ---
-Hannah Woo’s sculptures are bodies in motion, animated characters of a personal mythology that already inhabits a generative hybridity between human and nonhuman, between the artificial and the biological. Her sensorial, symbol-laden assemblages pulse with liveliness yet carry a haunting, ominous weight—anchored in fantasy, in that metaphorical third realm of dreams and fairy tales where the alien and the unknown can still take form, find existence, and endure.
+WOO HANNAH’s sculptures are bodies in motion, animated characters of a personal mythology that already inhabits a generative hybridity between human and nonhuman, between the artificial and the biological. Her sensorial, symbol-laden assemblages pulse with liveliness yet carry a haunting, ominous weight—anchored in fantasy, in that metaphorical third realm of dreams and fairy tales where the alien and the unknown can still take form, find existence, and endure.
 
 We might describe Woo’s sculptures through the art-historical notion of assemblage, which embraces the generative co-presence of heterogeneous elements that, in their dialectical tension, yield emergent effects and new symbolic meanings. Woo’s works have often been read as metaphors for the body. Her use of fabric, the very texture of the textiles and tissues she selects, evokes corporeality while collapsing distinctions between interior and exterior. Her creatures most often appear as fragmentary forms, transforming into porous membranes where the visceral meets the external, and the individual hybridizes with the “other.”
 

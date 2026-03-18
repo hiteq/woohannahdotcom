@@ -192,3 +192,27 @@ export function sortByDateDesc<T extends { date?: string; pinned?: boolean }>(it
     return (b.date ?? "").localeCompare(a.date ?? "");
   });
 }
+
+export function groupWorksBySeries(works: ContentEntry[]): any[] {
+  const grouped: any[] = [];
+  const seriesSeen = new Set<string>();
+
+  for (const w of works) {
+    if (w.series) {
+      if (!seriesSeen.has(w.series)) {
+        seriesSeen.add(w.series);
+        const seriesSlug = w.series.toLowerCase().replace(/\s+/g, '-');
+        grouped.push({
+          ...w,
+          title: w.series,
+          category: "Series",
+          isSeries: true,
+          seriesSlug,
+        });
+      }
+    } else {
+      grouped.push(w);
+    }
+  }
+  return grouped;
+}

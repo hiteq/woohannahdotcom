@@ -1,9 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
-import { loadAllContent, sortByDateDesc } from "../lib/content"
+import { loadAllContent, sortByDateDesc, groupWorksBySeries } from "../lib/content"
 
 const all = await loadAllContent()
-const works = sortByDateDesc(all.filter((e) => e.type === "work")).slice(0, 6)
+const rawWorks = sortByDateDesc(all.filter((e) => e.type === "work"))
+const works = groupWorksBySeries(rawWorks).slice(0, 6)
 const exhibitions = sortByDateDesc(all.filter((e) => e.type === "exhibition")).slice(0, 6)
 const thoughts = sortByDateDesc(all.filter((e) => e.type === "thought")).slice(0, 5)
 const about = all.find((e) => e.type === "page" && e.slug.join("/") === "about")
@@ -26,7 +27,7 @@ function getExcerpt(html: string, maxLen = 120): string {
   <section class="relative mb-24 mt-12 flex flex-col items-center justify-center text-center">
     <div class="space-y-8 animate-fade-in">
         <h1 class="text-6xl md:text-8xl font-bold tracking-tighter text-zinc-900">
-          Hannah Woo
+          WOO HANNAH
         </h1>
         
         <!-- About Button -->
@@ -94,7 +95,7 @@ function getExcerpt(html: string, maxLen = 120): string {
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {works.map((w) => (
         <a
-          href={`${base}works/${w.slug.join("/")}/`}
+          href={w.isSeries ? `${base}works/series/${w.seriesSlug}/` : `${base}works/${w.slug.join("/")}/`}
           class="group block no-underline"
         >
           <div class="aspect-[4/3] overflow-hidden bg-zinc-100 mb-3">

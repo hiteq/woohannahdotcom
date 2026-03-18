@@ -94,7 +94,7 @@ Curator: Hana Kwon
 
 Participating Artists:
 
-10 Finalists of the 2024 Seoul Sculpture Prize: Sung Hoon Kang, Intan Kwak, Yongju Kwon, Hyun Bhin Kwon, Hannah Woo, Jeongmin Yu, Joo Seoung Lee, Yong Sun Jang, Hay Lim Jang, Goen Choi
+10 Finalists of the 2024 Seoul Sculpture Prize: Sung Hoon Kang, Intan Kwak, Yongju Kwon, Hyun Bhin Kwon, WOO HANNAH, Jeongmin Yu, Joo Seoung Lee, Yong Sun Jang, Hay Lim Jang, Goen Choi
 
 8 Guest Artists: Myeongbeom Kim, Yunshin Kim, Suh Yongsun, Yong Ju Lee, Jaiyoung Cho, Soyoung Chung, Chun Kook-kwang, Buhm Hong
 

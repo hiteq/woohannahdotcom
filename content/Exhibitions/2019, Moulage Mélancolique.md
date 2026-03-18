@@ -121,8 +121,8 @@
 
 ![[Images/Untitled-16.png|Untitled-16.png]]
 
-**Moulage Mélancolique_ Hannah Woo, Solo exhibition**
-**Moulage Mélancolique_ Hannah Woo, Solo exhibition**
+**Moulage Mélancolique_ WOO HANNAH, Solo exhibition**
+**Moulage Mélancolique_ WOO HANNAH, Solo exhibition**
 
 **물라쥬 멜랑콜리크**
 

@@ -1,36 +1,16 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro"
-import { loadAllContent, sortByDateDesc } from "../../lib/content"
+import { loadAllContent, sortByDateDesc, groupWorksBySeries } from "../../lib/content"
 
 const all = await loadAllContent()
-const works = sortByDateDesc(all.filter((e) => e.type === "work"))
-
-const groupedWorks: any[] = [];
-const seriesSeen = new Set<string>();
-
-for (const w of works) {
-  if (w.series) {
-    if (!seriesSeen.has(w.series)) {
-      seriesSeen.add(w.series);
-      const seriesSlug = w.series.toLowerCase().replace(/\s+/g, '-');
-      groupedWorks.push({
-        ...w,
-        title: w.series,
-        category: "Series",
-        isSeries: true,
-        seriesSlug,
-      });
-    }
-  } else {
-    groupedWorks.push(w);
-  }
-}
+const rawWorks = sortByDateDesc(all.filter((e) => e.type === "work"))
+const groupedWorks = groupWorksBySeries(rawWorks)
 
 const baseRaw = import.meta.env.BASE_URL
 const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
 ---
 
-<BaseLayout title="Works · Hannah Woo" description="Works">
+<BaseLayout title="Works · WOO HANNAH" description="Works">
   <div class="mb-8 border-b border-zinc-200 pb-4">
     <h1 class="text-3xl font-bold">Works</h1>
   </div>

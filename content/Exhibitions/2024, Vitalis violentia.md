@@ -95,7 +95,7 @@ Also influenced by Barbara Creed’s internationally acclaimed book ‘The Monst
 
   
 
-Currently on view in ‘Vitalis Violentia’ at [@podiumgallery](https://www.instagram.com/podiumgallery/), Hannah Woo’s [@hannah.flashed.that](https://www.instagram.com/hannah.flashed.that/) painstakingly woven, metallic blue Bleeding Tungsten (2024) may symbolise women’s strength and commitment after going through patriarchal and racist oppressions. However, beyond the seemingly optimistic connotation, the viewer will find the blossom has viridescent bruises and oozing turquoise blood when looking up close.
+Currently on view in ‘Vitalis Violentia’ at [@podiumgallery](https://www.instagram.com/podiumgallery/), WOO HANNAH’s [@hannah.flashed.that](https://www.instagram.com/hannah.flashed.that/) painstakingly woven, metallic blue Bleeding Tungsten (2024) may symbolise women’s strength and commitment after going through patriarchal and racist oppressions. However, beyond the seemingly optimistic connotation, the viewer will find the blossom has viridescent bruises and oozing turquoise blood when looking up close.
 
   
 

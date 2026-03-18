@@ -8,12 +8,26 @@ const baseRaw = import.meta.env.BASE_URL
 const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
 ---
 
-<BaseLayout title="Exhibitions · Hannah Woo" description="Exhibitions">
-  <div class="mb-8 border-b border-zinc-200 pb-4">
-    <h1 class="text-3xl font-bold">Exhibitions</h1>
+<BaseLayout title="Exhibitions · WOO HANNAH" description="Exhibitions">
+  <div class="mb-12 border-b border-zinc-200 pb-8">
+    <h1 class="text-3xl font-bold mb-8">Exhibitions</h1>
+    
+    <div class="space-y-4">
+      <h2 class="text-lg font-semibold text-zinc-900">Chronological List</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 text-sm">
+        {exhibitions.map(e => (
+          <div class="flex gap-4 border-b border-zinc-50 pb-2">
+            <span class="text-zinc-400 tabular-nums shrink-0">{e.date?.slice(0, 4) || e.year || '—'}</span>
+            <a href={`${base}exhibitions/${e.slug.join("/")}/`} class="text-zinc-700 hover:text-zinc-900 no-underline hover:underline truncate">
+              {e.title}
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
   </div>
   
-  <div class="flex flex-col gap-16">
+  <div class="flex flex-col gap-24">
     {exhibitions.map((e) => (
       <div class="flex flex-col border-b border-zinc-100 pb-12 last:border-0 last:pb-0">
         <a
