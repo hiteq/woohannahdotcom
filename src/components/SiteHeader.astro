@@ -11,6 +11,9 @@ const nav = [
   { href: "press/", label: "Press" },
   { href: "about/", label: "About" },
 ]
+const homeLink = nav[0]
+const aboutLink = nav[nav.length - 1]
+const centerNav = nav.slice(1, -1)
 const baseRaw = import.meta.env.BASE_URL
 const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
 const path = currentPath.replace(/\/$/, "") || "/"
@@ -21,19 +24,38 @@ function isActive(href: string): boolean {
 }
 ---
 
-<header class="relative z-40 border-b border-zinc-200 bg-white/80 backdrop-blur">
-  <div class="mx-auto flex max-w-5xl items-center justify-end px-4 py-4 md:justify-center">
-    <nav class="hidden items-center justify-center gap-6 text-sm md:flex">
-      {nav.map((i) => (
-        <a
-          href={`${base}${i.href}`}
-          class={`text-zinc-700 hover:text-zinc-900 no-underline hover:no-underline ${isActive(i.href) ? "font-bold" : ""}`}
-        >
-          {i.label}
-        </a>
-      ))}
-    </nav>
+<header class="relative z-40 bg-white/80 backdrop-blur">
+  <div class="mx-auto hidden max-w-5xl items-center gap-6 px-4 py-4 md:flex">
+    <a
+      href={`${base}${homeLink.href}`}
+      class={`shrink-0 text-sm text-zinc-700 hover:text-zinc-900 no-underline hover:no-underline ${isActive(homeLink.href) ? "font-bold" : ""}`}
+    >
+      {homeLink.label}
+    </a>
 
+    <div class="relative flex min-w-0 flex-1 items-center justify-center">
+      <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-zinc-200"></div>
+      <nav class="relative flex items-center justify-center gap-6 bg-white/80 px-6 text-sm">
+        {centerNav.map((i) => (
+          <a
+            href={`${base}${i.href}`}
+            class={`text-zinc-700 hover:text-zinc-900 no-underline hover:no-underline ${isActive(i.href) ? "font-bold" : ""}`}
+          >
+            {i.label}
+          </a>
+        ))}
+      </nav>
+    </div>
+
+    <a
+      href={`${base}${aboutLink.href}`}
+      class={`shrink-0 text-sm text-zinc-700 hover:text-zinc-900 no-underline hover:no-underline ${isActive(aboutLink.href) ? "font-bold" : ""}`}
+    >
+      {aboutLink.label}
+    </a>
+  </div>
+
+  <div class="mx-auto flex max-w-5xl items-center justify-end px-4 py-4 md:hidden">
     <details class="group relative z-50 md:hidden">
       <summary
         class="list-none cursor-pointer p-2 text-zinc-700 marker:content-none"

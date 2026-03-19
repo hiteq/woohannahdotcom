@@ -6,20 +6,28 @@ const all = await loadAllContent()
 const exhibitions = sortByDateDesc(all.filter((e) => e.type === "exhibition"))
 const baseRaw = import.meta.env.BASE_URL
 const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
+
+function getExhibitionYearLabel(title: string, date?: string, year?: string): string {
+  return date?.slice(0, 4) || year || title.match(/^(\d{4})/)?.[1] || "—"
+}
+
+function getExhibitionDisplayTitle(title: string): string {
+  return title.replace(/^\d{4},\s*/, "")
+}
 ---
 
 <BaseLayout title="Exhibitions · WOO HANNAH" description="Exhibitions">
-  <div class="mb-12 border-b border-zinc-200 pb-8">
-    <h1 class="text-3xl font-bold mb-8">Exhibitions</h1>
+  <div class="mb-12 pb-8">
+    <h1 class="page-title mb-8 text-3xl font-bold">Exhibitions</h1>
     
     <div class="space-y-4">
       <h2 class="text-lg font-semibold text-zinc-900">Chronological List</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 text-sm">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3 text-sm">
         {exhibitions.map(e => (
-          <div class="flex gap-4 border-b border-zinc-50 pb-2">
-            <span class="text-zinc-400 tabular-nums shrink-0">{e.date?.slice(0, 4) || e.year || '—'}</span>
+          <div class="flex gap-4">
+            <span class="text-zinc-400 tabular-nums shrink-0">{getExhibitionYearLabel(e.title, e.date, e.year)}</span>
             <a href={`${base}exhibitions/${e.slug.join("/")}/`} class="text-zinc-700 hover:text-zinc-900 no-underline hover:underline truncate">
-              {e.title}
+              {getExhibitionDisplayTitle(e.title)}
             </a>
           </div>
         ))}
@@ -34,7 +42,7 @@ const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
           href={`${base}exhibitions/${e.slug.join("/")}/`}
           class="group block no-underline"
         >
-          <div class="w-full bg-zinc-50 mb-6 overflow-hidden">
+          <div class="mb-6 w-full overflow-hidden rounded-xl bg-zinc-50 md:rounded-2xl">
             {e.thumbnail ? (
               <img
                 src={e.thumbnail}
@@ -49,7 +57,7 @@ const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
             )}
           </div>
           <h3 class="text-3xl font-medium text-zinc-900 group-hover:text-zinc-600 transition-colors">
-            {e.title}
+            {getExhibitionDisplayTitle(e.title)}
           </h3>
           <div class="mt-3 flex flex-col gap-2">
             <span class="text-sm text-zinc-500">

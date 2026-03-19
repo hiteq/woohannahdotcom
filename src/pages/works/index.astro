@@ -11,8 +11,8 @@ const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
 ---
 
 <BaseLayout title="Works · WOO HANNAH" description="Works">
-  <div class="mb-8 border-b border-zinc-200 pb-4">
-    <h1 class="text-3xl font-bold">Works</h1>
+  <div class="mb-8 pb-4">
+    <h1 class="page-title text-3xl font-bold">Works</h1>
   </div>
   
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -21,7 +21,7 @@ const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
         href={w.isSeries ? `${base}works/series/${w.seriesSlug}/` : `${base}works/${w.slug.join("/")}/`}
         class="group block no-underline"
       >
-        <div class="aspect-[4/3] overflow-hidden bg-zinc-100 mb-3">
+        <div class="mb-3 aspect-[4/3] overflow-hidden rounded-xl bg-zinc-100 md:rounded-2xl">
           {w.thumbnail ? (
             <img
               src={w.thumbnail}

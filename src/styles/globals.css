@@ -101,9 +101,18 @@
   line-height: 0.9;
 }
 
+.page-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
 .prose figure.image-figure {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.prose :where(img) {
+  border-radius: 1rem;
 }
 
 .prose figure.image-figure img {
@@ -114,6 +123,10 @@
 }
 
 @media (min-width: 768px) {
+  .prose :where(img) {
+    border-radius: 1.5rem;
+  }
+
   .prose figure.image-figure img {
     border-radius: 1.5rem;
   }
@@ -129,4 +142,17 @@
 article.prose p {
   text-wrap: pretty;
   word-break: keep-all;
+}
+
+article.prose :where(h1) {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+article.prose :where(h2) {
+  font-weight: 700;
+}
+
+article.prose :where(h1, h2, h3, h4, h5, h6) strong {
+  font-weight: inherit;
 }
