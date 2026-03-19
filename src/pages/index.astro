@@ -57,7 +57,7 @@ function getExcerpt(html: string, maxLen = 120): string {
           href={`${base}exhibitions/${e.slug.join("/")}/`}
           class="group block no-underline"
         >
-          <div class="aspect-[4/3] overflow-hidden bg-zinc-100 mb-3">
+          <div class="mb-3 aspect-[4/3] overflow-hidden rounded-xl bg-zinc-100 md:rounded-2xl">
             {e.thumbnail ? (
               <img
                 src={e.thumbnail}
@@ -97,7 +97,7 @@ function getExcerpt(html: string, maxLen = 120): string {
           href={w.isSeries ? `${base}works/series/${w.seriesSlug}/` : `${base}works/${w.slug.join("/")}/`}
           class="group block no-underline"
         >
-          <div class="aspect-[4/3] overflow-hidden bg-zinc-100 mb-3">
+          <div class="mb-3 aspect-[4/3] overflow-hidden rounded-xl bg-zinc-100 md:rounded-2xl">
             {w.thumbnail ? (
               <img
                 src={w.thumbnail}
