@@ -91,7 +91,14 @@ function toSlugSegmentsFromFsPath(relFromContent: string): string[] {
 
 function normalizeFrontmatterDate(value: unknown): string | undefined {
   if (typeof value === "string" && value.trim()) {
-    return value.trim();
+    const trimmed = value.trim();
+    const dottedDate = trimmed.match(/^(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.?$/);
+    if (dottedDate) {
+      const [, year, month, day] = dottedDate;
+      return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+    }
+
+    return trimmed;
   }
 
   if (value instanceof Date && !Number.isNaN(value.getTime())) {
@@ -99,6 +106,15 @@ function normalizeFrontmatterDate(value: unknown): string | undefined {
   }
 
   return undefined;
+}
+
+function frontmatterDateFrom(data: Record<string, unknown>): string | undefined {
+  return (
+    normalizeFrontmatterDate(data.date) ??
+    normalizeFrontmatterDate(data.Date) ??
+    normalizeFrontmatterDate(data["생성일"]) ??
+    normalizeFrontmatterDate(data["생성 일시"])
+  );
 }
 
 function entryTypeFrom(relFromContent: string, fmType: unknown): EntryType {
@@ -182,7 +198,7 @@ async function loadAllContentUncached(): Promise<ContentEntry[]> {
       englishHtml,
       sourcePath: abs,
       thumbnail,
-      date: normalizeFrontmatterDate(data.date) ?? normalizeFrontmatterDate(data.Date),
+      date: frontmatterDateFrom(data),
       description: typeof data.description === "string" ? data.description : undefined,
       series: typeof data.series === "string" ? data.series : undefined,
       pinned: data.pinned === true || data.pinned === "true",
