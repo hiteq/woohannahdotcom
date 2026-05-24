@@ -3,7 +3,7 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "Date": "datetime",
-    "생성일": "text"
+    "Date": "date",
+    "생성일": "date"
   }
 }
