@@ -1,5 +1,5 @@
 ---
-title: "About Hannah Woo"
+title: "About WOO HANNAH"
 type: "page"
 ---
 
@@ -16,7 +16,7 @@ Woo Hannah (B.1988) received both BFA and MFA from the Korea National University
 
 ## CV
 
-### **Hannah Woo**
+### **WOO HANNAH**
 
 b. 1988
 

@@ -1,5 +1,5 @@
 ---
-title: "Hannah Woo"
+title: "WOO HANNAH"
 description: "Artist Portfolio"
 ---
 

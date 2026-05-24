@@ -89,6 +89,34 @@ function toSlugSegmentsFromFsPath(relFromContent: string): string[] {
   return noExt.split(path.sep).map(slugifyPathSegment).filter(Boolean);
 }
 
+function normalizeFrontmatterDate(value: unknown): string | undefined {
+  if (typeof value === "string" && value.trim()) {
+    const trimmed = value.trim();
+    const dottedDate = trimmed.match(/^(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.?$/);
+    if (dottedDate) {
+      const [, year, month, day] = dottedDate;
+      return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+    }
+
+    return trimmed;
+  }
+
+  if (value instanceof Date && !Number.isNaN(value.getTime())) {
+    return value.toISOString().slice(0, 10);
+  }
+
+  return undefined;
+}
+
+function frontmatterDateFrom(data: Record<string, unknown>): string | undefined {
+  return (
+    normalizeFrontmatterDate(data.date) ??
+    normalizeFrontmatterDate(data.Date) ??
+    normalizeFrontmatterDate(data["생성일"]) ??
+    normalizeFrontmatterDate(data["생성 일시"])
+  );
+}
+
 function entryTypeFrom(relFromContent: string, fmType: unknown): EntryType {
   if (typeof fmType === "string") {
     const t = fmType.toLowerCase();
@@ -170,7 +198,7 @@ async function loadAllContentUncached(): Promise<ContentEntry[]> {
       englishHtml,
       sourcePath: abs,
       thumbnail,
-      date: typeof data.date === "string" ? data.date : typeof data.Date === "string" ? data.Date : undefined,
+      date: frontmatterDateFrom(data),
       description: typeof data.description === "string" ? data.description : undefined,
       series: typeof data.series === "string" ? data.series : undefined,
       pinned: data.pinned === true || data.pinned === "true",
@@ -191,4 +219,28 @@ export function sortByDateDesc<T extends { date?: string; pinned?: boolean }>(it
     if (!a.pinned && b.pinned) return 1;
     return (b.date ?? "").localeCompare(a.date ?? "");
   });
+}
+
+export function groupWorksBySeries(works: ContentEntry[]): any[] {
+  const grouped: any[] = [];
+  const seriesSeen = new Set<string>();
+
+  for (const w of works) {
+    if (w.series) {
+      if (!seriesSeen.has(w.series)) {
+        seriesSeen.add(w.series);
+        const seriesSlug = w.series.toLowerCase().replace(/\s+/g, '-');
+        grouped.push({
+          ...w,
+          title: w.series,
+          category: "Series",
+          isSeries: true,
+          seriesSlug,
+        });
+      }
+    } else {
+      grouped.push(w);
+    }
+  }
+  return grouped;
 }

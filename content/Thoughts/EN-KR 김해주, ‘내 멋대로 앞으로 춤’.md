@@ -30,7 +30,7 @@ Beyond the commonality of having originated as rodlike objects, another feature 
 
   
 
-A hint as to whom this paradise is for can be gleaned through the messages of the individual sculptures—in the form of examining how the codes of everyday objects are inverted through the work’s coloring, materials, and shapes. Each imbued with a kind of personality or life, the objects embody specific characters, with elements affixed inside of them that may serve to show their personality. The titles, forms, and colors may offer clues to deduce why the dragon head and hunting trophy have been deconstructed, whether the magic wand conveys hope or defense, or why Jedori is building a nest. Hannah Woo refers to herself as “someone with a world view that believes in fairies.” For her, the process of sculpture is one of taking the object as guardian spirit, capturing hopes and expectations with a repulsive force of sorts.
+A hint as to whom this paradise is for can be gleaned through the messages of the individual sculptures—in the form of examining how the codes of everyday objects are inverted through the work’s coloring, materials, and shapes. Each imbued with a kind of personality or life, the objects embody specific characters, with elements affixed inside of them that may serve to show their personality. The titles, forms, and colors may offer clues to deduce why the dragon head and hunting trophy have been deconstructed, whether the magic wand conveys hope or defense, or why Jedori is building a nest. WOO HANNAH refers to herself as “someone with a world view that believes in fairies.” For her, the process of sculpture is one of taking the object as guardian spirit, capturing hopes and expectations with a repulsive force of sorts.
 
   
 
