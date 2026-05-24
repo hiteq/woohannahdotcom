@@ -48,6 +48,18 @@ b. 1988
 
 2016 - City Units, Choc2gak, Seoul, South of Korea
 
+--- 
+
+## Two-Person
+
+2026 - Woo Hannah x Kim Donghee, Off the White: Fold and Watchtower, Ilmin Museum of Art, Seoul, South of Korea
+
+2026 - Woo Hannah x Ian Cheng, Nothing is Complete, CYNC, Seoul, South of Korea
+
+2022 - Woo Hannah x Jeong Sujeong, Feather, Cylinder, Seoul, South of Korea
+
+2017 - Woo Hannah x Mat-Kkal, 2X2, The Revenge, It’s Ma Power, Huh!, Audio Visual Pavilion, Seoul, South of Korea
+
 ---
 
 ## Group
@@ -57,8 +69,6 @@ b. 1988
 Rehearsing Transformation, Incheon Art Platform, Incheon, South of Korea
 
 Stay with Me: Neither Here nor There, Gallery Vacancy, Shanghai, China
-
-Nothing is Complete, CYNC, Seoul, South of Korea
 
 ---
 
@@ -103,8 +113,6 @@ Fashion Exhibition, MMCA Residency Changdong, Seoul, South of Korea
 Sculptural Impulse, Buk-Seoul Museum of Art, Seoul, South of Korea
 
 ART REBUILD, Boan1942, Seoul, South of Korea
-
-Feather, Cylinder, Seoul, South of Korea
 
 Ziggy Stardust, n/a, Seoul, South of Korea
 
@@ -170,7 +178,7 @@ Sticky Forever, Keep in Touch, Seoul, South of Korea
 
 PACK F/W17, Culturetank, Seoul, South of Korea
 
-2X2, “The Revenge, It’s Ma Power, Huh!”, Audio Visual Pavilion, Seoul, South of Korea
+2X2, The Revenge, It’s Ma Power, Huh!, Audio Visual Pavilion, Seoul, South of Korea
 
 LOTUS LAND, Asia Culture Center, Gwangju, South of Korea
 
@@ -321,6 +329,17 @@ b. 1988
 2016 - City Units, 촉촉투명각, 서울, 대한민국
 
 ---
+## Two-person
+
+2026 - 우한나 x 김동희, 오 더 화이트: 주름과 망루, 일민미술관, 서울, 대한민국
+
+2026 - 우한나 x 이안 쳉, Nothing is Complete, CYNC, 서울, 대한민국
+
+2021 - 우한나 x 정수정, Feather, Cylinder, 서울, 대한민국
+
+2017 - 우한나 x 맛깔손, 2X2, *The Revenge, It's Ma Power, Huh!*, 시청각, 서울, 대한민국
+
+---
 
 ## Group
 
@@ -329,8 +348,6 @@ b. 1988
 변신연습, 인천아트플랫폼, 인천, 대한민국
 
 Stay with Me: Neither Here nor There, Gallery Vacancy, 상하이, 중국
-
-Nothing is Complete, CYNC, 서울, 대한민국
 
 ---
 
@@ -359,8 +376,6 @@ Two Side Love, 지 갤러리, 서울, 대한민국
 
 ---
 
-  
-
 ### 2023
 
 Autohypnosis, G Gallery, 서울, 대한민국
@@ -368,7 +383,6 @@ Autohypnosis, G Gallery, 서울, 대한민국
 Living in Joy, 아트선재센터, 서울, 대한민국
 
   
-
 ---
 
   
@@ -386,8 +400,6 @@ Summer Love 2022, 송은, 서울, 대한민국
 조각충동, 서울시립 북서울미술관, 서울, 대한민국
 
 아트리빌드, 스페이스 보안, 서울, 대한민국
-
-Feather, Cylinder, 서울, 대한민국
 
 Ziggy Stardust, N/a, 서울, 대한민국
 
@@ -476,8 +488,6 @@ PACK F/W17, 문화비축기지, 서울, 대한민국
 키티데카당스, 개방회로, 서울, 대한민국
 
 STICKY FOREVER, 킵인터치, 서울, 대한민국
-
-2X2, *The Revenge, It's Ma Power, Huh!*, 시청각, 서울, 대한민국
 
 LOTUS LAND, 국립아시아문화전당, 광주, 대한민국
 
