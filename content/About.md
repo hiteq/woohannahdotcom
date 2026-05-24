@@ -66,6 +66,8 @@ b. 1988
 
 ### 2026
 
+Faisandage, G Gallery, Seoul, South of Korea
+
 Rehearsing Transformation, Incheon Art Platform, Incheon, South of Korea
 
 Stay with Me: Neither Here nor There, Gallery Vacancy, Shanghai, China
@@ -73,6 +75,10 @@ Stay with Me: Neither Here nor There, Gallery Vacancy, Shanghai, China
 ---
 
 ### 2025
+
+Stillalive, Marguo, Paris, France 
+
+Une saison culturelle exceptionnelle, Couleurs de Corée, Paris, France
 
 Body’s First Architecture, Ely Center of Contemporary Art, New Haven, U.S.A
 
@@ -345,6 +351,8 @@ b. 1988
 
 ### 2026
 
+Faisandage: 세계로 스며드는 죽음, G 갤러리, 서울, 대한민국
+
 변신연습, 인천아트플랫폼, 인천, 대한민국
 
 Stay with Me: Neither Here nor There, Gallery Vacancy, 상하이, 중국
@@ -352,6 +360,10 @@ Stay with Me: Neither Here nor There, Gallery Vacancy, 상하이, 중국
 ---
 
 ### 2025
+
+Stillalive, 마고, 파리, 프랑스
+
+한국의 색, 한국 현대미술을 조명하다, 주프랑스한국문화원, 파리, 프랑스
 
 Body’s First Architecture, Ely Center of Contemporary Art, 뉴헤이븐, 미국
 
