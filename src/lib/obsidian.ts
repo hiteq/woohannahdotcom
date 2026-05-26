@@ -100,7 +100,7 @@ export function normalizeObsidianEmbeds(md: string, basePath = "/"): string {
 
     const [linkTarget, explicitLabel] = target.split("|")
     if (isImagePath(linkTarget)) {
-      return renderImageMarkdown(linkTarget, explicitLabel, base)
+      return ""
     }
 
     const parts = linkTarget.split("/").map((p) => p.trim()).filter(Boolean)

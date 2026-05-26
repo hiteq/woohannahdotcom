@@ -40,4 +40,9 @@ describe("normalizeObsidianEmbeds", () => {
     const md = "![[private/Images/Press/file.jpg]]";
     expect(normalizeObsidianEmbeds(md)).toBe("");
   });
+
+  it("removes non-embed attachment wiki links instead of publishing note links", () => {
+    const md = "[[file.jpg|Open: file.jpg]]\n![[file.jpg]]";
+    expect(normalizeObsidianEmbeds(md)).toBe("\n![](/Images/file.jpg)");
+  });
 });
