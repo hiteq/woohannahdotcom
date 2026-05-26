@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import {
+  normalizeImagePathToUrlPath,
   normalizeImageFilenameToUrlSegment,
   normalizeObsidianEmbeds,
 } from "../src/lib/obsidian";
@@ -12,6 +13,12 @@ describe("obsidian image filename normalization", () => {
       encodeURIComponent(input.normalize("NFC")),
     );
   });
+
+  it("encodes nested image paths segment by segment", () => {
+    expect(normalizeImagePathToUrlPath("works/가 나/image 1.jpg")).toBe(
+      `works/${encodeURIComponent("가 나".normalize("NFC"))}/image%201.jpg`,
+    );
+  });
 });
 
 describe("normalizeObsidianEmbeds", () => {
@@ -21,5 +28,16 @@ describe("normalizeObsidianEmbeds", () => {
     expect(out).toBe(
       `![Alt](/woohannahdotcom/Images/${encodeURIComponent("가 나.png".normalize("NFC"))})`,
     );
+  });
+
+  it("rewrites bare image embeds without creating note links", () => {
+    const md = "![[Cook or Be Cooked.jpg]]";
+    const out = normalizeObsidianEmbeds(md);
+    expect(out).toBe("![](/Images/Cook%20or%20Be%20Cooked.jpg)");
+  });
+
+  it("keeps private image embeds out of published markdown", () => {
+    const md = "![[private/Images/Press/file.jpg]]";
+    expect(normalizeObsidianEmbeds(md)).toBe("");
   });
 });

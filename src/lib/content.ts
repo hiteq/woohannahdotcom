@@ -4,7 +4,7 @@ import fg from "fast-glob";
 import matter from "gray-matter";
 import { marked } from "marked";
 import {
-  normalizeImageFilenameToUrlSegment,
+  normalizeImagePathToUrlPath,
   normalizeObsidianEmbeds,
   slugifyPathSegment,
 } from "./obsidian";
@@ -63,9 +63,18 @@ function extractFirstImage(
   // Match ![[Images/...]] pattern, capturing only the filename (before | if present)
   const obsidianMatch = mdContent.match(/!\[\[Images\/([^\]|]+)/);
   if (obsidianMatch) {
-    const filename = obsidianMatch[1];
-    const encodedFilename = normalizeImageFilenameToUrlSegment(filename);
-    return `${siteBase}Images/${encodedFilename}`;
+    const imagePath = obsidianMatch[1];
+    const encodedImagePath = normalizeImagePathToUrlPath(imagePath);
+    return `${siteBase}Images/${encodedImagePath}`;
+  }
+
+  const bareObsidianImageMatch = mdContent.match(
+    /!\[\[((?!private\/Images\/)(?:[^\]|]+\.(?:avif|gif|jpe?g|png|svg|webp)))/i,
+  );
+  if (bareObsidianImageMatch) {
+    const imagePath = bareObsidianImageMatch[1].replace(/^Images\//i, "");
+    const encodedImagePath = normalizeImagePathToUrlPath(imagePath);
+    return `${siteBase}Images/${encodedImagePath}`;
   }
   // Also try standard markdown image syntax
   const mdMatch = mdContent.match(/!\[.*?\]\(([^)]+)\)/);
@@ -92,6 +101,8 @@ function toSlugSegmentsFromFsPath(relFromContent: string): string[] {
 function normalizeFrontmatterDate(value: unknown): string | undefined {
   if (typeof value === "string" && value.trim()) {
     const trimmed = value.trim();
+    if (/^invalid date$/i.test(trimmed)) return undefined;
+
     const dottedDate = trimmed.match(/^(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.?$/);
     if (dottedDate) {
       const [, year, month, day] = dottedDate;
@@ -111,10 +122,63 @@ function normalizeFrontmatterDate(value: unknown): string | undefined {
 function frontmatterDateFrom(data: Record<string, unknown>): string | undefined {
   return (
     normalizeFrontmatterDate(data.date) ??
+    normalizeFrontmatterDate(data["날짜"]) ??
     normalizeFrontmatterDate(data.Date) ??
     normalizeFrontmatterDate(data["생성일"]) ??
     normalizeFrontmatterDate(data["생성 일시"])
   );
+}
+
+function frontmatterYearFrom(data: Record<string, unknown>): string | undefined {
+  const rawYear = data.year ?? data.Year;
+  if (typeof rawYear === "number" && Number.isFinite(rawYear)) {
+    return String(rawYear);
+  }
+
+  if (typeof rawYear === "string") {
+    const match = rawYear.match(/\b(\d{4})\b/);
+    if (match) return match[1];
+  }
+
+  return undefined;
+}
+
+function inferYearFromText(text: string): string | undefined {
+  return text.match(/\b(19|20)\d{2}\b/)?.[0];
+}
+
+function asStringArray(value: unknown): string[] {
+  if (Array.isArray(value)) {
+    return value.filter((item): item is string => typeof item === "string");
+  }
+
+  if (typeof value === "string" && value.trim()) return [value.trim()];
+  return [];
+}
+
+function normalizeCategoryLabel(value: string): string | undefined {
+  const normalized = value.trim().toLowerCase();
+  if (!normalized) return undefined;
+
+  if (["solo", "personal", "개인전"].includes(normalized)) return "Solo";
+  if (["duo", "two-person", "two person", "2-person", "2 person", "2인전", "duet"].includes(normalized)) {
+    return "Duo";
+  }
+  if (["group", "group show", "단체전"].includes(normalized)) return "Group";
+  return value.trim();
+}
+
+function frontmatterCategoryFrom(data: Record<string, unknown>): string | undefined {
+  const explicit = typeof data.category === "string" ? normalizeCategoryLabel(data.category) : undefined;
+  if (explicit) return explicit;
+
+  const tags = [...asStringArray(data.tags), ...asStringArray(data["태그"])];
+  for (const tag of tags) {
+    const category = normalizeCategoryLabel(tag);
+    if (category === "Solo" || category === "Duo" || category === "Group") return category;
+  }
+
+  return undefined;
 }
 
 function entryTypeFrom(relFromContent: string, fmType: unknown): EntryType {
@@ -190,8 +254,8 @@ async function loadAllContentUncached(): Promise<ContentEntry[]> {
       type,
       title,
       slug,
-      category: typeof data.category === "string" ? data.category : undefined,
-      year: typeof data.year === "string" ? data.year : undefined,
+      category: frontmatterCategoryFrom(data),
+      year: frontmatterYearFrom(data) ?? inferYearFromText(title) ?? inferYearFromText(rel),
       medium: typeof data.medium === "string" ? data.medium : undefined,
       dimensions: typeof data.dimensions === "string" ? data.dimensions : undefined,
       bodyHtml,
@@ -213,11 +277,13 @@ export function loadAllContent(): Promise<ContentEntry[]> {
   return allContentCache;
 }
 
-export function sortByDateDesc<T extends { date?: string; pinned?: boolean }>(items: T[]): T[] {
+export function sortByDateDesc<T extends { date?: string; year?: string; title?: string; pinned?: boolean }>(items: T[]): T[] {
   return [...items].sort((a, b) => {
     if (a.pinned && !b.pinned) return -1;
     if (!a.pinned && b.pinned) return 1;
-    return (b.date ?? "").localeCompare(a.date ?? "");
+    const dateCompare = (b.date ?? b.year ?? "").localeCompare(a.date ?? a.year ?? "");
+    if (dateCompare !== 0) return dateCompare;
+    return (a.title ?? "").localeCompare(b.title ?? "");
   });
 }
 

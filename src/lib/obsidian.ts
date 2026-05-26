@@ -41,6 +41,32 @@ export function normalizeImageFilenameToUrlSegment(filename: string): string {
   return encodeURIComponent(normalizeImageFilename(filename))
 }
 
+export function normalizeImagePathToUrlPath(imagePath: string): string {
+  return imagePath
+    .split("/")
+    .map((segment) => segment.trim())
+    .filter(Boolean)
+    .map(normalizeImageFilenameToUrlSegment)
+    .join("/")
+}
+
+function isImagePath(target: string): boolean {
+  return /\.(?:avif|gif|jpe?g|png|svg|webp)$/i.test(target.trim())
+}
+
+function stripImagesPrefix(target: string): string {
+  return target.replace(/^Images\//i, "")
+}
+
+function renderImageMarkdown(target: string, alt?: string, base = "/"): string {
+  if (/^private\/Images\//i.test(target)) return ""
+
+  const imagePath = stripImagesPrefix(target)
+  const safePath = normalizeImagePathToUrlPath(imagePath)
+  const safeAlt = (alt ?? "").trim()
+  return safeAlt ? `![${safeAlt}](${base}Images/${safePath})` : `![](${base}Images/${safePath})`
+}
+
 export function normalizeObsidianEmbeds(md: string, basePath = "/"): string {
   const base = ensureTrailingSlash(ensureLeadingSlash(basePath))
 
@@ -49,18 +75,19 @@ export function normalizeObsidianEmbeds(md: string, basePath = "/"): string {
   // - ![[Images/foo.jpg|alt]] -> ![alt](/<base>/Images/foo.jpg)
   // (We assume Images are copied to site/public/Images/)
   md = md.replaceAll(
-    /!\[\[Images\/([^\]|]+)(?:\|([^\]]+))?\]\]/g,
-    (_m, filename: string, alt?: string) => {
-      const safe = normalizeImageFilenameToUrlSegment(filename)
-      const safeAlt = (alt ?? "").trim()
-      return safeAlt ? `![${safeAlt}](${base}Images/${safe})` : `![](${base}Images/${safe})`
+    /!\[\[((?:Images\/)?[^\]|]+\.(?:avif|gif|jpe?g|png|svg|webp))(?:\|([^\]]+))?\]\]/gi,
+    (_m, target: string, alt?: string) => {
+      return renderImageMarkdown(target, alt, base)
     },
   )
+
+  // Explicit private image embeds are intentionally not published.
+  md = md.replaceAll(/!\[\[private\/Images\/[^\]]+\]\]/gi, "")
 
   // If someone used standard markdown image syntax pointing at root (/Images/...),
   // rewrite to respect the configured base path (important for GitHub Pages base deploy).
   md = md.replaceAll(/!\[([^\]]*)\]\(\/Images\/([^)]+)\)/g, (_m, alt: string, rest: string) => {
-    const safeRest = normalizeImageFilenameToUrlSegment(rest)
+    const safeRest = normalizeImagePathToUrlPath(rest)
     return `![${alt}](${base}Images/${safeRest})`
   })
 
@@ -69,8 +96,15 @@ export function normalizeObsidianEmbeds(md: string, basePath = "/"): string {
 
   // Wiki links: [[Works/Sculptures/Bleeding]] -> [Bleeding](/works/sculptures/bleeding)
   md = md.replaceAll(/\[\[([^[\]]+?)\]\]/g, (_m, target: string) => {
-    const parts = target.split("/").map((p) => p.trim()).filter(Boolean)
-    const label = parts.at(-1) ?? target
+    if (/^private\/Images\//i.test(target)) return ""
+
+    const [linkTarget, explicitLabel] = target.split("|")
+    if (isImagePath(linkTarget)) {
+      return renderImageMarkdown(linkTarget, explicitLabel, base)
+    }
+
+    const parts = linkTarget.split("/").map((p) => p.trim()).filter(Boolean)
+    const label = explicitLabel?.trim() || parts.at(-1) || linkTarget
     const first = (parts[0] ?? "").toLowerCase()
     const rest = parts.slice(1).map(slugifyPathSegment)
 

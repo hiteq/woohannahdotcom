@@ -12,7 +12,7 @@ const { entry } = Astro.props
 ---
 
 <BaseLayout title={`${entry.title} · WOO HANNAH`} description={entry.description}>
-  <article class="prose prose-zinc max-w-none">
+  <article class="prose prose-zinc max-w-none work-detail">
     <h1>{entry.title}</h1>
     <p class="mt-2 text-sm text-zinc-600">
       {[entry.year, entry.category, entry.medium, entry.dimensions].filter(Boolean).join(" · ")}
@@ -20,4 +20,3 @@ const { entry } = Astro.props
     <Fragment set:html={entry.bodyHtml} />
   </article>
 </BaseLayout>
-

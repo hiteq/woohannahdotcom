@@ -14,17 +14,54 @@ function getExhibitionYearLabel(title: string, date?: string, year?: string): st
 function getExhibitionDisplayTitle(title: string): string {
   return title.replace(/^\d{4},\s*/, "")
 }
+
+function getCategoryKey(category?: string): "solo" | "duo" | "group" {
+  const normalized = category?.trim().toLowerCase()
+  if (normalized === "solo") return "solo"
+  if (normalized === "duo") return "duo"
+  return "group"
+}
+
+function getCategoryLabel(category?: string): string {
+  const key = getCategoryKey(category)
+  if (key === "solo") return "Solo"
+  if (key === "duo") return "Duo"
+  return "Group"
+}
+
+const categorySections = [
+  { key: "solo", title: "Solo Exhibitions", items: exhibitions.filter((e) => getCategoryKey(e.category) === "solo") },
+  { key: "duo", title: "Duo Exhibitions", items: exhibitions.filter((e) => getCategoryKey(e.category) === "duo") },
+  { key: "group", title: "Group Exhibitions", items: exhibitions.filter((e) => getCategoryKey(e.category) === "group") },
+].filter((section) => section.items.length > 0)
 ---
 
 <BaseLayout title="Exhibitions · WOO HANNAH" description="Exhibitions">
   <div class="mb-12 pb-8">
     <h1 class="page-title mb-8 text-3xl font-bold">Exhibitions</h1>
+
+    <div class="mb-8 flex flex-wrap gap-2" aria-label="Exhibition category filter">
+      {[
+        ["all", "All"],
+        ["solo", "Solo"],
+        ["duo", "Duo"],
+        ["group", "Group"],
+      ].map(([key, label]) => (
+        <button
+          type="button"
+          data-filter-button={key}
+          class="rounded-full border border-zinc-200 px-4 py-2 text-sm text-zinc-600 transition-colors hover:border-zinc-400 hover:text-zinc-900 data-[active=true]:border-zinc-900 data-[active=true]:bg-zinc-900 data-[active=true]:text-white"
+        >
+          {label}
+        </button>
+      ))}
+    </div>
     
     <div class="space-y-4">
       <h2 class="text-lg font-semibold text-zinc-900">Chronological List</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3 text-sm">
         {exhibitions.map(e => (
-          <div class="flex gap-4">
+          <div class="flex gap-4" data-exhibition-row data-category={getCategoryKey(e.category)}>
             <span class="text-zinc-400 tabular-nums shrink-0">{getExhibitionYearLabel(e.title, e.date, e.year)}</span>
             <a href={`${base}exhibitions/${e.slug.join("/")}/`} class="text-zinc-700 hover:text-zinc-900 no-underline hover:underline truncate">
               {getExhibitionDisplayTitle(e.title)}
@@ -34,10 +71,26 @@ function getExhibitionDisplayTitle(title: string): string {
       </div>
     </div>
   </div>
+
+  <div class="mb-20 grid grid-cols-1 gap-10 md:grid-cols-3">
+    {categorySections.map((section) => (
+      <section data-exhibition-section data-category={section.key}>
+        <h2 class="mb-4 text-lg font-semibold text-zinc-900">{section.title}</h2>
+        <div class="space-y-3 text-sm">
+          {section.items.map((e) => (
+            <a href={`${base}exhibitions/${e.slug.join("/")}/`} class="block no-underline hover:underline">
+              <span class="mr-3 text-zinc-400 tabular-nums">{getExhibitionYearLabel(e.title, e.date, e.year)}</span>
+              <span class="text-zinc-700">{getExhibitionDisplayTitle(e.title)}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
   
   <div class="flex flex-col gap-24">
     {exhibitions.map((e) => (
-      <div class="flex flex-col border-b border-zinc-100 pb-12 last:border-0 last:pb-0">
+      <div class="flex flex-col border-b border-zinc-100 pb-12 last:border-0 last:pb-0" data-exhibition-card data-category={getCategoryKey(e.category)}>
         <a
           href={`${base}exhibitions/${e.slug.join("/")}/`}
           class="group block no-underline"
@@ -61,7 +114,7 @@ function getExhibitionDisplayTitle(title: string): string {
           </h3>
           <div class="mt-3 flex flex-col gap-2">
             <span class="text-sm text-zinc-500">
-              {[e.date?.slice(0, 10).replace(/\-/g, '.'), e.category].filter(Boolean).join(" · ")}
+              {[e.date?.slice(0, 10).replace(/\-/g, '.'), getCategoryLabel(e.category)].filter(Boolean).join(" · ")}
             </span>
             {e.description && (
               <p class="mt-2 text-base text-zinc-600 leading-relaxed whitespace-pre-wrap">
@@ -73,4 +126,26 @@ function getExhibitionDisplayTitle(title: string): string {
       </div>
     ))}
   </div>
+
+  <script>
+    const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-filter-button]"))
+    const filterable = Array.from(document.querySelectorAll<HTMLElement>("[data-exhibition-row], [data-exhibition-card], [data-exhibition-section]"))
+
+    function setFilter(filter: string) {
+      buttons.forEach((button) => {
+        button.dataset.active = String(button.dataset.filterButton === filter)
+      })
+
+      filterable.forEach((item) => {
+        const shouldShow = filter === "all" || item.dataset.category === filter
+        item.hidden = !shouldShow
+      })
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => setFilter(button.dataset.filterButton ?? "all"))
+    })
+
+    setFilter("all")
+  </script>
 </BaseLayout>

@@ -68,4 +68,35 @@ describe("content date parsing", () => {
     expect(thoughts.map((entry) => entry.title)).toEqual(["Newest", "Older"]);
     expect(thoughts.map((entry) => entry.date)).toEqual(["2025-10-17", "2025-08-12"]);
   });
+
+  it("ignores invalid dates and uses exhibition filename years for sorting", async () => {
+    const tmpRoot = await fs.mkdtemp(path.join(os.tmpdir(), "woohannahdotcom-exhibition-dates-"));
+    const exhibitionsRoot = path.join(tmpRoot, "content", "Exhibitions");
+    await fs.mkdir(exhibitionsRoot, { recursive: true });
+
+    await fs.writeFile(
+      path.join(exhibitionsRoot, "2024, Group Show.md"),
+      "---\n생성일: Invalid date\n태그:\n  - Group\n---\nBody\n",
+      "utf8",
+    );
+    await fs.writeFile(
+      path.join(exhibitionsRoot, "2025, Solo Show.md"),
+      "---\n생성일: Invalid date\n태그:\n  - Solo\n---\nBody\n",
+      "utf8",
+    );
+
+    process.chdir(tmpRoot);
+    vi.resetModules();
+
+    const mod = await import("../src/lib/content");
+    mod.clearContentCache();
+
+    const entries = await mod.loadAllContent();
+    const exhibitions = mod.sortByDateDesc(entries.filter((entry) => entry.type === "exhibition"));
+
+    expect(exhibitions.map((entry) => entry.title)).toEqual(["2025, Solo Show", "2024, Group Show"]);
+    expect(exhibitions.map((entry) => entry.date)).toEqual([undefined, undefined]);
+    expect(exhibitions.map((entry) => entry.year)).toEqual(["2025", "2024"]);
+    expect(exhibitions.map((entry) => entry.category)).toEqual(["Solo", "Group"]);
+  });
 });
