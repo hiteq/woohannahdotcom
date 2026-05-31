@@ -5,6 +5,7 @@ import SiteHeader from "../components/SiteHeader.astro"
 import SiteFooter from "../components/SiteFooter.astro"
 
 const { title, description } = Astro.props
+const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID
 ---
 
 <!doctype html>
@@ -20,6 +21,21 @@ const { title, description } = Astro.props
     />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
+    {
+      gaMeasurementId && (
+        <>
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`} />
+          <script define:vars={{ gaMeasurementId }}>
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function gtag() {
+              window.dataLayer.push(arguments);
+            };
+            window.gtag("js", new Date());
+            window.gtag("config", gaMeasurementId);
+          </script>
+        </>
+      )
+    }
   </head>
   <body>
     <SiteHeader currentPath={Astro.url.pathname} />

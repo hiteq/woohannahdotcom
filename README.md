@@ -25,6 +25,18 @@ yarn dev
 yarn build
 ```
 
+### Google Analytics 4
+
+GA4 측정 ID를 설정하면 모든 페이지에 추적 스크립트가 포함됩니다.
+
+```bash
+cp .env.example .env
+# .env 안의 PUBLIC_GA_MEASUREMENT_ID를 실제 값으로 교체
+yarn build
+```
+
+GitHub Pages 운영 배포에서는 repository secret에 `PUBLIC_GA_MEASUREMENT_ID`를 추가해야 합니다.
+
 ---
 
 ## 콘텐츠 구조

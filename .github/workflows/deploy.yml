@@ -32,6 +32,8 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Build
+        env:
+          PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.PUBLIC_GA_MEASUREMENT_ID }}
         run: yarn build
 
       - name: Setup Pages
