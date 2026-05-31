@@ -22,6 +22,10 @@ pnpm-debug.log*
 # Astro
 .astro/
 
+# generated from content/private/Images during local/build sync
+public/Images/20??,*/
+public/Images/**/*_MD5.*
+
 # local editor workspace state
 content/.obsidian/workspace.json
 .vercel
