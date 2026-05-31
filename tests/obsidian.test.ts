@@ -19,6 +19,12 @@ describe("obsidian image filename normalization", () => {
       `works/${encodeURIComponent("가 나".normalize("NFC"))}/image%201.jpg`,
     );
   });
+
+  it("leaves commas unescaped for static file serving compatibility", () => {
+    expect(normalizeImagePathToUrlPath("2026, Show/image 1.jpg")).toBe(
+      "2026,%20Show/image%201.jpg",
+    );
+  });
 });
 
 describe("normalizeObsidianEmbeds", () => {
@@ -36,13 +42,35 @@ describe("normalizeObsidianEmbeds", () => {
     expect(out).toBe("![](/Images/Cook%20or%20Be%20Cooked.jpg)");
   });
 
-  it("keeps private image embeds out of published markdown", () => {
+  it("publishes explicitly referenced private image embeds through public image URLs", () => {
     const md = "![[private/Images/Press/file.jpg]]";
-    expect(normalizeObsidianEmbeds(md)).toBe("");
+    expect(normalizeObsidianEmbeds(md)).toBe("![](/Images/Press/file.jpg)");
+  });
+
+  it("publishes standard markdown private image embeds without Open attachment links", () => {
+    const md = [
+      "[Open: source.jpg](private/Images/2026,%20Show/file%20one.jpg)",
+      "![](private/Images/2026,%20Show/file%20one.jpg)",
+    ].join("\n");
+
+    expect(normalizeObsidianEmbeds(md)).toBe(
+      "\n![](/Images/2026,%20Show/file%20one.jpg)",
+    );
   });
 
   it("removes non-embed attachment wiki links instead of publishing note links", () => {
     const md = "[[file.jpg|Open: file.jpg]]\n![[file.jpg]]";
     expect(normalizeObsidianEmbeds(md)).toBe("\n![](/Images/file.jpg)");
+  });
+
+  it("keeps nested image embeds published while dropping adjacent Open attachment links", () => {
+    const md = [
+      "[[35a4fbf16b1a9f3a3c09c658cf0f6b1d_MD5.jpg|Open: source.jpg]]",
+      "![[Images/Bag with you_Cook or Be Cooked/35a4fbf16b1a9f3a3c09c658cf0f6b1d_MD5.jpg]]",
+    ].join("\n");
+
+    expect(normalizeObsidianEmbeds(md)).toBe(
+      "\n![](/Images/Bag%20with%20you_Cook%20or%20Be%20Cooked/35a4fbf16b1a9f3a3c09c658cf0f6b1d_MD5.jpg)",
+    );
   });
 });

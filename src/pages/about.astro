@@ -1,13 +1,22 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
 import { loadAllContent } from "../lib/content"
+import { linkAboutExhibitions } from "../lib/exhibition-links"
 
 const all = await loadAllContent()
 const about = all.find((e) => e.type === "page" && e.slug.join("/") === "about")
+const exhibitions = all.filter((e) => e.type === "exhibition")
+const baseRaw = import.meta.env.BASE_URL
+const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
 
 if (!about) {
   throw new Error("About page not found in content/About.md")
 }
+
+const linkedBodyHtml = linkAboutExhibitions(about.bodyHtml, exhibitions, base)
+const linkedEnglishHtml = about.englishHtml
+  ? linkAboutExhibitions(about.englishHtml, exhibitions, base)
+  : undefined
 ---
 
 <BaseLayout title="About · WOO HANNAH" description={about.description}>
@@ -36,10 +45,10 @@ if (!about) {
       </div>
 
       <div id="content-kor">
-        <Fragment set:html={about.bodyHtml} />
+        <Fragment set:html={linkedBodyHtml} />
       </div>
       <div id="content-eng" class="hidden">
-        <Fragment set:html={about.englishHtml} />
+        <Fragment set:html={linkedEnglishHtml} />
       </div>
 
       <script>
@@ -65,7 +74,7 @@ if (!about) {
         }
       </script>
     ) : (
-      <Fragment set:html={about.bodyHtml} />
+      <Fragment set:html={linkedBodyHtml} />
     )}
   </article>
 </BaseLayout>

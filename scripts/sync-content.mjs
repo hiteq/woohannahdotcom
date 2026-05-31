@@ -4,6 +4,7 @@ import { pathToFileURL } from "node:url";
 
 const repoRoot = process.cwd();
 const contentImages = path.join(repoRoot, "content", "Images");
+const privateImages = path.join(repoRoot, "content", "private", "Images");
 const targetImages = path.join(process.cwd(), "public", "Images");
 
 export function isFileUpToDate(srcStat, dstStat) {
@@ -44,8 +45,16 @@ async function copyDir(src, dst) {
   );
 }
 
-export async function syncContentImages({ src = contentImages, dst = targetImages } = {}) {
+export async function syncContentImages({ src = contentImages, privateSrc = privateImages, dst = targetImages } = {}) {
   await copyDir(src, dst);
+  try {
+    // Obsidian can emit public-page embeds that point at private/Images.
+    // They are rewritten to /Images at render time, so referenced assets need
+    // to exist under public/Images as well.
+    await copyDir(privateSrc, dst);
+  } catch (err) {
+    if (err?.code !== "ENOENT") throw err;
+  }
   console.log(`[sync] Images copied: ${src} -> ${dst}`);
 }
 
