@@ -18,14 +18,13 @@ description: Off the White：Fold and Watchtower, May. 01 – Jul. 12, 2026
 [Open: Off the White_2026_Poster.jpg](private/Images/2026,%20Off%20the%20White%EF%BC%9AFold%20and%20Watchtower/e88ff9180f0fc2aee62634b41d7bf710_MD5.jpg)
 ![](private/Images/2026,%20Off%20the%20White%EF%BC%9AFold%20and%20Watchtower/e88ff9180f0fc2aee62634b41d7bf710_MD5.jpg)
 
-Off the White: Fold and Watchtower
-2026.5.1.(Fri) ― 2026.7.12.(Sun)
+*Off the White: Fold and Watchtower*
 
 _Off the White_ is a relay exhibition through which the Ilmin Museum of Art, marking the 100th anniversary of its architecture, explores contemporary art’s experiments and prospects concerning the museum as a place. Completed in 1926 as the Dong-A Ilbo headquarters, this building began as the offices of a modern newspaper company and has since transformed into an institution engaging with a broad range of visual culture. Against this background, the museum now erects white exhibition halls, places artworks within them, and produces discourse and images. In this sense, the museum exceeds the meaning of a space in which artworks are simply stored; it is where artworks are newly perceived and reconstituted.
 
 Unlike the conventional understanding of “site” in art as a setting endowed with irreplaceable specificity, _Off the White_ attends to what precedes such enunciation in the form of an intervention or a frame. It looks instead to another order of conditions that enable the museum before a given location is called forth as a site. These include the by-products of the museum’s operation: walls and floors, light and ornament, storage and transport protocols, attitudes toward display and viewing, and immaterial registers such as feelings and habits. The artists who have attended to these elements reveal the museum as a singular position where the force and sensibility of artworks are negotiated between a neutral white environment and a “specific site.”
 
-Fold and Watchtower
+*Fold and Watchtower*
 
 Kim Donghee’s works are built in relation to a place, only to disappear afterward. Structures made in response to walls cutting across an exhibition space, columns rising high above it, or the floors of outdoor facilities have, after the exhibitions ended, been divided into small fragments and stored in a warehouse in accordance with the artist’s desire for preservation. In this exhibition, the fragments once bound to given functions and contexts are reanimated and examined through the purview of the museum. Kim Donghee’s solo exhibitions include _Hide Edges_ (2025), _Hall 2_ (2023), and _3 Volumes_ (2017). He has participated in group exhibitions at Asia Culture Center, Leeum Museum of Art, and Atelier Hermès, among others. In 2023, he received the Porsche Frontier Award at the 2nd edition of the Seoul Arts Awards.
 
