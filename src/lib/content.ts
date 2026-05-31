@@ -81,6 +81,14 @@ function extractFirstImage(
   if (mdMatch) {
     const src = mdMatch[1];
     if (src.startsWith("http")) return src;
+    const privateImage = src.match(/^(?:\.?\/)?private\/Images\/(.+)$/i);
+    if (privateImage) {
+      return `${siteBase}Images/${normalizeImagePathToUrlPath(privateImage[1])}`;
+    }
+    const publicImage = src.match(/^\/?Images\/(.+)$/i);
+    if (publicImage) {
+      return `${siteBase}Images/${normalizeImagePathToUrlPath(publicImage[1])}`;
+    }
     // If src is absolute (/Images/...), respect the configured base.
     return `${siteBase}${src.replace(/^\//, "")}`;
   }

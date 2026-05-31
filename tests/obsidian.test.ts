@@ -36,9 +36,20 @@ describe("normalizeObsidianEmbeds", () => {
     expect(out).toBe("![](/Images/Cook%20or%20Be%20Cooked.jpg)");
   });
 
-  it("keeps private image embeds out of published markdown", () => {
+  it("publishes explicitly referenced private image embeds through public image URLs", () => {
     const md = "![[private/Images/Press/file.jpg]]";
-    expect(normalizeObsidianEmbeds(md)).toBe("");
+    expect(normalizeObsidianEmbeds(md)).toBe("![](/Images/Press/file.jpg)");
+  });
+
+  it("publishes standard markdown private image embeds without Open attachment links", () => {
+    const md = [
+      "[Open: source.jpg](private/Images/2026,%20Show/file%20one.jpg)",
+      "![](private/Images/2026,%20Show/file%20one.jpg)",
+    ].join("\n");
+
+    expect(normalizeObsidianEmbeds(md)).toBe(
+      "\n![](/Images/2026%2C%20Show/file%20one.jpg)",
+    );
   });
 
   it("removes non-embed attachment wiki links instead of publishing note links", () => {

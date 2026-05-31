@@ -22,6 +22,17 @@ const EXTRA_EXHIBITION_ALIASES: Record<string, string[]> = {
   "2022-sculptural-impulse": ["조각충동"],
   "2020-art-plant-asia-hare-way-object": ["Hare Way Object", "토끼 방향 오브젝트"],
   "2019-seoul-focus": ["Nothing Twice", "두 번의 똑같은 밤은 없다"],
+  "2026-off-the-whitefold-and-watchtower": [
+    "Off the White: Fold and Watchtower",
+    "Off the White：Fold and Watchtower",
+    "오프 더 화이트: 주름과 망루",
+    "우한나 x 김동희",
+  ],
+  "2026-stay-with-meneither-here-nor-there": [
+    "Stay with Me: Neither Here nor There",
+    "Stay with Me：Neither Here nor There",
+    "Stay With Me：Neither Here nor There",
+  ],
 };
 
 function getDisplayTitle(title: string): string {

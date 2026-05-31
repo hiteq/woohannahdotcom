@@ -55,12 +55,10 @@ function isImagePath(target: string): boolean {
 }
 
 function stripImagesPrefix(target: string): string {
-  return target.replace(/^Images\//i, "")
+  return target.replace(/^private\/Images\//i, "").replace(/^Images\//i, "")
 }
 
 function renderImageMarkdown(target: string, alt?: string, base = "/"): string {
-  if (/^private\/Images\//i.test(target)) return ""
-
   const imagePath = stripImagesPrefix(target)
   const safePath = normalizeImagePathToUrlPath(imagePath)
   const safeAlt = (alt ?? "").trim()
@@ -81,8 +79,22 @@ export function normalizeObsidianEmbeds(md: string, basePath = "/"): string {
     },
   )
 
-  // Explicit private image embeds are intentionally not published.
-  md = md.replaceAll(/!\[\[private\/Images\/[^\]]+\]\]/gi, "")
+  md = md.replaceAll(
+    /!\[\[(private\/Images\/[^\]|]+\.(?:avif|gif|jpe?g|png|svg|webp))(?:\|([^\]]+))?\]\]/gi,
+    (_m, target: string, alt?: string) => {
+      return renderImageMarkdown(target, alt, base)
+    },
+  )
+
+  // Standard markdown images pointing at private/Images are still intentional
+  // public-page embeds, so publish them through /Images after sync.
+  md = md.replaceAll(
+    /!\[([^\]]*)\]\((?:\.?\/)?private\/Images\/([^)]+)\)/gi,
+    (_m, alt: string, rest: string) => renderImageMarkdown(rest, alt, base),
+  )
+
+  // Drop Obsidian's adjacent "Open:" attachment links for private images.
+  md = md.replaceAll(/\[[^\]]*\]\((?:\.?\/)?private\/Images\/[^)]+\)/gi, "")
 
   // If someone used standard markdown image syntax pointing at root (/Images/...),
   // rewrite to respect the configured base path (important for GitHub Pages base deploy).
@@ -93,11 +105,10 @@ export function normalizeObsidianEmbeds(md: string, basePath = "/"): string {
 
   // Same for raw HTML <img src="/Images/...">
   md = md.replaceAll(/(<img\b[^>]*\bsrc=")\/Images\//g, `$1${base}Images/`)
+  md = md.replaceAll(/(<img\b[^>]*\bsrc=")(?:\.?\/)?private\/Images\//gi, `$1${base}Images/`)
 
   // Wiki links: [[Works/Sculptures/Bleeding]] -> [Bleeding](/works/sculptures/bleeding)
   md = md.replaceAll(/\[\[([^[\]]+?)\]\]/g, (_m, target: string) => {
-    if (/^private\/Images\//i.test(target)) return ""
-
     const [linkTarget, explicitLabel] = target.split("|")
     if (isImagePath(linkTarget)) {
       return ""
