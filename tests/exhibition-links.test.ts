@@ -26,6 +26,18 @@ describe("linkAboutExhibitions", () => {
     expect(out).toContain('<a href="/exhibitions/2025-poomsae/">품새</a>');
   });
 
+  it("does not include exhibition years in generated links", () => {
+    const html = "<p>2025 - Poomsae, G Gallery, Seoul</p>";
+    const out = linkAboutExhibitions(
+      html,
+      [exhibition("2025, POOMSAE", ["2025-poomsae"], "2025")],
+      "/",
+    );
+
+    expect(out).toContain('2025 - <a href="/exhibitions/2025-poomsae/">Poomsae</a>');
+    expect(out).not.toContain('<a href="/exhibitions/2025-poomsae/">2025 - Poomsae</a>');
+  });
+
   it("links English aliases and preserves existing anchors", () => {
     const html =
       '<p>2023 - Appearances, G Gallery, Frieze No. 9 Cork Street</p><p><a href="/x/">Summer Love</a></p>';

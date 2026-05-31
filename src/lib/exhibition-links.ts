@@ -9,10 +9,11 @@ const EXTRA_EXHIBITION_ALIASES: Record<string, string[]> = {
   "2025-poomsae": ["Poomsae", "품새"],
   "2023-no-9-cork-street": ["Appearances", "Frieze No. 9 Cork Street", "Frieze No.9 Cork Street"],
   "2023-tumbleweeds": ["마른 풀 소용돌이", "마른 풀 소용돌이:Tumbleweeds"],
-  "2023-woo-hannah-connection": ["Connection: Woo Hannah Open Studio"],
-  "2020-woo-hannah-ma-moitié": ["Ma Moitié", "마 모아티에"],
+  "2023-woo-hannah-connection": [
+    "Connection: Woo Hannah Open Studio",
+    "Connection: Woo Hannah Open Studion",
+  ],
   "2022-feather": ["우한나 x 정수정"],
-  "2025-bodys-first-architecture": ["Body's First Architecture"],
   "2024-the-1st-seoul-sculpture-prize-the-strange-encounter": [
     "The 1st Seoul Sculpture Prize ‘The Strange Encounter’",
     "제 1회 서울조각상 ‘경계없이 낯설게’",
@@ -26,13 +27,39 @@ const EXTRA_EXHIBITION_ALIASES: Record<string, string[]> = {
     "Off the White: Fold and Watchtower",
     "Off the White：Fold and Watchtower",
     "오프 더 화이트: 주름과 망루",
-    "우한나 x 김동희",
   ],
   "2026-stay-with-meneither-here-nor-there": [
     "Stay with Me: Neither Here nor There",
     "Stay with Me：Neither Here nor There",
     "Stay With Me：Neither Here nor There",
   ],
+  "2026-faisandage-upcoming": ["Faisandage", "Faisandage: 세계로 스며드는 죽음"],
+  "2026-rehearsing-transformation": ["변신연습"],
+  "2025-buddies-sharing-our-big-home": ["Buddies Sharing Our Big Home", "버디즈 쉐어링 아워 빅 홈"],
+  "2025-layered-medium-we-are-in-open-circuits": ["Layered Medium: We Are in Open Circuits"],
+  "2025-bodys-first-architecture": ["Body's First Architecture", "Body’s First Architecture"],
+  "2025-still-alive": ["Still Alive", "Stillalive"],
+  "2025-la-couleur-de-la-corée": [
+    "La couleur de la Corée",
+    "Une saison culturelle exceptionnelle",
+    "Couleurs de Corée",
+    "한국의 색",
+    "한국 현대미술을 조명하다",
+  ],
+  "2024-vitalis-violentia": ["Vitalis violentia", "비탈리 비올렌티아"],
+  "2024-two-side-love": ["Two Side Love"],
+  "2023-living-in-joy": ["Living in Joy", "즐겁게! 기쁘게!"],
+  "2023-autohypnosis": ["Autohypnosis"],
+  "2022-summer-love": ["Summer Love", "Summer Love 2022"],
+  "2022-ziggy-stardust": ["Ziggy Stardust"],
+  "2021-though-we-dance": ["Though We Dance", "Though we dance"],
+  "2020-woo-hannah-ma-moitié": ["Ma Moitié", "마 모아티에"],
+  "2018-swinging": ["Swinging"],
+  "2017-the-revenge-its-ma-power-huh": [
+    "The Revenge, It’s Ma Power, Huh!",
+    "The Revenge, It's Ma Power, Huh!",
+  ],
+  "2016-city-units": ["City Units"],
 };
 
 function getDisplayTitle(title: string): string {
@@ -69,9 +96,7 @@ function buildLinkTargets(exhibitions: ContentEntry[], base = "/"): LinkTarget[]
     const slugKey = getSlugKey(entry);
     const displayTitle = getDisplayTitle(entry.title);
     const terms = uniqueTerms([
-      entry.title,
       displayTitle,
-      ...(entry.year ? [`${entry.year} - ${displayTitle}`, `${entry.year}, ${displayTitle}`] : []),
       ...(EXTRA_EXHIBITION_ALIASES[slugKey] ?? []),
     ]);
 
