@@ -16,7 +16,7 @@ Preview: true
 *Mama Piano, 2024, Painting on PLA, aluminum, urethane, fabric, cotton, silicone, 100 x 112 x 175 cm*
 
 ![[Images/우한나_블리딩-2024-아가리-(2).jpg]]
-  
+ *Agari*, 2024, Fabric, cotton, aluminium wire, acrylic spray on fabric, silicone, 118 x 124 x 56 cm 
 
   
 
