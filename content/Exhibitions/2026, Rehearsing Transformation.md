@@ -53,6 +53,8 @@ description: Rehearsing Transformation 변신연습, Mar. 26 – Jun. 07, 2026
 [Open: 변신연습_드로잉_7.jpg](private/Images/2026,%20Rehearsing%20Transformation/a04b33b30cd475e5c2ba66af5970ccb6_MD5.jpg)
 ![](private/Images/2026,%20Rehearsing%20Transformation/a04b33b30cd475e5c2ba66af5970ccb6_MD5.jpg)
 
+[Open: 2026 변신연습 Rehearsing Transformation 포스터.jpg](private/Images/2026,%20Rehearsing%20Transformation/6f7ca49e45bffcb5aa734f7f366c3873_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/6f7ca49e45bffcb5aa734f7f366c3873_MD5.jpg)
 
 We often regard transformation as something that happens in an instant. There is always a powerful fascination we feel in moments when something before us suddenly changes and a completely different presence reveals itself. But for such changes to become possible, we need a lot of time and contemplation, along with a willingness to remain in the presence of some substance.  
   
