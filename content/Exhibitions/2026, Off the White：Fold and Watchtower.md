@@ -18,11 +18,10 @@ description: Off the White：Fold and Watchtower, May. 01 – Jul. 12, 2026
 [Open: Off the White_2026_Poster.jpg](private/Images/2026,%20Off%20the%20White%EF%BC%9AFold%20and%20Watchtower/e88ff9180f0fc2aee62634b41d7bf710_MD5.jpg)
 ![](private/Images/2026,%20Off%20the%20White%EF%BC%9AFold%20and%20Watchtower/e88ff9180f0fc2aee62634b41d7bf710_MD5.jpg)
 
-《오프 더 화이트: 주름과 망루》
 Off the White: Fold and Watchtower
 2026.5.1.(Fri) ― 2026.7.12.(Sun)
 
-_Off the White_ is a relay exhibition through which the Ilmin Museum of Art, marking the 100th anniversary of its architecture, explores contemporary art’s experiments and prospects concerning the museum as a place. Completed in 1926 as the Dong-A Ilbo headquarters, this building began as the offices of a modern newspaper company and has since transformed into an institution engaging with a broad range of visual culture. Against this background, the museum now erects white exhibition halls, places artworks within them, and produces discourse and images. In this sense, the museum exceeds the meaning of a space in which artworks are simply stored; it is where artworks are newly perceived and reconstituted.
+_Off the White_ is a relay exhibition through which the Ilmin Museum of Art, marking the 100th anniversary of its architecture, explores contemporary art’s experiments and prospects concerning the museum as a place. Completed in 1926 as the Dong-A Ilbo headquarters, this building began as the offices of a modern newspaper company and has since transformed into an institution engaging with a broad range of visual culture. Against this background, the museum now erects white exhibition halls, places artworks within them, and produces discourse and images. In this sense, the museum exceeds the meaning of a space in which artworks are simply stored; it is where artworks are newly perceived and reconstituted.
 
 Unlike the conventional understanding of “site” in art as a setting endowed with irreplaceable specificity, _Off the White_ attends to what precedes such enunciation in the form of an intervention or a frame. It looks instead to another order of conditions that enable the museum before a given location is called forth as a site. These include the by-products of the museum’s operation: walls and floors, light and ornament, storage and transport protocols, attitudes toward display and viewing, and immaterial registers such as feelings and habits. The artists who have attended to these elements reveal the museum as a singular position where the force and sensibility of artworks are negotiated between a neutral white environment and a “specific site.”
 
@@ -78,8 +77,6 @@ DISCOVER SEOUL PASS Partnership
 
 Ilmin Museum of Art 152 Sejong-daero, Jongno-gu, Seoul, Korea
 
-
-오프 더 화이트
 
 《오프 더 화이트》는 건축 100주년을 맞은 일민미술관이 ‘미술관’이라는 장소에 관한 동시대 미술의 실험과 전망을 탐색하는 릴레이 전시이다. 1926년 동아일보 사옥으로 지어진 이곳은 근대 언론의 업무 시설에서 출발해 광범위한 시각문화 현상을 다루는 기관으로 변모했다. 오늘날 이 자리에 위치한 미술관은 그러한 배경 위에 흰 전시실을 세우고, 작품을 배치하고, 담론과 이미지를 생산한다. 이때 미술관은 단순히 예술품이 적재된 공간의 의미를 넘어 작품이 새롭게 인식되고 재구성되는 곳이다.
 
