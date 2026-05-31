@@ -35,6 +35,9 @@ series: Bag with you
 [Open: Bag with you_Cooked or Be cooked, Installation View, 2026(3).jpg](private/Images/Bag%20with%20you_Cook%20or%20Be%20Cooked/7947915689db2ef04832468dd9bd1b23_MD5.jpg)
 ![](private/Images/Bag%20with%20you_Cook%20or%20Be%20Cooked/7947915689db2ef04832468dd9bd1b23_MD5.jpg)
 
+[Open: A Pirate's Lifeboy_plastic, rope, fabric, 75x80(h)x12cm_2026.jpg](private/Images/Bag%20with%20you_Cook%20or%20Be%20Cooked/f927b6c0d7ca567b59a228df66812dab_MD5.jpg)
+![](private/Images/Bag%20with%20you_Cook%20or%20Be%20Cooked/f927b6c0d7ca567b59a228df66812dab_MD5.jpg)
+
 [Open: Fatigued Kimchi, fabric, stuffing, wire, faux fur, acrylic, lacquer paint, beads, 67x53(h)x59cm, 2026.jpg](private/Images/Bag%20with%20you_Cook%20or%20Be%20Cooked/1e7d78b11136e47b6d37859cd54366a4_MD5.jpg)
 ![](private/Images/Bag%20with%20you_Cook%20or%20Be%20Cooked/1e7d78b11136e47b6d37859cd54366a4_MD5.jpg)
 
