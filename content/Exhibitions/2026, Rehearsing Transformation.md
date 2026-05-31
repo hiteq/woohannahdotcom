@@ -5,6 +5,55 @@ type: exhibition
 category: Group
 description: Rehearsing Transformation 변신연습, Mar. 26 – Jun. 07, 2026
 ---
+[Open: Bag with you_Preserving Me_Cloak 은신_2026_fabric, stuffing, steel pipe, beads_170x200x200cm__6.jpg](private/Images/2026,%20Rehearsing%20Transformation/c82faab77916ce9c9e90a598d4ff3bc8_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/c82faab77916ce9c9e90a598d4ff3bc8_MD5.jpg)
+
+[Open: Bag with you_Preserving Me_2026_18.jpg](private/Images/2026,%20Rehearsing%20Transformation/9109bf8b22abe627e58709d0b394399f_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/9109bf8b22abe627e58709d0b394399f_MD5.jpg)
+
+[Open: Bag with you_Preserving Me_Cloak 은신_2026_fabric, stuffing, steel pipe, beads_170x200x200cm__11.jpg](private/Images/2026,%20Rehearsing%20Transformation/7bb3e4c778481b111075b4ef1f46ead7_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/7bb3e4c778481b111075b4ef1f46ead7_MD5.jpg)
+
+[Open: Bag with you_Preserving Me_Cloak 은신_2026_fabric, stuffing, steel pipe, beads_170x200x200cm_29.jpg](private/Images/2026,%20Rehearsing%20Transformation/aaa6a245114452060f6526b1d7c6096f_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/aaa6a245114452060f6526b1d7c6096f_MD5.jpg)
+
+[Open: Bag with you_Preserving Me_Ward 결계_2026_fabric, stuffing, beads, thread, steel pipe, 160x48x25cm__2.jpg](private/Images/2026,%20Rehearsing%20Transformation/79d75bc62e558e601de5c09608cb5f0d_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/79d75bc62e558e601de5c09608cb5f0d_MD5.jpg)
+
+[Open: Bag with you_Preserving Me_Ward 결계_2026_fabric, stuffing, beads, thread, steel pipe, 160x48x25cm__4.jpg](private/Images/2026,%20Rehearsing%20Transformation/7dd69f84fd2bcae311d1d4dcec7e2aa5_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/7dd69f84fd2bcae311d1d4dcec7e2aa5_MD5.jpg)
+
+[Open: Bag with you_Preserving Me_Ward 결계_2026_fabric, stuffing, beads, thread, steel pipe, 160x48x25cm_33.jpg](private/Images/2026,%20Rehearsing%20Transformation/4e6a693fa9b512db06336b9371d3a373_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/4e6a693fa9b512db06336b9371d3a373_MD5.jpg)
+
+[Open: Bag with you_Preserving Me_Ward 결계_2026_fabric, stuffing, beads, thread, steel pipe, 160x48x25cm_46.jpg](private/Images/2026,%20Rehearsing%20Transformation/c043298cf2b5e9c107ed171bb0b89929_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/c043298cf2b5e9c107ed171bb0b89929_MD5.jpg)
+
+[Open: 변신연습_드로잉_10.jpg](private/Images/2026,%20Rehearsing%20Transformation/4964ef70ef1b5d5b71a7ed5f5520dd85_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/4964ef70ef1b5d5b71a7ed5f5520dd85_MD5.jpg)
+
+[Open: 변신연습_드로잉_1.jpg](private/Images/2026,%20Rehearsing%20Transformation/3eafd6c205639144d117051e059ab391_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/3eafd6c205639144d117051e059ab391_MD5.jpg)
+
+[Open: 변신연습_드로잉_9.jpg](private/Images/2026,%20Rehearsing%20Transformation/394b1f84c535d13475bb523eefc1f604_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/394b1f84c535d13475bb523eefc1f604_MD5.jpg)
+
+[Open: 변신연습_Milk and Honey-11_590x300x295cm61.jpg](private/Images/2026,%20Rehearsing%20Transformation/f15859858e342d98bdf67d0e0aa52f14_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/f15859858e342d98bdf67d0e0aa52f14_MD5.jpg)
+
+[Open: 변신연습_Milk and Honey-11_590x300x295cm40.jpg](private/Images/2026,%20Rehearsing%20Transformation/0b1944a972f9031e12dd2dda1a929032_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/0b1944a972f9031e12dd2dda1a929032_MD5.jpg)
+
+[Open: 변신연습_Milk and Honey-11_590x300x295cm73.jpg](private/Images/2026,%20Rehearsing%20Transformation/922af4674912112d3cfff105ce84054e_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/922af4674912112d3cfff105ce84054e_MD5.jpg)
+
+[Open: 변신연습_Milk and Honey-11_590x300x295cm7.jpg](private/Images/2026,%20Rehearsing%20Transformation/9de313e459ed5b32f7fa84a5dab2844e_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/9de313e459ed5b32f7fa84a5dab2844e_MD5.jpg)
+
+[Open: 변신연습_드로잉_7.jpg](private/Images/2026,%20Rehearsing%20Transformation/a04b33b30cd475e5c2ba66af5970ccb6_MD5.jpg)
+![](private/Images/2026,%20Rehearsing%20Transformation/a04b33b30cd475e5c2ba66af5970ccb6_MD5.jpg)
+
+
 We often regard transformation as something that happens in an instant. There is always a powerful fascination we feel in moments when something before us suddenly changes and a completely different presence reveals itself. But for such changes to become possible, we need a lot of time and contemplation, along with a willingness to remain in the presence of some substance.  
   
 Incheon Art Platform presents 𝑅𝑒ℎ𝑒𝑎𝑟𝑠𝑖𝑛𝑔 𝑇𝑟𝑎𝑛𝑠𝑓𝑜𝑟𝑚𝑎𝑡𝑖𝑜𝑛, an exhibition that explores the conditions and process through which transformation takes shape. The event opens on March 26.  
