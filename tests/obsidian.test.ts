@@ -45,4 +45,15 @@ describe("normalizeObsidianEmbeds", () => {
     const md = "[[file.jpg|Open: file.jpg]]\n![[file.jpg]]";
     expect(normalizeObsidianEmbeds(md)).toBe("\n![](/Images/file.jpg)");
   });
+
+  it("keeps nested image embeds published while dropping adjacent Open attachment links", () => {
+    const md = [
+      "[[35a4fbf16b1a9f3a3c09c658cf0f6b1d_MD5.jpg|Open: source.jpg]]",
+      "![[Images/Bag with you_Cook or Be Cooked/35a4fbf16b1a9f3a3c09c658cf0f6b1d_MD5.jpg]]",
+    ].join("\n");
+
+    expect(normalizeObsidianEmbeds(md)).toBe(
+      "\n![](/Images/Bag%20with%20you_Cook%20or%20Be%20Cooked/35a4fbf16b1a9f3a3c09c658cf0f6b1d_MD5.jpg)",
+    );
+  });
 });
