@@ -38,7 +38,7 @@ function normalizeImageFilename(filename: string): string {
 }
 
 export function normalizeImageFilenameToUrlSegment(filename: string): string {
-  return encodeURIComponent(normalizeImageFilename(filename))
+  return encodeURIComponent(normalizeImageFilename(filename)).replaceAll("%2C", ",")
 }
 
 export function normalizeImagePathToUrlPath(imagePath: string): string {

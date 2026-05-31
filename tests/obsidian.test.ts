@@ -19,6 +19,12 @@ describe("obsidian image filename normalization", () => {
       `works/${encodeURIComponent("가 나".normalize("NFC"))}/image%201.jpg`,
     );
   });
+
+  it("leaves commas unescaped for static file serving compatibility", () => {
+    expect(normalizeImagePathToUrlPath("2026, Show/image 1.jpg")).toBe(
+      "2026,%20Show/image%201.jpg",
+    );
+  });
 });
 
 describe("normalizeObsidianEmbeds", () => {
@@ -48,7 +54,7 @@ describe("normalizeObsidianEmbeds", () => {
     ].join("\n");
 
     expect(normalizeObsidianEmbeds(md)).toBe(
-      "\n![](/Images/2026%2C%20Show/file%20one.jpg)",
+      "\n![](/Images/2026,%20Show/file%20one.jpg)",
     );
   });
 
