@@ -5,7 +5,6 @@ type: exhibition
 category: Two-person
 description: Off the White：Fold and Watchtower, May. 01 – Jul. 12, 2026
 ---
-
 [Open: Off the White_2026_Installation View_3.jpg](private/Images/2026,%20Off%20the%20White%EF%BC%9AFold%20and%20Watchtower/a2390eb3a7c05738f97fdce4204bc2d8_MD5.jpg)
 ![](private/Images/2026,%20Off%20the%20White%EF%BC%9AFold%20and%20Watchtower/a2390eb3a7c05738f97fdce4204bc2d8_MD5.jpg)
 

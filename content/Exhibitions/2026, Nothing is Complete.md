@@ -5,12 +5,11 @@ type: exhibition
 category: Two-person
 description: Nothing is Complete, Feb. 25 – Apr. 18, 2026
 ---
-
 [Open: cync_001_Nothing is complete_001.jpg](private/Images/2026,%20Nothing%20is%20Complete/65d5fc2f2f8fe01b875efdf61b3f1e68_MD5.jpg)
 ![](private/Images/2026,%20Nothing%20is%20Complete/65d5fc2f2f8fe01b875efdf61b3f1e68_MD5.jpg)
 
-[Open: cync_001_Nothing is complete_002.jpg](private/Images/2026,%20Nothing%20is%20Complete/0d8784fe0fe6f57796975085f6464e54_MD5.jpg)
-![](private/Images/2026,%20Nothing%20is%20Complete/0d8784fe0fe6f57796975085f6464e54_MD5.jpg)
+[Open: cync_001_Nothing is complete_002.jpg](Grand%20Coolly,%202023,%20Aluminum,%20fabric,%20cotton,%20thread,%20beads%20265%20×%20337%20×%20104%20cm.jpg)
+![](Grand%20Coolly,%202023,%20Aluminum,%20fabric,%20cotton,%20thread,%20beads%20265%20×%20337%20×%20104%20cm.jpg)
 
 [Open: cync_001_Nothing is complete_004.jpg](private/Images/2026,%20Nothing%20is%20Complete/06ff6dd2995a435a492b9b2e777883a4_MD5.jpg)
 ![](private/Images/2026,%20Nothing%20is%20Complete/06ff6dd2995a435a492b9b2e777883a4_MD5.jpg)
