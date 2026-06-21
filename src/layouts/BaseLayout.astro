@@ -3,8 +3,37 @@ import "../styles/globals.css"
 import AgentationOverlay from "../components/AgentationOverlay"
 import SiteHeader from "../components/SiteHeader.astro"
 import SiteFooter from "../components/SiteFooter.astro"
+import { absoluteUrl, personSchema, SITE_DESCRIPTION, websiteSchema } from "../lib/seo"
 
-const { title, description } = Astro.props
+type SchemaItem = Record<string, unknown>
+
+interface Props {
+  title?: string
+  description?: string
+  canonical?: string
+  image?: string
+  type?: "website" | "article"
+  schema?: SchemaItem | SchemaItem[]
+}
+
+const {
+  title = "WOO HANNAH",
+  description,
+  canonical,
+  image,
+  type = "website",
+  schema,
+} = Astro.props as Props
+
+const weakDescriptions = new Set(["Artist Portfolio", "Works", "Exhibitions", "Press"])
+const metaDescription = description && !weakDescriptions.has(description) ? description : SITE_DESCRIPTION
+const canonicalUrl = canonical ? absoluteUrl(canonical) : absoluteUrl(Astro.url.pathname)
+const imageUrl = image ? absoluteUrl(image) : undefined
+const schemaItems = [
+  websiteSchema(),
+  personSchema(),
+  ...(Array.isArray(schema) ? schema : schema ? [schema] : []),
+]
 const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID
 ---
 
@@ -13,6 +42,7 @@ const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href={canonicalUrl} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +50,22 @@ const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans+KR:wght@400;500;600;700;900&family=Playfair+Display:wght@900&display=swap"
     />
     <title>{title}</title>
-    {description && <meta name="description" content={description} />}
+    <meta name="description" content={metaDescription} />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:site_name" content="WOO HANNAH" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    {imageUrl && <meta property="og:image" content={imageUrl} />}
+    <meta name="twitter:card" content={imageUrl ? "summary_large_image" : "summary"} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={metaDescription} />
+    {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+    {schemaItems.map((schemaItem) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schemaItem)}></script>
+    ))}
     {
       gaMeasurementId && (
         <>

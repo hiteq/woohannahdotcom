@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro"
 import { loadAllContent } from "../../lib/content"
+import { summarizeEntry, visualArtworkSchema } from "../../lib/seo"
 
 export async function getStaticPaths() {
   const all = await loadAllContent()
@@ -9,9 +10,18 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props
+const description = summarizeEntry(
+  entry,
+  [entry.title, "by Woo Hannah", entry.year, entry.category, entry.medium].filter(Boolean).join(" · "),
+)
 ---
 
-<BaseLayout title={`${entry.title} · WOO HANNAH`} description={entry.description}>
+<BaseLayout
+  title={`${entry.title} · WOO HANNAH`}
+  description={description}
+  image={entry.thumbnail}
+  schema={visualArtworkSchema(entry)}
+>
   <article class="prose prose-zinc max-w-none work-detail">
     <h1>{entry.title}</h1>
     <p class="mt-2 text-sm text-zinc-600">
