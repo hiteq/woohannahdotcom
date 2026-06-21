@@ -8,6 +8,18 @@ export const SITE_DESCRIPTION =
 const ARTIST_ID = `${SITE_URL}/#artist`
 const WEBSITE_ID = `${SITE_URL}/#website`
 
+type ListSchemaItem = {
+  name: string
+  url: string
+  description?: string
+  image?: string
+}
+
+type BreadcrumbItem = {
+  name: string
+  path: string
+}
+
 export const ARTIST_SAME_AS = [
   "https://www.instagram.com/hannah.flashed.that/",
   "https://www.artsy.net/artist/woo-hannah",
@@ -59,6 +71,15 @@ export function entryImageUrl(entry: ContentEntry): string | undefined {
   return entry.thumbnail ? absoluteUrl(entry.thumbnail) : undefined
 }
 
+export function entryListItem(entry: ContentEntry, maxDescriptionLen = 180): ListSchemaItem {
+  return compactSchema({
+    name: entry.title,
+    url: entryUrl(entry),
+    description: summarizeEntry(entry, `${entry.title} by Woo Hannah.`, maxDescriptionLen),
+    image: entryImageUrl(entry),
+  }) as ListSchemaItem
+}
+
 export function websiteSchema(): Record<string, unknown> {
   return {
     "@context": "https://schema.org",
@@ -106,6 +127,7 @@ export function visualArtworkSchema(entry: ContentEntry): Record<string, unknown
     additionalProperty: entry.dimensions
       ? [{ "@type": "PropertyValue", name: "dimensions", value: entry.dimensions }]
       : undefined,
+    isPartOf: { "@id": `${SITE_URL}/works/#collection` },
     mainEntityOfPage: entryUrl(entry),
   })
 }
@@ -124,6 +146,7 @@ export function exhibitionSchema(entry: ContentEntry): Record<string, unknown> {
     performer: { "@id": ARTIST_ID },
     about: { "@id": ARTIST_ID },
     organizer: { "@id": ARTIST_ID },
+    isPartOf: { "@id": `${SITE_URL}/exhibitions/#collection` },
     mainEntityOfPage: entryUrl(entry),
   })
 }
@@ -140,9 +163,85 @@ export function articleSchema(entry: ContentEntry): Record<string, unknown> {
     dateModified: entry.date,
     author: { "@id": ARTIST_ID },
     publisher: { "@id": ARTIST_ID },
+    isPartOf: { "@id": `${SITE_URL}/thoughts/#collection` },
     mainEntityOfPage: entryUrl(entry),
     inLanguage: "ko",
   })
+}
+
+export function breadcrumbSchema(items: BreadcrumbItem[]): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: absoluteUrl(item.path),
+    })),
+  }
+}
+
+export function entryBreadcrumbSchema(entry: ContentEntry): Record<string, unknown> {
+  const section = entry.type === "work" ? "Works" : entry.type === "exhibition" ? "Exhibitions" : "Thoughts"
+  const sectionPath = entry.type === "work" ? "/works/" : entry.type === "exhibition" ? "/exhibitions/" : "/thoughts/"
+
+  return breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: section, path: sectionPath },
+    { name: entry.title, path: entryPath(entry) },
+  ])
+}
+
+export function collectionPageSchema(options: {
+  name: string
+  description: string
+  path: string
+  id?: string
+  items?: ListSchemaItem[]
+}): Record<string, unknown> {
+  const url = absoluteUrl(options.path)
+  const items = options.items ?? []
+
+  return compactSchema({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": options.id ?? `${url}#collection`,
+    name: options.name,
+    url,
+    description: options.description,
+    about: { "@id": ARTIST_ID },
+    isPartOf: { "@id": WEBSITE_ID },
+    mainEntity: items.length
+      ? {
+          "@type": "ItemList",
+          numberOfItems: items.length,
+          itemListElement: items.map((item, index) =>
+            compactSchema({
+              "@type": "ListItem",
+              position: index + 1,
+              name: item.name,
+              url: item.url,
+              image: item.image,
+              description: item.description,
+            }),
+          ),
+        }
+      : undefined,
+  })
+}
+
+export function profilePageSchema(description: string): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${SITE_URL}/about/#profile`,
+    name: "About Woo Hannah",
+    url: absoluteUrl("/about/"),
+    description,
+    mainEntity: { "@id": ARTIST_ID },
+    isPartOf: { "@id": WEBSITE_ID },
+  }
 }
 
 function compactSchema(value: Record<string, unknown>): Record<string, unknown> {
