@@ -150,6 +150,11 @@
 article.prose p {
   text-wrap: pretty;
   word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+article.prose :where(a, li, h1, h2, h3, h4, h5, h6, figcaption) {
+  overflow-wrap: anywhere;
 }
 
 article.prose :where(h1) {
