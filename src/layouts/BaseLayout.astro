@@ -63,7 +63,9 @@ const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={metaDescription} />
     {imageUrl && <meta name="twitter:image" content={imageUrl} />}
-    {schemaItems.map((schemaItem) => <script type="application/ld+json" set:html={JSON.stringify(schemaItem)} />)}
+    {schemaItems.map((schemaItem) => (
+      <script type="application/ld+json" set:html={JSON.stringify(schemaItem)}></script>
+    ))}
     {
       gaMeasurementId && (
         <>
