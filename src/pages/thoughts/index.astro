@@ -1,9 +1,23 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro"
 import { loadAllContent, sortByDateDesc } from "../../lib/content"
+import { breadcrumbSchema, collectionPageSchema, entryListItem } from "../../lib/seo"
 
 const all = await loadAllContent()
 const thoughts = sortByDateDesc(all.filter((e) => e.type === "thought"))
+const pageDescription = "Criticism, interviews, artist notes, and writing related to Woo Hannah."
+const pageSchema = [
+  collectionPageSchema({
+    name: "Thoughts on Woo Hannah",
+    description: pageDescription,
+    path: "/thoughts/",
+    items: thoughts.map((entry) => entryListItem(entry, 220)),
+  }),
+  breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Thoughts", path: "/thoughts/" },
+  ]),
+]
 const baseRaw = import.meta.env.BASE_URL
 const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
 
@@ -18,7 +32,7 @@ function getExcerpt(html: string, maxLen = 200): string {
 }
 ---
 
-<BaseLayout title="Thoughts · WOO HANNAH" description="비평, 인터뷰, 작가노트">
+<BaseLayout title="Thoughts · WOO HANNAH" description={pageDescription} schema={pageSchema}>
   <div class="mb-8 border-b border-zinc-200 pb-4">
     <h1 class="page-title text-3xl font-bold">Thoughts</h1>
     <p class="mt-2 text-sm text-zinc-500">비평, 인터뷰, 작가노트</p>
