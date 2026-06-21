@@ -103,7 +103,9 @@ export function visualArtworkSchema(entry: ContentEntry): Record<string, unknown
     dateCreated: entry.year,
     artMedium: entry.medium,
     material: entry.medium,
-    width: entry.dimensions,
+    additionalProperty: entry.dimensions
+      ? [{ "@type": "PropertyValue", name: "dimensions", value: entry.dimensions }]
+      : undefined,
     mainEntityOfPage: entryUrl(entry),
   })
 }
