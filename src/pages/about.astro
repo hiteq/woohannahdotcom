@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro"
 import { loadAllContent } from "../lib/content"
 import { linkAboutExhibitions } from "../lib/exhibition-links"
+import { breadcrumbSchema, profilePageSchema, stripHtml, truncateText } from "../lib/seo"
 
 const all = await loadAllContent()
 const about = all.find((e) => e.type === "page" && e.slug.join("/") === "about")
@@ -13,13 +14,21 @@ if (!about) {
   throw new Error("About page not found in content/About.md")
 }
 
+const pageDescription = about.description ?? truncateText(stripHtml(about.englishHtml ?? about.bodyHtml), 180)
+const pageSchema = [
+  profilePageSchema(pageDescription),
+  breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about/" },
+  ]),
+]
 const linkedBodyHtml = linkAboutExhibitions(about.bodyHtml, exhibitions, base)
 const linkedEnglishHtml = about.englishHtml
   ? linkAboutExhibitions(about.englishHtml, exhibitions, base)
   : undefined
 ---
 
-<BaseLayout title="About · WOO HANNAH" description={about.description}>
+<BaseLayout title="About · WOO HANNAH" description={pageDescription} schema={pageSchema}>
   <article class="about-page prose prose-zinc max-w-none">
     <h1>{about.title}</h1>
     
