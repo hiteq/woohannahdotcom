@@ -95,16 +95,17 @@ const categorySections = [
           href={`${base}exhibitions/${e.slug.join("/")}/`}
           class="group block no-underline"
         >
-          <div class="mb-6 w-full overflow-hidden rounded-xl bg-zinc-50 md:rounded-2xl">
+          <div class="mb-6 aspect-[16/9] w-full overflow-hidden rounded-xl bg-zinc-50 md:rounded-2xl">
             {e.thumbnail ? (
               <img
                 src={e.thumbnail}
                 alt={e.title}
-                class="w-full h-auto max-h-[75vh] object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                class="h-full w-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
                 loading="lazy"
+                decoding="async"
               />
             ) : (
-              <div class="w-full aspect-video flex items-center justify-center text-zinc-400">
+              <div class="flex h-full w-full items-center justify-center text-zinc-400">
                 No image
               </div>
             )}

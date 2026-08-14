@@ -31,7 +31,7 @@ const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
   </div>
   
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {works.map((w) => (
+    {works.map((w, index) => (
       <a
         href={`${base}works/${w.slug.join("/")}/`}
         class="group block no-underline"
@@ -42,7 +42,9 @@ const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
               src={w.thumbnail}
               alt={w.title}
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              loading="lazy"
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
+              fetchpriority={index === 0 ? "high" : "auto"}
             />
           ) : (
             <div class="w-full h-full flex items-center justify-center text-zinc-400">
