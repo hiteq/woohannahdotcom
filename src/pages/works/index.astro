@@ -1,16 +1,30 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro"
 import { loadAllContent, sortByDateDesc, groupWorksBySeries } from "../../lib/content"
+import { breadcrumbSchema, collectionPageSchema, entryListItem } from "../../lib/seo"
 
 const all = await loadAllContent()
 const rawWorks = sortByDateDesc(all.filter((e) => e.type === "work"))
 const groupedWorks = groupWorksBySeries(rawWorks)
+const pageDescription = "Sculptures, installations, paintings, and textile-based mixed media works by Woo Hannah."
+const pageSchema = [
+  collectionPageSchema({
+    name: "Works by Woo Hannah",
+    description: pageDescription,
+    path: "/works/",
+    items: rawWorks.map((entry) => entryListItem(entry)),
+  }),
+  breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Works", path: "/works/" },
+  ]),
+]
 
 const baseRaw = import.meta.env.BASE_URL
 const base = baseRaw.endsWith("/") ? baseRaw : `${baseRaw}/`
 ---
 
-<BaseLayout title="Works · WOO HANNAH" description="Works">
+<BaseLayout title="Works · WOO HANNAH" description={pageDescription} schema={pageSchema}>
   <div class="mb-8 pb-4">
     <h1 class="page-title text-3xl font-bold">Works</h1>
   </div>

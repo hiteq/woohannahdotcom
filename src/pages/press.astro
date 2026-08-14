@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro"
 import { loadAllContent } from "../lib/content"
 import { fetchOgImage, extractFirstLink } from "../lib/og-image"
+import { absoluteUrl, breadcrumbSchema, collectionPageSchema, stripHtml, truncateText } from "../lib/seo"
 
 const all = await loadAllContent()
 const press = all.find((e) => e.type === "page" && e.slug[0] === "press")
@@ -56,6 +57,25 @@ await Promise.all(
   }),
 )
 
+const pageDescription = press.description ?? "Press coverage, interviews, articles, and external references for Woo Hannah."
+const pageSchema = [
+  collectionPageSchema({
+    name: "Press coverage for Woo Hannah",
+    description: pageDescription,
+    path: "/press/",
+    items: items.map((item) => ({
+      name: item.title,
+      url: item.firstLinkUrl ?? absoluteUrl("/press/"),
+      description: truncateText(stripHtml(item.html), 180),
+      image: item.thumbnail ? absoluteUrl(item.thumbnail) : undefined,
+    })),
+  }),
+  breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Press", path: "/press/" },
+  ]),
+]
+
 /* 벤토 그리드 크기: 이미지 수에 따라 카드 크기 결정 */
 const gridClasses: string[] = []
 let multiToggle = 0
@@ -79,7 +99,7 @@ if (smallCount > 0 && smallCount % 3 === 1) {
 }
 ---
 
-<BaseLayout title="Press · WOO HANNAH">
+<BaseLayout title="Press · WOO HANNAH" description={pageDescription} schema={pageSchema}>
   <h1 class="page-title mb-10 text-3xl font-bold">Press</h1>
 
   <!-- Bento Grid -->
