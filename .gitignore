@@ -29,3 +29,4 @@ public/Images/**/*_MD5.*
 # local editor workspace state
 content/.obsidian/workspace.json
 .vercel
+.playwright-mcp/

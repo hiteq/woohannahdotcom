@@ -37,6 +37,18 @@ yarn build
 
 GitHub Pages 운영 배포에서는 repository secret에 `PUBLIC_GA_MEASUREMENT_ID`를 추가해야 합니다.
 
+### 웹 성능 모니터링 (Core Web Vitals & CrUX)
+
+실제 사용자 환경 성능(RUM) 및 Chrome UX Report(CrUX) 모니터링이 연동되어 있습니다.
+
+- **실시간 사용자 성능(RUM)**: 모든 방문자의 LCP, INP, CLS 지표가 GA4 이벤트로 자동 기록됩니다.
+- **CrUX 대시보드**: [Looker Studio 대시보드 바로가기](https://lookerstudio.google.com/c/reporting/create?c.reportId=chrome-ux-report&ds.ds0.datasourceName=CrUX&ds.ds0.origin=https%3A%2F%2Fwoohannah.com)
+- **CrUX API 조회 CLI**:
+  ```bash
+  CRUX_API_KEY=your_key yarn crux
+  ```
+- **자동 모니터링**: `.github/workflows/crux-monitor.yml`을 통해 매주 정기 리포트가 생성됩니다. 상세 내용은 [CRUX_GUIDE.md](CRUX_GUIDE.md)를 참고하세요.
+
 ---
 
 ## 콘텐츠 구조

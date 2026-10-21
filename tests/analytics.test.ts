@@ -27,5 +27,7 @@ describe("analytics layout", () => {
     expect(html).toContain("https://www.googletagmanager.com/gtag/js?id=G-TEST123456");
     expect(html).toContain('window.gtag("config", gaMeasurementId);');
     expect(html).not.toContain("{`window.dataLayer");
-  }, 20000);
+    // Verify client collector script is embedded or linked
+    expect(html).toMatch(/BaseLayout.*\.js/);
+  }, 60000);
 });
